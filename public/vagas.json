@@ -1,0 +1,515 @@
+[
+    {
+        "id": 1,
+        "cargo": "Auxiliar técnico de Laboratório",
+        "empresa": "Farmácia Unifórmulas",
+        "local_trabalho": {
+            "rua": "Rua Senhor dos Passos, n66",
+            "bairro": "Centro",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [],
+        "horario": {
+            "segunda_a_sexta": "10:00 às 19:00",
+            "sabado": "08:00 às 14:00 (com uma folga no sábado uma vez no mês)"
+        },
+        "escala": "Segunda a sábado",
+        "contato": {
+            "email": "farmaciauniformulas@hotmail.com"
+        },
+        "descricao_vaga": "Trabalhar diretamente na manipulação de formulações sólidas e semi sólidas dentro da legislação vigente.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164756_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 2,
+        "cargo": "Vendedor(a)",
+        "empresa": "Não especificada (Segmento de Telefonia Móvel)",
+        "local_trabalho": {
+            "rua": "",
+            "bairro": "Centro",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": "R$ 1.600,00 até R$ 3.200,00 (fixo + comissão)",
+        "beneficios": [
+            "Ambiente animado e motivador",
+            "Oportunidade real de crescimento",
+            "Ganhos acima da média com comissões"
+        ],
+        "requisitos": [
+            "Ser comunicativa e com energia para vender",
+            "Ser proativa e comprometida",
+            "Ser focada em metas e resultados"
+        ],
+        "horario": {
+            "diario": "09:00 às 18:00"
+        },
+        "escala": "Não especificada",
+        "contato": {
+            "whatsapp": "(31) 99494-6358"
+        },
+        "descricao_vaga": "Atuação com vendas no segmento de telefonia móvel no Centro de Sete Lagoas.",
+        "divulgacao": "@juniorsousainforma",
+        "fonte_imagem": "photo_4952187362507164759_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 3,
+        "cargo": "Auxiliar de Vendas na Captação de Clientes Interna",
+        "empresa": "Conquista Cred",
+        "local_trabalho": {
+            "rua": "",
+            "bairro": "",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": "Comissionado (pagamentos comissionados)",
+        "beneficios": [
+            "Ambiente colaborativo",
+            "Treinamento",
+            "Possibilidade de crescimento"
+        ],
+        "requisitos": [
+            "Pessoas comunicativas",
+            "Proativas",
+            "Vontade de crescimento profissional"
+        ],
+        "horario": {
+            "diario": "09:00 às 18:00"
+        },
+        "escala": "Segunda a sexta-feira (Escala 5x2)",
+        "contato": {
+            "whatsapp": "(31) 97313-9634"
+        },
+        "descricao_vaga": "Atuar na captação interna de clientes utilizando redes sociais, WhatsApp, telefone e ferramentas digitais.",
+        "divulgacao": "@juniorsousainforma",
+        "fonte_imagem": "photo_4952187362507164763_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 4,
+        "cargo": "Pizzaiolo",
+        "empresa": "Supermercado Santa Helena",
+        "local_trabalho": {
+            "rua": "",
+            "bairro": "",
+            "cidade": "Sete Lagoas",
+            "estado": "MG",
+            "detalhe": "Supermercado Santa Helena"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [],
+        "horario": {
+            "observacao": "Informado na entrevista"
+        },
+        "escala": "Informado na entrevista",
+        "contato": {
+            "email": "vagas@supersantahelena.com.br"
+        },
+        "descricao_vaga": "Responsável pela produção completa de pizzas (preparo, montagem, forneamento e apresentação), mantendo a qualidade, normas de higiene e controle de estoque. Garante a limpeza do setor, atendimento ao cliente e o bom trabalho em equipe.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164778_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 5,
+        "cargo": "Vendedor(a)",
+        "empresa": "Perfumaria Sul Americana",
+        "local_trabalho": {
+            "rua": "",
+            "bairro": "",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [
+            "Experiência na função de 6 meses",
+            "Ensino médio completo"
+        ],
+        "habilidades_desejadas": [
+            "Trabalhar em equipe",
+            "Boa Comunicação",
+            "Habilidade de negociação",
+            "Proatividade",
+            "Agilidade"
+        ],
+        "diferencial": [
+            "Gostar da área de beleza"
+        ],
+        "horario": {
+            "tipo": "Horário comercial"
+        },
+        "escala": "Segunda a sábado",
+        "contato": {
+            "email": "daniadm2006@yahoo.com.br"
+        },
+        "descricao_vaga": "Atuar como Vendedor(a) na Perfumaria Sul Americana.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164760_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 6,
+        "cargo": "Vendedor / Atendente",
+        "empresa": "Loja Mega Cell",
+        "local_trabalho": {
+            "rua": "",
+            "bairro": "Shopping Sete Lagoas",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": "R$ 1.800,00",
+        "beneficios": [],
+        "requisitos": [
+            "Pessoa comunicativa",
+            "Responsável",
+            "Proativa",
+            "Vontade de crescer profissionalmente"
+        ],
+        "horario": {
+            "segunda_a_sabado": "10h às 18:30 (indicado como 18:3 na imagem)",
+            "domingo": "12:00 às 20:00"
+        },
+        "escala": "Segunda a sábado e Domingos (com 1 folga fixa na semana e 1 domingo de folga por mês)",
+        "contato": {
+            "whatsapp": "(31) 99891-0339"
+        },
+        "descricao_vaga": "Atendimento ao cliente e vendas na loja Mega Cell do Shopping Sete Lagoas.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164786_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 7,
+        "cargo": "Vendedor/Atendente",
+        "empresa": "TIM",
+        "local_trabalho": {
+            "rua": "",
+            "bairro": "Shopping Sete Lagoas",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": "R$ 1.800,00",
+        "beneficios": [],
+        "requisitos": [
+            "Pessoa comunicativa",
+            "Responsável",
+            "Proativa",
+            "Vontade de crescer profissionalmente"
+        ],
+        "horario": {
+            "segunda_a_sabado": "10h às 18h30",
+            "domingo": "12h às 20h"
+        },
+        "escala": "Com 1 folga fixa durante a semana e 1 domingo de folga por mês",
+        "contato": {
+            "whatsapp": "(31) 99891-0339"
+        },
+        "descricao_vaga": "Estamos contratando Vendedor(a) para fazer parte da nossa equipe na loja TIM do Shopping Sete Lagoas.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164762_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 8,
+        "cargo": "Vendedora",
+        "empresa": "Like Acessórios",
+        "local_trabalho": {
+            "rua": "Rua Monsenhor Messias, 293",
+            "bairro": "Centro",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [
+            "Ser comunicativa",
+            "Proativa",
+            "Saber trabalhar bem em equipe",
+            "Não é necessário ter experiência (Contratação para início imediato)"
+        ],
+        "horario": {
+            "segunda_a_sexta": "07:00 às 16:00 ou 10:00 às 19:00",
+            "sabado": "07:00 às 12:00 ou 11:00 às 13:00"
+        },
+        "escala": "Segunda a sábado",
+        "contato": {
+            "whatsapp": "(31) 99645-1824"
+        },
+        "descricao_vaga": "Vendas de acessórios com contratação imediata e sem exigência de experiência anterior.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164765_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 9,
+        "cargo": "Lavador de carros e acabamentos em geral",
+        "empresa": "Não especificada",
+        "local_trabalho": {
+            "rua": "Rua Chico dos pinhões, 438",
+            "bairro": "Várzea",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [
+            "Comprometimento e pontualidade",
+            "Agilidade e atenção aos detalhes",
+            "Vontade de aprender",
+            "Experiência na função"
+        ],
+        "horario": {
+            "segunda_a_sexta": "07:30 às 17:30",
+            "sabado": "até 15:00"
+        },
+        "escala": "Segunda a sábado",
+        "contato": {
+            "whatsapp_ou_telefone": "31 996660899 (falar com Rafael)"
+        },
+        "descricao_vaga": "Atuar com lavagem de carros e acabamentos em geral.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164764_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 10,
+        "cargo": "Auxiliar de Padaria",
+        "empresa": "Não especificada",
+        "local_trabalho": {
+            "rua": "Zoroastro Passos, 30",
+            "bairro": "Centro",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [],
+        "horario": {
+            "periodo": "Tarde"
+        },
+        "escala": "Informado na entrevista",
+        "contato": {
+            "whatsapp_ou_telefone": "3199721-8382"
+        },
+        "descricao_vaga": "Atuação como auxiliar no setor de padaria.",
+        "divulgacao": "Grupo WhatsApp - Empregos",
+        "fonte_imagem": "photo_4952187362507164779_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 11,
+        "cargo": "Operador de Produção (Indústria Frigorífica)",
+        "empresa": "RHF Talentos / Parceria com Secretaria Municipal da Mulher de Sete Lagoas-MG",
+        "local_trabalho": {
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": "Salário compatível com a função",
+        "beneficios": [
+            "Vale-alimentação R$ 550,00",
+            "Kit Natalino",
+            "Transporte fretado",
+            "Assistência Médica e Odontológica",
+            "Seguro de Vida",
+            "Refeição na empresa",
+            "Adicional noturno de 30%"
+        ],
+        "requisitos": [
+            "Ensino Fundamental completo (desejável)",
+            "Disponibilidade para atuar em turnos"
+        ],
+        "horario": {
+            "segunda_a_sexta": "16:20 às 02:08 (2º turno)"
+        },
+        "escala": "Segunda a sexta-feira",
+        "contato": {
+            "telefone": "(31) 97185-8719"
+        },
+        "descricao_vaga": "Oportunidade para Operador de Produção em indústria frigorífica. Processo seletivo totalmente gratuito, sem cobrança aos candidatos.",
+        "divulgacao": "@mulhersetelagoas e prefeituradesetelagoas",
+        "fonte_imagem": "photo_4952187362507164777_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true
+    },
+    {
+        "id": 12,
+        "cargo": "Operador(a) de Teleatendimento",
+        "empresa": "Fácil Brasil Contact Center",
+        "local_trabalho": {
+            "cidade": "Sete Lagoas",
+            "estado": "MG",
+            "modalidade": "Presencial"
+        },
+        "salario": "Salário fixo + comissão por desempenho individual + premiações por resultados",
+        "beneficios": [
+            "Vale-transporte",
+            "Plano de saúde",
+            "Plano odontológico",
+            "Day Off",
+            "Convênio com farmácia"
+        ],
+        "requisitos": [
+            "A partir de 18 anos",
+            "Noções básicas de informática"
+        ],
+        "horario": {
+            "segunda_a_sexta": "09:00 às 17:12"
+        },
+        "escala": "Segunda a sexta-feira",
+        "contato": {
+            "email": "recrutamento@facilbrasil.com"
+        },
+        "descricao_vaga": "Atue com negociação de dívidas por telefone e faça a diferença! Vagas de início imediato.",
+        "fonte_imagem": "photo_4952187362507164761_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true,
+        "divulgacao": "Grupo WhatsApp - Empregos"
+    },
+    {
+        "id": 13,
+        "cargo": "Motorista Rodocaçamba",
+        "empresa": "Expresso Transporte",
+        "local_trabalho": {
+            "cidade": "Sete Lagoas",
+            "estado": "MG",
+            "detalhe": "Nossa Base: Sete Lagoas / MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [
+            "Experiência com rodocaçamba",
+            "Trabalho em equipe",
+            "Proatividade",
+            "Disponibilidade para viajar",
+            "CNH Categoria E"
+        ],
+        "prazo_inscricao": "Envie até 04/09",
+        "contato": {
+            "telefone": "(31) 98515-0325",
+            "email": "gestao.rh@expressotransporte.com"
+        },
+        "descricao_vaga": "Vaga de motorista rodocaçamba com CNH E na Expresso Transporte.",
+        "fonte_imagem": "photo_4952187362507164787_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true,
+        "escala": "Até 04/09",
+        "divulgacao": "Grupo WhatsApp - Empregos"
+    },
+    {
+        "id": 14,
+        "cargo": "Vagas Inclusivas Santa Helena",
+        "empresa": "Santa Helena",
+        "local_trabalho": {
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [
+            "Vale Alimentação",
+            "Plano de Saúde",
+            "Plano Odonto",
+            "Vale transporte"
+        ],
+        "cargos_disponiveis": [
+            "Pizzaiolo",
+            "Açougueiro",
+            "Atendente de Lanchonete",
+            "Atendente de Frios",
+            "Repositor de Frios",
+            "Garçom",
+            "Operador de caixa",
+            "Repositor de Loja",
+            "Atendente de Padaria",
+            "Atendente de Guarda-Volumes",
+            "Conferente"
+        ],
+        "requisitos": [],
+        "contato": {
+            "whatsapp": "(31) 97143-6905",
+            "email": "vagas@supersantahelena.com.br"
+        },
+        "instrucoes_candidatura": "Enviar currículo para o WhatsApp ou e-mail com o nome da vaga no assunto, ou deixar o currículo impresso em uma das lojas.",
+        "fonte_imagem": "photo_4952187362507164757_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true,
+        "descricao_vaga": "Vagas inclusivas para diversos cargos. Oportunidade de trabalho com benefícios completos.",
+        "escala": "Conforme vaga",
+        "divulgacao": "Grupo WhatsApp - Empregos"
+    },
+    {
+        "id": 15,
+        "cargo": "Vendedor(a)",
+        "empresa": "Útil Brink Decor",
+        "local_trabalho": {
+            "rua": "Rua Doutor Avelar, 260",
+            "bairro": "Centro",
+            "cidade": "Sete Lagoas",
+            "estado": "MG"
+        },
+        "salario": null,
+        "beneficios": [],
+        "requisitos": [
+            "Maior de 18 anos",
+            "Boa comunicação e habilidades interpessoais",
+            "Proatividade e capacidade de trabalhar em equipe"
+        ],
+        "contato": {
+            "whatsapp": "(31) 99946-3666"
+        },
+        "instrucoes_candidatura": "Enviar currículo pelo Whatsapp ou entregar diretamente na loja física.",
+        "fonte_imagem": "photo_4952187362507164758_y.jpg",
+        "data_publicacao": "2026-09-01",
+        "data_validade": "2026-10-01",
+        "origem": "Grupo WhatsApp - Empregos e Freelances",
+        "ativa": true,
+        "descricao_vaga": "Vendedor(a) de acessórios na Útil Brink Decor, localizada no Centro de Sete Lagoas.",
+        "escala": "Conforme necessidade",
+        "divulgacao": "Grupo WhatsApp - Empregos"
+    }
+]
