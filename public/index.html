@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>7 Vagas - Portal de Oportunidades</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <div class="container">
 
-<!-- Header -->
-<header class="header">
-    <div class="header-content">
+        <!-- =====================================================
+             HEADER
+             ===================================================== -->
 
-        <h1 class="logo">7 Vagas</h1>
+        <header class="header">
 
-        <p class="tagline">
-            Seu portal de oportunidades em Sete Lagoas
-        </p>
+            <div class="header-content">
 
-        <!-- Botão Voltar -->
-        <a 
-            href="https://setelagoaspolitica.web.app/"
-            style="
-                display: inline-block;
-                margin-top: 20px;
-                padding: 10px 18px;
-                background: #E4032E;
-                color: #ffffff;
-                text-decoration: none;
-                border-radius: 6px;
-                font-weight: 600;
-                font-size: 14px;
-            "
-        >
-            ← Voltar para o site
-        </a>
+                <h1 class="logo">
+                    7 Vagas
+                </h1>
 
-    </div>
-</header>
+                <p class="tagline">
+                    Seu portal de oportunidades em Sete Lagoas
+                </p>
+
+                <a
+                    href="https://setelagoaspolitica.web.app/"
+                    class="back-link"
+                >
+                    ← Voltar para o site
+                </a>
+
+            </div>
+
+        </header>
 
 
+        <!-- =====================================================
+             FILTROS
+             ===================================================== -->
 
-
-        <!-- Filtros -->
         <section class="filters-section">
+
             <div class="filters-container">
 
-                <h2>Filtrar Vagas</h2>
+                <h2>
+                    Filtrar Vagas
+                </h2>
 
                 <div class="filters-grid">
 
+                    <!-- Busca -->
+
                     <div class="filter-group">
+
                         <label for="search-input">
                             Buscar por cargo ou empresa:
                         </label>
 
-                        <input 
-                            type="text" 
-                            id="search-input" 
-                            placeholder="Digite o cargo ou empresa..."
+                        <input
+                            type="text"
+                            id="search-input"
                             class="filter-input"
+                            placeholder="Digite o cargo ou empresa..."
                         >
+
                     </div>
 
 
+                    <!-- Salário -->
+
                     <div class="filter-group">
+
                         <label for="salary-filter">
                             Filtrar por salário:
                         </label>
 
-                        <select 
-                            id="salary-filter" 
+                        <select
+                            id="salary-filter"
                             class="filter-input"
                         >
+
                             <option value="">
                                 Todos os salários
                             </option>
@@ -90,88 +102,133 @@
                             <option value="comissionado">
                                 Comissionado
                             </option>
+
                         </select>
+
                     </div>
 
 
+                    <!-- Empresa -->
+
                     <div class="filter-group">
+
                         <label for="company-filter">
                             Filtrar por empresa:
                         </label>
 
-                        <select 
-                            id="company-filter" 
+                        <select
+                            id="company-filter"
                             class="filter-input"
                         >
+
                             <option value="">
                                 Todas as empresas
                             </option>
+
                         </select>
+
                     </div>
 
                 </div>
 
-                <button 
-                    id="reset-filters" 
+
+                <!-- Limpar filtros -->
+
+                <button
+                    id="reset-filters"
                     class="btn-reset"
+                    type="button"
                 >
                     Limpar Filtros
                 </button>
 
             </div>
+
         </section>
 
 
-        <!-- Contador de vagas -->
+        <!-- =====================================================
+             CONTADOR
+             ===================================================== -->
+
         <section class="counter-section">
 
             <p class="total-vagas">
+
                 Total de vagas:
-                <strong id="vagas-count">0</strong>
+
+                <strong id="vagas-count">
+                    0
+                </strong>
+
             </p>
 
         </section>
 
 
-        <!-- Lista de Vagas -->
+        <!-- =====================================================
+             LISTA DE VAGAS
+             ===================================================== -->
+
         <section class="vagas-section">
 
-            <div 
-                id="vagas-container" 
+            <div
+                id="vagas-container"
                 class="vagas-grid"
             >
-                <!-- As vagas serão inseridas aqui via JavaScript -->
+
+                <!--
+                    As vagas serão inseridas
+                    automaticamente pelo JavaScript.
+                -->
+
             </div>
 
 
-            <div 
-                id="no-results" 
-                class="no-results" 
+            <!-- Nenhum resultado -->
+
+            <div
+                id="no-results"
+                class="no-results"
                 style="display: none;"
             >
+
                 <p>
                     Nenhuma vaga encontrada com os filtros selecionados.
                 </p>
+
             </div>
 
         </section>
 
 
-        <!-- Modal para detalhes da vaga -->
-        <div 
-            id="modal" 
-            class="modal" 
+        <!-- =====================================================
+             MODAL — DETALHES DA VAGA
+             ===================================================== -->
+
+        <div
+            id="modal"
+            class="modal"
             style="display: none;"
         >
 
             <div class="modal-content">
 
-                <span class="close-modal">
+                <button
+                    type="button"
+                    class="close-modal"
+                    aria-label="Fechar detalhes"
+                >
                     &times;
-                </span>
+                </button>
 
                 <div id="modal-body">
-                    <!-- Conteúdo da vaga será inserido aqui -->
+
+                    <!--
+                        Os detalhes da vaga
+                        serão inseridos pelo JavaScript.
+                    -->
+
                 </div>
 
             </div>
@@ -179,7 +236,10 @@
         </div>
 
 
-        <!-- Footer -->
+        <!-- =====================================================
+             FOOTER
+             ===================================================== -->
+
         <footer class="footer">
 
             <p>
@@ -192,8 +252,12 @@
     </div>
 
 
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
-```
