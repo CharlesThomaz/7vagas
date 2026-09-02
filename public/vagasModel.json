@@ -1,0 +1,658 @@
+	
+0	
+id	1
+cargo	"Auxiliar técnico de Laboratório"
+empresa	"Farmácia Unifórmulas"
+local_trabalho	
+rua	"Rua Senhor dos Passos, n66"
+bairro	"Centro"
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	
+0	"Manipulação de formulações sólidas e semi sólidas dentro da legislação vigente"
+horario	
+segunda_a_sexta	"10:00 às 19:00"
+sabado	"08:00 às 14:00 (com uma folga no sábado uma vez no mês)"
+escala	"Segunda a sábado"
+contato	
+email	"farmaciauniformulas@hotmail.com"
+descricao_vaga	"Trabalhar diretamente na manipulação de formulações sólidas e semi sólidas dentro da legislação vigente."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"photo_4952187362507164756_y.jpg"
+data_publicacao	"2026-09-01"
+data_validade	"2026-10-01"
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+1	
+id	2
+cargo	"Manutencista"
+empresa	"Empresa não informada"
+local_trabalho	
+rua	"Unidade de Educação de Sete Lagoas"
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 2.296,17 + 20% acúmulo de função"
+beneficios	[]
+requisitos	
+0	"Experiência com manutenções básicas"
+horario	
+segunda_a_sexta	"Horário comercial"
+sabado	null
+escala	"Segunda a sexta"
+contato	
+telefone	"(31) 9531-4113"
+descricao_vaga	"Realizar manutenção em geral (elétrica, hidráulica, pedreiro, dentre outras atividades) na Unidade de Educação de Sete Lagoas."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0128.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+2	
+id	3
+cargo	"Auxiliar de Cozinha"
+empresa	"Bom Sabor Alimentação"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Vale Alimentação"
+1	"Convênio Médico"
+2	"Vale Transporte"
+requisitos	
+0	"Experiência na área"
+1	"Disponibilidade de horários"
+horario	
+segunda_a_sexta	"Regime 12x36"
+sabado	"Regime 12x36"
+escala	"12x36"
+contato	
+telefone	"(31) 99179-6949"
+descricao_vaga	"Atuar como Auxiliar de Cozinha no regime 12x36. Necessário experiência na área e disponibilidade de horários."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0127.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+3	
+id	4
+cargo	"Cozinheira"
+empresa	"Bom Sabor Alimentação"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Vale Alimentação"
+1	"Convênio Médico"
+2	"Vale Transporte"
+requisitos	
+0	"Experiência na área"
+1	"Disponibilidade de horários"
+horario	
+segunda_a_sexta	"Regime 12x36"
+sabado	"Regime 12x36"
+escala	"12x36"
+contato	
+telefone	"(31) 99179-6949"
+descricao_vaga	"Atuar como Cozinheira no regime 12x36. Necessário experiência na área e disponibilidade de horários."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0127.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+4	
+id	5
+cargo	"Eletricista 1"
+empresa	"Empresa não informada"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 2.107,30"
+beneficios	
+0	"Adicional de periculosidade (30%)"
+requisitos	[]
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	null
+contato	
+telefone	"(31) 98797-1904"
+descricao_vaga	"Atuar como Eletricista. Salário-base R$ 1.621,00 + Adicional de periculosidade (30%)."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0126.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+5	
+id	6
+cargo	"Eletricista 2"
+empresa	"Empresa não informada"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 2.691,00"
+beneficios	
+0	"Adicional de periculosidade (30%)"
+requisitos	[]
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	null
+contato	
+telefone	"(31) 98797-1904"
+descricao_vaga	"Atuar como Eletricista. Salário-base R$ 2.070,62 + Adicional de periculosidade (30%)."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0126.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+6	
+id	7
+cargo	"Auxiliar de Limpeza"
+empresa	"SAMA Siderúrgica"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Cesta básica"
+1	"Vale alimentação"
+2	"Plano odontológico"
+3	"Plano de saúde"
+4	"Seguro de vida"
+5	"Vale transporte"
+6	"Total Pass (plano de academia)"
+requisitos	
+0	"Experiência na área"
+1	"Ter disponibilidade de horário"
+2	"Ser proativa, organizada e ágil"
+3	"Vaga exclusiva para o sexo feminino"
+horario	
+segunda_a_sexta	"06:00 às 15:00"
+sabado	"06:00 às 10:00"
+escala	"Segunda a sábado"
+contato	
+email	"rh@samasider.com.br"
+telefone	"(31) 2106-5008"
+descricao_vaga	"Responsável pela limpeza, conservação e organização da siderúrgica."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0168.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+7	
+id	8
+cargo	"Jovem Aprendiz"
+empresa	"CIE Forjas Minas"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Cartão Cesta Básica"
+1	"Plano de Saúde Familiar"
+2	"Plano Odontológico"
+3	"Seguro de vida"
+4	"Alimentação na empresa"
+requisitos	
+0	"Ensino médio completo"
+1	"Ter entre 18 e 22 anos"
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	"Não especificado"
+contato	
+site	"https://www.autometal.com.br/trabalhe-conosco/"
+telefone	"(31) 99864-5755"
+descricao_vaga	"A CIE Forjas Minas contrata Jovem Aprendiz para integrar sua equipe em Sete Lagoas-MG."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0161.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+8	
+id	9
+cargo	"Churrasqueiro"
+empresa	"Espeteria Rafael Figueiredo"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	
+0	"Agilidade e organização"
+1	"Compromisso e trabalho em equipe"
+2	"Disponibilidade de segunda a sábado"
+horario	
+segunda_a_sabado	"Disponibilidade de segunda a sábado"
+escala	"Segunda a sábado"
+contato	
+telefone	"(31) 99075-0228"
+descricao_vaga	"Realizar atividades de churrasqueiro na espeteria. Oferecemos salário compatível com a função, ambiente dinâmico e respeitoso."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0124.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+9	
+id	10
+cargo	"Atendente"
+empresa	"Supra Açaí"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	[]
+horario	
+segunda_a_sexta	"08:00 às 18:00"
+sabado	"08:00 às 12:00"
+escala	"Segunda a sábado"
+contato	
+telefone	"(31) 99176-2344"
+descricao_vaga	"Atuar no atendimento ao cliente da distribuidora Supra Açaí."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0160.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+10	
+id	11
+cargo	"Operador de Câmara Fria"
+empresa	"Gellak"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Plano de Saúde Unimed (Coparticipativo)"
+1	"Convênio Odontológico Unimed"
+2	"Transporte fretado (sem desconto em folha)"
+3	"Seguro de vida (sem desconto em folha)"
+4	"Rede de convênios e descontos"
+5	"Cesta básica"
+requisitos	
+0	"Vaga masculina"
+1	"Ensino Médio"
+2	"Disponibilidade de horário"
+3	"Perfil concentrado, organized, responsável, ético, flexível e de comunicação clara"
+horario	
+segunda_a_sexta	"Turnos disponíveis: 07:00 às 17:00 ou 17:00 às 02:30"
+sabado	null
+escala	"Não especificado"
+contato	
+email	"recrutamento@gellak.com.br"
+telefone	"(31) 97130-1136"
+descricao_vaga	"Atuar na operação de câmara fria."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0162.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+11	
+id	12
+cargo	"Comprador com Domínio para Estoque"
+empresa	"Ideal Auto Peças"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	
+0	"Conhecimento em peças para camionetes e vans"
+1	"Experiência na área de compras"
+2	"Domínio no controle de estoque"
+3	"Organização, agilidade e bom relacionamento interpessoal"
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	"Não especificado"
+contato	
+telefone	"(31) 97248-6931"
+descricao_vaga	"Realizar cotações e negociações de peças; Efetuar compras conforme necessidade; Acompanhar prazos de entrega e itens em aberto; Controlar e organizar o estoque; Trabalhar em parceria com a equipe para manter compras e estoque em dia."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0157.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+12	
+id	13
+cargo	"Auxiliar de Produção"
+empresa	"Supra Açaí"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	[]
+horario	
+segunda_a_sexta	"07:00 às 17:00"
+sabado	null
+escala	"Segunda a sexta"
+contato	
+telefone	"(31) 99176-2344"
+descricao_vaga	"Atuar na produção de açaí."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0156.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+13	
+id	14
+cargo	"Auxiliar de Cozinha"
+empresa	"SSVP (Sociedade de São Vicente de Paulo)"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	[]
+horario	
+segunda_a_sexta	"Carga horária: 12x36"
+sabado	"Carga horária: 12x36"
+escala	"12x36"
+contato	{}
+descricao_vaga	"Atuar na cozinha de asilo / entidade SSVP."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0165.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+14	
+id	15
+cargo	"Operador de Loja"
+empresa	"Americanas S.A."
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Vale alimentação"
+1	"Vale transporte"
+2	"Plano de saúde"
+3	"Empresa Cidadã"
+4	"Seguro de vida"
+5	"Plano odontológico"
+6	"Gympass"
+7	"Allya"
+8	"Sesc"
+requisitos	
+0	"Ser maior de 18 anos"
+1	"Ensino médio completo"
+horario	
+segunda_a_sexta	"14:00 às 22:20"
+sabado	"14:00 às 22:20"
+escala	"Não especificado"
+contato	
+telefone	"+55 31 98417-3526"
+descricao_vaga	"Atuar no Time de Loja com oportunidades de carreira nas Lojas Americanas."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0125.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+15	
+id	16
+cargo	"Motorista Rodocaçamba"
+empresa	"Expresso Transporte"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	[]
+requisitos	
+0	"Experiência com rodocaçamba"
+1	"Trabalho em equipe"
+2	"Proatividade"
+3	"Disponibilidade para viajar"
+4	"CNH (Categoria E)"
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	"Não especificado"
+contato	
+email	"gestao.rh@expressotransporte.com"
+telefone	"(31) 98515-0325"
+descricao_vaga	"Dirigir rodocaçamba em rotas de transporte. Enviar currículo e CNH até 04/09."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0169.jpg"
+data_publicacao	"2026-09-02"
+data_validade	"2026-09-04"
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+16	
+id	17
+cargo	"Caixa Balconista"
+empresa	"Lagoa das Pedras"
+local_trabalho	
+rua	"BR040-Próximo a Fazenda Velha"
+bairro	"Fazenda Velha"
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 1.697,00"
+beneficios	
+0	"Plano de Saúde"
+1	"Vale Transporte"
+2	"Bonificação de Assiduidade de R$200,00"
+requisitos	
+0	"Mínimo de 6 meses de experiência com Caixa ou atendimento ao cliente"
+1	"Acima de 18 anos"
+2	"Disponibilidade em escala 12x36 das 10h às 22:00h"
+horario	
+segunda_a_sexta	"10:00 às 22:00 (escala 12x36)"
+sabado	"10:00 às 22:00 (escala 12x36)"
+escala	"12x36"
+contato	
+telefone	"(31) 99366-0181"
+descricao_vaga	"Atuar como Caixa Balconista em Restaurante, Lanchonete e Minimercado às margens da BR-040."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0166.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+17	
+id	18
+cargo	"Balconista"
+empresa	"Lagoa das Pedras"
+local_trabalho	
+rua	"BR040-Próximo a Fazenda Velha"
+bairro	"Fazenda Velha"
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 1.697,00"
+beneficios	
+0	"Plano de Saúde"
+1	"Vale Transporte"
+2	"Bonificação de Assiduidade de R$200,00"
+requisitos	
+0	"Mínimo de 6 meses de experiência com atendimento ao cliente"
+1	"Acima de 18 anos"
+2	"Disponibilidade em escala 12x36 de 10:00h às 22:00h ou escala 6x1 de 13:40h às 22:00h com folgas aos finais de semana"
+horario	
+segunda_a_sexta	"Horários conforme escala (12x36 ou 6x1)"
+sabado	"Horários conforme escala"
+escala	"12x36 ou 6x1"
+contato	
+telefone	"(31) 99366-0181"
+descricao_vaga	"Atuar como Balconista em Restaurante, Lanchonete e Minimercado."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0166.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+18	
+id	19
+cargo	"Atendente Comercial"
+empresa	"Empresa não informada"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Plano de Saúde"
+1	"Transporte"
+2	"Cartão Alimentação"
+3	"Seguro de Vida"
+4	"Convênio Sest Senat (Psicólogo, Nutricionista, Fisioterapeuta e Odontologia)"
+requisitos	
+0	"Feminino"
+1	"Informática intermediária"
+2	"Experiência de atendimento comprovada"
+horario	
+segunda_a_sexta	"Horário comercial"
+sabado	"Horário comercial"
+escala	"Segunda a sábado"
+contato	
+telefone	"(31) 98268-0874"
+descricao_vaga	"Vaga feminina para atendimento comercial em horário comercial."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0164.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+19	
+id	20
+cargo	"Auxiliar Administrativo"
+empresa	"CSS Siderúrgica Setelagoana Ltda."
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	null
+beneficios	
+0	"Vale-transporte"
+1	"Cartão-alimentação"
+2	"Convênio de saúde"
+3	"Seguro de vida"
+4	"Refeição na empresa"
+requisitos	
+0	"Maior de 18 anos"
+1	"Proatividade e comprometimento"
+2	"Experiência na área"
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	"Não especificado"
+contato	
+email	"css.rh@yahoo.com"
+telefone	"(31) 99348-0183"
+descricao_vaga	"Auxiliar nas demandas do setor administrativo da siderúrgica."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0125.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+20	
+id	21
+cargo	"Operador de Cozinha"
+empresa	"Spoleto"
+local_trabalho	
+rua	"Shopping Sete Lagoas"
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 1.697,00"
+beneficios	
+0	"Vale alimentação de R$ 400,00"
+requisitos	
+0	"Experiência como auxiliar de cozinha"
+1	"Disponibilidade para trabalhar em Shopping"
+horario	
+segunda_a_sexta	"10:30h às 22:30h"
+sabado	"10:30h às 22:30h"
+escala	"12x36h"
+contato	
+telefone	"(31) 98261-1957"
+descricao_vaga	"Higienizar, porcionar matérias primas; Limpeza da cozinha e de utensílios e vasilhas; Etiquetar e porcionar massas e proteínas no Spoleto (Shopping Sete Lagoas)."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0045.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
+21	
+id	22
+cargo	"Auxiliar Técnico 1"
+empresa	"Zelar Agência de Empregos"
+local_trabalho	
+rua	null
+bairro	null
+cidade	"Sete Lagoas"
+estado	"MG"
+salario	"R$ 3.019,26"
+beneficios	
+0	"Vale transporte"
+1	"Vale alimentação"
+2	"Plano de Saúde"
+3	"Seguro de Vida"
+requisitos	
+0	"Vaga masculina"
+1	"Ensino Fundamental"
+2	"CNH B"
+3	"Conhecimento básico em Instalações Elétricas"
+horario	
+segunda_a_sexta	"Não especificado"
+sabado	null
+escala	"Não especificado"
+contato	
+telefone	"(31) 99735-0566"
+descricao_vaga	"Atuar como Auxiliar Técnico 1. Início imediato."
+divulgacao	"Grupo WhatsApp - Empregos"
+fonte_imagem	"IMG-20260902-WA0165.jpg"
+data_publicacao	"2026-09-02"
+data_validade	null
+origem	"Grupo WhatsApp - Empregos e Freelances"
+ativa	true
