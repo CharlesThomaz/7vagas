@@ -106,6 +106,40 @@ button {
 }
 
 
+.update-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #1a6bc4;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background: #4cff7a;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blink-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes blink-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+.update-label {
+    color: #5a6f8f;
+    font-weight: 400;
+}
+
 /* =========================================================
    CONTAINER
    ========================================================= */

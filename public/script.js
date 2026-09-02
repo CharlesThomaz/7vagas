@@ -1236,3 +1236,40 @@ function escaparHTML(valor) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#039;');
 }
+
+// =========================================================
+// FUNÇÃO PARA ATUALIZAR A DATA DE PUBLICAÇÃO
+// =========================================================
+
+function atualizarDataPublicacao() {
+    const updateDateElement = document.getElementById('update-date');
+    if (!updateDateElement) return;
+    
+    // Data atual
+    const hoje = new Date();
+    
+    // Opções de formatação
+    const opcoes = {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric'
+    };
+    
+    // Formatar data: "02 de setembro de 2026"
+    const dataFormatada = hoje.toLocaleDateString('pt-BR', opcoes);
+    
+    // Atualizar o elemento
+    updateDateElement.textContent = dataFormatada;
+}
+
+// Executar quando a página carregar
+document.addEventListener('DOMContentLoaded', function() {
+    atualizarDataPublicacao();
+});
+
+// Também atualizar quando os filtros forem resetados
+// ou quando novas vagas forem carregadas
+function atualizarTudo() {
+    aplicarFiltros();
+    atualizarDataPublicacao();
+}
