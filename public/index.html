@@ -92,6 +92,16 @@
 </section>
 
 
+        <section class="mural-anuncio mural-anuncio-principal" aria-labelledby="mural-principal-title">
+            <div class="mural-anuncio-texto">
+                <span class="mural-eyebrow">ESPAÇO PARA EMPRESAS</span>
+                <h2 id="mural-principal-title">Sua empresa pode aparecer aqui.</h2>
+                <p>Divulgue vagas, produtos ou serviços para pessoas de Sete Lagoas que estão procurando oportunidades.</p>
+            </div>
+            <button id="mural-principal-cta" class="btn-mural-cta" type="button">Quero divulgar</button>
+        </section>
+
+
         <!-- =====================================================
              FILTROS
              ===================================================== -->
@@ -197,6 +207,16 @@
         </section>
 
 
+        <section class="mural-anuncio mural-anuncio-secundario" aria-labelledby="mural-secundario-title">
+            <div>
+                <span class="mural-eyebrow">ANUNCIE NO 7 VAGAS</span>
+                <h2 id="mural-secundario-title">Encontre candidatos e clientes na nossa cidade.</h2>
+                <p>Conte o que deseja divulgar e entraremos em contato.</p>
+            </div>
+            <button id="mural-secundario-cta" class="btn-mural-cta btn-mural-secundario" type="button">Solicitar divulgação</button>
+        </section>
+
+
         <!-- =====================================================
              CONTADOR
              ===================================================== -->
@@ -213,6 +233,47 @@
 
             </p>
 
+        </section>
+
+        <section class="anuncios-compactos" aria-labelledby="anuncios-compactos-title">
+            <div class="anuncios-compactos-cabecalho">
+                <div>
+                    <span class="mural-eyebrow">FORMATOS COMPACTOS</span>
+                    <h2 id="anuncios-compactos-title">Destaques da cidade</h2>
+                    <p>Uma opção de divulgação menor, pensada para caber em diferentes planos.</p>
+                </div>
+                <div class="carrossel-controles">
+                    <button id="carrossel-anuncios-anterior" type="button" aria-label="Ver anúncios anteriores">←</button>
+                    <button id="carrossel-anuncios-proximo" type="button" aria-label="Ver próximos anúncios">→</button>
+                </div>
+            </div>
+
+            <div id="carrossel-anuncios" class="carrossel-anuncios" aria-label="Anúncios em destaque">
+                <article class="anuncio-mini anuncio-mini-azul">
+                    <span>Publicidade</span>
+                    <strong>Studio Nexo</strong>
+                    <p>Ideias que ganham vida.</p>
+                    <button class="anuncio-mini-cta" type="button">Anunciar assim</button>
+                </article>
+                <article class="anuncio-mini anuncio-mini-rosa">
+                    <span>Publicidade</span>
+                    <strong>Flor & Afeto</strong>
+                    <p>Presentes para todos os momentos.</p>
+                    <button class="anuncio-mini-cta" type="button">Anunciar assim</button>
+                </article>
+                <article class="anuncio-mini anuncio-mini-amarelo">
+                    <span>Publicidade</span>
+                    <strong>Movimento+ Fitness</strong>
+                    <p>Mais energia para o seu dia.</p>
+                    <button class="anuncio-mini-cta" type="button">Anunciar assim</button>
+                </article>
+                <article class="anuncio-mini anuncio-mini-ciano">
+                    <span>Publicidade</span>
+                    <strong>Seu negócio aqui</strong>
+                    <p>Um destaque direto para sua marca.</p>
+                    <button class="anuncio-mini-cta" type="button">Quero divulgar</button>
+                </article>
+            </div>
         </section>
 
 
@@ -286,6 +347,43 @@
         </div>
 
 
+        <!-- SOLICITAÇÃO DE DIVULGAÇÃO -->
+
+        <div id="anuncio-modal" class="modal" style="display: none;" aria-hidden="true">
+            <div class="modal-content cadastro-content" role="dialog" aria-modal="true" aria-labelledby="anuncio-title">
+                <button id="close-anuncio" type="button" class="close-modal" aria-label="Fechar solicitação">&times;</button>
+
+                <div class="cadastro-body anuncio-body">
+                    <span class="cadastro-icon" aria-hidden="true">📣</span>
+                    <h2 id="anuncio-title">Divulgue no 7 Vagas</h2>
+                    <p>Deixe seus dados e entraremos em contato para montar sua divulgação.</p>
+
+                    <form id="anuncio-form">
+                        <label for="empresa-anunciante">Empresa ou responsável</label>
+                        <input id="empresa-anunciante" type="text" maxlength="100" autocomplete="organization" placeholder="Ex.: Empresa Silva" required>
+                        <label for="whatsapp-anunciante">WhatsApp para contato</label>
+                        <input id="whatsapp-anunciante" type="tel" maxlength="20" autocomplete="tel" placeholder="(31) 99999-9999" required>
+                        <label for="interesse-anunciante">O que deseja divulgar?</label>
+                        <select id="interesse-anunciante" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="Vaga de emprego">Vaga de emprego</option>
+                            <option value="Produto ou serviço">Produto ou serviço</option>
+                            <option value="Campanha ou evento">Campanha ou evento</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <button type="submit" class="btn-cadastro">Enviar solicitação</button>
+                    </form>
+                    <p id="anuncio-status" class="cadastro-status" role="status"></p>
+                    <p class="anuncio-contato-direto">
+                        Prefere falar agora? <a href="https://wa.me/5531971656313?text=Olá!%20Quero%20divulgar%20no%207%20Vagas." target="_blank" rel="noopener">WhatsApp</a>
+                        <span aria-hidden="true">•</span>
+                        <a href="mailto:lagoasmarketing@gmail.com?subject=Divulgação%20no%207%20Vagas">lagoasmarketing@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
         <!-- CADASTRO SIMPLIFICADO -->
 
         <div id="cadastro-modal" class="modal cadastro-modal" style="display: none;" aria-hidden="true">
@@ -295,7 +393,7 @@
                 <div class="cadastro-body">
                     <span class="cadastro-icon" aria-hidden="true">👋</span>
                     <h2 id="cadastro-title">Antes, como podemos te chamar?</h2>
-                    <p>Informe seu nome e e-mail para ver os detalhes e os contatos das vagas.</p>
+                    <p id="cadastro-descricao">Informe seu nome e e-mail para ver os detalhes e os contatos das vagas.</p>
 
                     <form id="cadastro-form">
                         <div id="nome-candidato-grupo">

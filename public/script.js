@@ -6,6 +6,26 @@ let acaoAposCadastro = null;
 let modoLogin = false;
 
 const CHAVE_NOME_CANDIDATO = '7vagas:nome-candidato';
+const ANUNCIOS_DEMONSTRACAO = [
+    {
+        marca: 'VivaLeve',
+        chamada: 'Seu bem-estar merece atenção.',
+        texto: 'Conheça uma nova forma de cuidar da sua rotina.',
+        tema: 'verde'
+    },
+    {
+        marca: 'Sabor da Vila',
+        chamada: 'Almoço caprichado, todos os dias.',
+        texto: 'Opções preparadas com sabor de comida caseira.',
+        tema: 'laranja'
+    },
+    {
+        marca: 'Evoluir Cursos',
+        chamada: 'O próximo passo da sua carreira começa aqui.',
+        texto: 'Cursos práticos para transformar seus planos em resultado.',
+        tema: 'roxo'
+    }
+];
 
 
 // ==================== INICIALIZAÇÃO ====================
@@ -111,12 +131,26 @@ function exibirVagas(vagas) {
     container.style.display = 'grid';
     noResults.style.display = 'none';
 
-    vagas.forEach(vaga => {
+    vagas.forEach((vaga, indice) => {
 
         const card = criarCartaoVaga(vaga);
 
         container.appendChild(card);
+
+        if (indice === 2) {
+            container.appendChild(criarCartaoAnuncio(ANUNCIOS_DEMONSTRACAO[0]));
+        }
+
+        if (indice === 5) {
+            container.appendChild(criarCartaoAnuncio(ANUNCIOS_DEMONSTRACAO[1]));
+        }
     });
+
+    if (vagas.length < 3) {
+        container.appendChild(criarCartaoAnuncio(ANUNCIOS_DEMONSTRACAO[0]));
+    }
+
+    container.appendChild(criarCartaoAnuncio(ANUNCIOS_DEMONSTRACAO[2]));
 }
 
 
@@ -278,6 +312,26 @@ function criarCartaoVaga(vaga) {
 }
 
 
+function criarCartaoAnuncio(anuncio) {
+    const card = document.createElement('article');
+    card.className = `anuncio-card anuncio-card-${anuncio.tema}`;
+
+    card.innerHTML = `
+        <span class="anuncio-identificacao">Publicidade</span>
+        <div class="anuncio-marca">${escaparHTML(anuncio.marca)}</div>
+        <h3>${escaparHTML(anuncio.chamada)}</h3>
+        <p>${escaparHTML(anuncio.texto)}</p>
+        <button class="anuncio-cta" type="button">Divulgue sua marca</button>
+    `;
+
+    card
+        .querySelector('.anuncio-cta')
+        .addEventListener('click', () => solicitarAcesso(abrirAnuncio));
+
+    return card;
+}
+
+
 // ==================== OBTER INICIAIS DA EMPRESA ====================
 
 function obterIniciais(nome) {
@@ -419,13 +473,82 @@ function fecharCadastro() {
 }
 
 
+function abrirAnuncio() {
+    const modal = document.getElementById('anuncio-modal');
+    const status = document.getElementById('anuncio-status');
+
+    status.textContent = '';
+    status.classList.remove('sucesso');
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    window.setTimeout(
+        () => document.getElementById('empresa-anunciante').focus(),
+        50
+    );
+}
+
+
+function fecharAnuncio() {
+    const modal = document.getElementById('anuncio-modal');
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+
+async function enviarLeadAnuncio(event) {
+    event.preventDefault();
+
+    const empresa = document.getElementById('empresa-anunciante');
+    const whatsapp = document.getElementById('whatsapp-anunciante');
+    const interesse = document.getElementById('interesse-anunciante');
+    const status = document.getElementById('anuncio-status');
+    const botao = event.submitter;
+    const usuario = await window.obterUsuarioFirebase();
+
+    if (!empresa.value.trim() || !whatsapp.value.trim() || !interesse.value) {
+        status.textContent = 'Preencha empresa, WhatsApp e o tipo de divulgação.';
+        status.classList.remove('sucesso');
+        return;
+    }
+
+    botao.disabled = true;
+    botao.textContent = 'Enviando...';
+    status.textContent = '';
+    status.classList.remove('sucesso');
+
+    try {
+        await window.salvarLeadAnuncioFirebase({
+            usuario,
+            empresa: empresa.value.trim().replace(/\s+/g, ' '),
+            whatsapp: whatsapp.value.trim(),
+            interesse: interesse.value
+        });
+
+        event.target.reset();
+        status.textContent = 'Solicitação enviada! Em breve entraremos em contato.';
+        status.classList.add('sucesso');
+    } catch (error) {
+        console.error('Erro ao salvar solicitação de divulgação:', error);
+        status.textContent = 'Não foi possível enviar sua solicitação. Tente novamente.';
+        status.classList.remove('sucesso');
+    } finally {
+        botao.disabled = false;
+        botao.textContent = 'Enviar solicitação';
+    }
+}
+
+
 function atualizarModoCadastro() {
     const grupoNome = document.getElementById('nome-candidato-grupo');
     const inputNome = document.getElementById('nome-candidato');
     const inputSenha = document.getElementById('senha-candidato');
     const labelSenha = document.getElementById('senha-candidato-label');
     const titulo = document.getElementById('cadastro-title');
-    const botao = document.querySelector('.btn-cadastro');
+    const descricao = document.getElementById('cadastro-descricao');
+    const botao = document.querySelector('#cadastro-form .btn-cadastro');
     const alternar = document.getElementById('completar-perfil');
     const esqueciSenha = document.getElementById('esqueci-senha');
 
@@ -435,6 +558,9 @@ function atualizarModoCadastro() {
     inputSenha.placeholder = modoLogin ? 'Informe sua senha' : 'Mínimo de 6 caracteres';
     labelSenha.textContent = modoLogin ? 'Sua senha' : 'Crie uma senha';
     titulo.textContent = modoLogin ? 'Entre na sua conta' : 'Crie seu cadastro';
+    descricao.textContent = modoLogin
+        ? 'Informe seu e-mail e senha para continuar.'
+        : 'Crie seu acesso para ver os detalhes e os contatos das vagas.';
     botao.textContent = modoLogin ? 'Entrar' : 'Criar cadastro';
     alternar.textContent = modoLogin ? 'Ainda não tenho cadastro' : 'Já tenho cadastro';
     esqueciSenha.hidden = !modoLogin;
@@ -448,7 +574,8 @@ async function salvarCadastro(event) {
     const inputEmail = document.getElementById('email-candidato');
     const inputSenha = document.getElementById('senha-candidato');
     const status = document.getElementById('cadastro-status');
-    const botaoSalvar = event.submitter || document.querySelector('.btn-cadastro');
+    const botaoSalvar =
+        event.submitter || document.querySelector('#cadastro-form .btn-cadastro');
     const nome = inputNome.value.trim().replace(/\s+/g, ' ');
     const email = inputEmail.value.trim().toLowerCase();
     const senha = inputSenha.value;
@@ -1217,6 +1344,13 @@ document.addEventListener('keydown', event => {
             return;
         }
 
+        const anuncioModal = document.getElementById('anuncio-modal');
+
+        if (anuncioModal && anuncioModal.style.display === 'flex') {
+            fecharAnuncio();
+            return;
+        }
+
         const modal =
             document.getElementById('modal');
 
@@ -1312,6 +1446,49 @@ function inicializarEventos() {
     document
         .getElementById('google-login-button')
         .addEventListener('click', entrarComGoogle);
+
+    document
+        .getElementById('mural-principal-cta')
+        .addEventListener('click', () => solicitarAcesso(abrirAnuncio));
+
+    document
+        .getElementById('mural-secundario-cta')
+        .addEventListener('click', () => solicitarAcesso(abrirAnuncio));
+
+    document.querySelectorAll('.anuncio-mini-cta').forEach(botao => {
+        botao.addEventListener('click', () => solicitarAcesso(abrirAnuncio));
+    });
+
+    const carrosselAnuncios = document.getElementById('carrossel-anuncios');
+    const distanciaCarrossel = 244;
+
+    document
+        .getElementById('carrossel-anuncios-anterior')
+        .addEventListener('click', () => {
+            carrosselAnuncios.scrollBy({ left: -distanciaCarrossel, behavior: 'smooth' });
+        });
+
+    document
+        .getElementById('carrossel-anuncios-proximo')
+        .addEventListener('click', () => {
+            carrosselAnuncios.scrollBy({ left: distanciaCarrossel, behavior: 'smooth' });
+        });
+
+    document
+        .getElementById('anuncio-form')
+        .addEventListener('submit', enviarLeadAnuncio);
+
+    document
+        .getElementById('close-anuncio')
+        .addEventListener('click', fecharAnuncio);
+
+    document
+        .getElementById('anuncio-modal')
+        .addEventListener('click', event => {
+            if (event.target.id === 'anuncio-modal') {
+                fecharAnuncio();
+            }
+        });
 
     document
         .getElementById('close-cadastro')

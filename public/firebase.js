@@ -13,8 +13,10 @@ import {
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import {
     getDatabase,
+    push,
     ref,
     serverTimestamp,
+    set,
     update
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js';
 
@@ -81,6 +83,19 @@ window.salvarPerfilUsuarioFirebase = async usuario => {
         uid: usuario.uid,
         provedor,
         atualizadoEm: serverTimestamp()
+    });
+};
+
+window.salvarLeadAnuncioFirebase = async ({ usuario, empresa, whatsapp, interesse }) => {
+    const leadRef = push(ref(database, `leadsAnuncios/${usuario.uid}`));
+
+    await set(leadRef, {
+        empresa,
+        whatsapp,
+        interesse,
+        nome: usuario.displayName || '',
+        email: usuario.email || '',
+        criadoEm: serverTimestamp()
     });
 };
 
