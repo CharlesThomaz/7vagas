@@ -2,6 +2,10 @@
 
 let todasAsVagas = [];
 let vagasFiltradas = [];
+let acaoAposCadastro = null;
+let modoLogin = false;
+
+const CHAVE_NOME_CANDIDATO = '7vagas:nome-candidato';
 
 
 // ==================== INICIALIZAÇÃO ====================
@@ -9,7 +13,10 @@ let vagasFiltradas = [];
 document.addEventListener('DOMContentLoaded', () => {
     carregarVagas();
     inicializarEventos();
+    sincronizarSessao();
 });
+
+window.addEventListener('firebase-auth-ready', sincronizarSessao);
 
 
 // ==================== CARREGAR VAGAS DO JSON ====================
@@ -248,7 +255,7 @@ function criarCartaoVaga(vaga) {
                 <button
                     type="button"
                     class="btn-detalhes"
-                    onclick="abrirModal(${Number(vaga.id)})"
+                    onclick="solicitarAcesso(() => abrirModal(${Number(vaga.id)}))"
                 >
                     Detalhes
                 </button>
@@ -257,7 +264,7 @@ function criarCartaoVaga(vaga) {
                 <button
                     type="button"
                     class="btn-contato"
-                    onclick="abrirContato(${Number(vaga.id)})"
+                    onclick="solicitarAcesso(() => abrirContato(${Number(vaga.id)}))"
                 >
                     Contato
                 </button>
@@ -331,6 +338,317 @@ function formatarLocalizacao(local) {
 
 
 // ==================== ABRIR MODAL ====================
+
+function obterNomeCandidato() {
+    return obterPerfilCandidato().nome;
+}
+
+
+function obterPerfilCandidato() {
+    const cadastroSalvo = localStorage.getItem(CHAVE_NOME_CANDIDATO);
+
+    if (!cadastroSalvo) {
+        return { nome: '', email: '' };
+    }
+
+    try {
+        const perfil = JSON.parse(cadastroSalvo);
+        return {
+            nome: perfil.nome?.trim() || '',
+            email: perfil.email?.trim() || ''
+        };
+    } catch {
+        return { nome: cadastroSalvo.trim(), email: '' };
+    }
+}
+
+
+async function solicitarAcesso(acao) {
+    const usuario =
+        typeof window.obterUsuarioFirebase === 'function' &&
+        await window.obterUsuarioFirebase();
+
+    if (usuario) {
+        localStorage.setItem(
+            CHAVE_NOME_CANDIDATO,
+            JSON.stringify({
+                nome: usuario.displayName || usuario.email.split('@')[0],
+                email: usuario.email
+            })
+        );
+        atualizarBotaoPerfil();
+        acao();
+        return;
+    }
+
+    acaoAposCadastro = acao;
+    abrirCadastro();
+}
+
+
+function abrirCadastro() {
+    const modal = document.getElementById('cadastro-modal');
+    const inputNome = document.getElementById('nome-candidato');
+    const inputEmail = document.getElementById('email-candidato');
+    const status = document.getElementById('cadastro-status');
+    const perfil = obterPerfilCandidato();
+
+    inputNome.value = perfil.nome;
+    inputEmail.value = perfil.email;
+    status.textContent = '';
+    status.classList.remove('sucesso');
+    atualizarModoCadastro();
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    window.setTimeout(
+        () => (modoLogin ? inputEmail : inputNome).focus(),
+        50
+    );
+}
+
+
+function fecharCadastro() {
+    const modal = document.getElementById('cadastro-modal');
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    acaoAposCadastro = null;
+    document.getElementById('senha-candidato').value = '';
+}
+
+
+function atualizarModoCadastro() {
+    const grupoNome = document.getElementById('nome-candidato-grupo');
+    const inputNome = document.getElementById('nome-candidato');
+    const inputSenha = document.getElementById('senha-candidato');
+    const labelSenha = document.getElementById('senha-candidato-label');
+    const titulo = document.getElementById('cadastro-title');
+    const botao = document.querySelector('.btn-cadastro');
+    const alternar = document.getElementById('completar-perfil');
+    const esqueciSenha = document.getElementById('esqueci-senha');
+
+    grupoNome.hidden = modoLogin;
+    inputNome.required = !modoLogin;
+    inputSenha.autocomplete = modoLogin ? 'current-password' : 'new-password';
+    inputSenha.placeholder = modoLogin ? 'Informe sua senha' : 'Mínimo de 6 caracteres';
+    labelSenha.textContent = modoLogin ? 'Sua senha' : 'Crie uma senha';
+    titulo.textContent = modoLogin ? 'Entre na sua conta' : 'Crie seu cadastro';
+    botao.textContent = modoLogin ? 'Entrar' : 'Criar cadastro';
+    alternar.textContent = modoLogin ? 'Ainda não tenho cadastro' : 'Já tenho cadastro';
+    esqueciSenha.hidden = !modoLogin;
+}
+
+
+async function salvarCadastro(event) {
+    event.preventDefault();
+
+    const inputNome = document.getElementById('nome-candidato');
+    const inputEmail = document.getElementById('email-candidato');
+    const inputSenha = document.getElementById('senha-candidato');
+    const status = document.getElementById('cadastro-status');
+    const botaoSalvar = event.submitter || document.querySelector('.btn-cadastro');
+    const nome = inputNome.value.trim().replace(/\s+/g, ' ');
+    const email = inputEmail.value.trim().toLowerCase();
+    const senha = inputSenha.value;
+
+    if ((!modoLogin && !nome) || !inputEmail.validity.valid || senha.length < 6) {
+        status.textContent = 'Informe nome, e-mail válido e senha de no mínimo 6 caracteres.';
+        (!modoLogin && !nome ? inputNome : inputEmail).focus();
+        return;
+    }
+
+    if (
+        typeof window.criarContaFirebase !== 'function' ||
+        typeof window.entrarFirebase !== 'function'
+    ) {
+        status.textContent = 'Não foi possível conectar ao cadastro. Tente novamente.';
+        return;
+    }
+
+    botaoSalvar.disabled = true;
+    botaoSalvar.textContent = 'Salvando...';
+    status.textContent = '';
+    status.classList.remove('sucesso');
+
+    try {
+        const usuario = modoLogin
+            ? await window.entrarFirebase({ email, senha })
+            : await window.criarContaFirebase({ nome, email, senha });
+
+        await window.salvarPerfilUsuarioFirebase(usuario);
+
+        const nomePerfil = usuario.displayName || nome || email.split('@')[0];
+
+        localStorage.setItem(
+            CHAVE_NOME_CANDIDATO,
+            JSON.stringify({ nome: nomePerfil, email })
+        );
+    } catch (error) {
+        console.error('Erro de autenticação:', error);
+        status.textContent = mensagemErroAutenticacao(error.code);
+        status.classList.remove('sucesso');
+        botaoSalvar.disabled = false;
+
+        if (error.code === 'auth/email-already-in-use') {
+            modoLogin = true;
+        }
+
+        atualizarModoCadastro();
+        return;
+    }
+
+    atualizarBotaoPerfil();
+
+    const acao = acaoAposCadastro;
+    fecharCadastro();
+
+    if (acao) {
+        acao();
+    }
+}
+
+
+async function solicitarRedefinicaoSenha() {
+    const inputEmail = document.getElementById('email-candidato');
+    const status = document.getElementById('cadastro-status');
+    const botao = document.getElementById('esqueci-senha');
+    const email = inputEmail.value.trim().toLowerCase();
+
+    if (!inputEmail.validity.valid) {
+        status.textContent = 'Informe seu e-mail para receber o link de redefinição.';
+        status.classList.remove('sucesso');
+        inputEmail.focus();
+        return;
+    }
+
+    botao.disabled = true;
+    botao.textContent = 'Enviando...';
+    status.textContent = '';
+    status.classList.remove('sucesso');
+
+    try {
+        await window.enviarRedefinicaoSenhaFirebase(email);
+        status.textContent = 'Enviamos um link para redefinir sua senha. Confira sua caixa de entrada.';
+        status.classList.add('sucesso');
+    } catch (error) {
+        console.error('Erro ao enviar redefinição de senha:', error);
+        status.textContent = mensagemErroAutenticacao(error.code);
+        status.classList.remove('sucesso');
+    } finally {
+        botao.disabled = false;
+        botao.textContent = 'Esqueci minha senha';
+    }
+}
+
+
+async function entrarComGoogle() {
+    const status = document.getElementById('cadastro-status');
+    const botaoGoogle = document.getElementById('google-login-button');
+
+    if (typeof window.entrarComGoogleFirebase !== 'function') {
+        status.textContent = 'Não foi possível conectar ao Google. Tente novamente.';
+        return;
+    }
+
+    botaoGoogle.disabled = true;
+    status.textContent = '';
+
+    try {
+        const usuario = await window.entrarComGoogleFirebase();
+        const nome = usuario.displayName || usuario.email.split('@')[0];
+
+        await window.salvarPerfilUsuarioFirebase(usuario);
+
+        localStorage.setItem(
+            CHAVE_NOME_CANDIDATO,
+            JSON.stringify({ nome, email: usuario.email })
+        );
+
+        atualizarBotaoPerfil();
+
+        const acao = acaoAposCadastro;
+        fecharCadastro();
+
+        if (acao) {
+            acao();
+        }
+    } catch (error) {
+        if (error.code !== 'auth/popup-closed-by-user') {
+            console.error('Erro de autenticação com Google:', error);
+            status.textContent = mensagemErroAutenticacao(error.code);
+        }
+    } finally {
+        botaoGoogle.disabled = false;
+    }
+}
+
+
+function mensagemErroAutenticacao(codigo) {
+    const mensagens = {
+        'auth/email-already-in-use': 'Este e-mail já possui cadastro. Use a opção “Já tenho cadastro”.',
+        'auth/invalid-credential': 'E-mail ou senha incorretos.',
+        'auth/weak-password': 'Use uma senha com pelo menos 6 caracteres.',
+        'auth/invalid-email': 'Informe um e-mail válido.',
+        'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Permita pop-ups e tente novamente.',
+        'auth/unauthorized-domain': 'Este endereço ainda não está autorizado no Firebase.',
+        'auth/account-exists-with-different-credential': 'Este e-mail já está vinculado a outro método de acesso. Entre com ele para continuar.',
+        'auth/operation-not-allowed': 'Ative o método E-mail/senha no Firebase Authentication.',
+        'auth/configuration-not-found': 'O Firebase Authentication ainda não foi configurado. Tente novamente após ativar E-mail/senha.'
+    };
+
+    return mensagens[codigo] || 'Não foi possível concluir. Tente novamente.';
+}
+
+
+function atualizarBotaoPerfil() {
+    const botao = document.getElementById('profile-button');
+    const botaoSair = document.getElementById('logout-button');
+    const nome = obterNomeCandidato();
+
+    if (botao) {
+        botao.textContent = nome ? `Olá, ${nome.split(' ')[0]}` : 'Entrar / cadastro';
+    }
+
+    if (botaoSair) {
+        botaoSair.style.display = nome ? 'inline-flex' : 'none';
+    }
+}
+
+
+async function sincronizarSessao() {
+    if (typeof window.obterUsuarioFirebase !== 'function') {
+        atualizarBotaoPerfil();
+        return;
+    }
+
+    const usuario = await window.obterUsuarioFirebase();
+
+    if (usuario) {
+        localStorage.setItem(
+            CHAVE_NOME_CANDIDATO,
+            JSON.stringify({
+                nome: usuario.displayName || usuario.email.split('@')[0],
+                email: usuario.email
+            })
+        );
+    } else {
+        localStorage.removeItem(CHAVE_NOME_CANDIDATO);
+    }
+
+    atualizarBotaoPerfil();
+}
+
+
+async function sairDaConta() {
+    if (typeof window.sairFirebase === 'function') {
+        await window.sairFirebase();
+    }
+
+    localStorage.removeItem(CHAVE_NOME_CANDIDATO);
+    atualizarBotaoPerfil();
+}
 
 function abrirModal(vagaId) {
 
@@ -888,6 +1206,17 @@ document.addEventListener('keydown', event => {
 
     if (event.key === 'Escape') {
 
+        const cadastroModal =
+            document.getElementById('cadastro-modal');
+
+        if (
+            cadastroModal &&
+            cadastroModal.style.display === 'flex'
+        ) {
+            fecharCadastro();
+            return;
+        }
+
         const modal =
             document.getElementById('modal');
 
@@ -967,6 +1296,47 @@ function abrirContato(vagaId) {
 // ==================== INICIALIZAR EVENTOS ====================
 
 function inicializarEventos() {
+
+    document
+        .getElementById('profile-button')
+        .addEventListener('click', abrirCadastro);
+
+    document
+        .getElementById('logout-button')
+        .addEventListener('click', sairDaConta);
+
+    document
+        .getElementById('cadastro-form')
+        .addEventListener('submit', salvarCadastro);
+
+    document
+        .getElementById('google-login-button')
+        .addEventListener('click', entrarComGoogle);
+
+    document
+        .getElementById('close-cadastro')
+        .addEventListener('click', fecharCadastro);
+
+    document
+        .getElementById('completar-perfil')
+        .addEventListener('click', () => {
+            modoLogin = !modoLogin;
+            document.getElementById('cadastro-status').textContent = '';
+            document.getElementById('cadastro-status').classList.remove('sucesso');
+            atualizarModoCadastro();
+        });
+
+    document
+        .getElementById('esqueci-senha')
+        .addEventListener('click', solicitarRedefinicaoSenha);
+
+    document
+        .getElementById('cadastro-modal')
+        .addEventListener('click', event => {
+            if (event.target.id === 'cadastro-modal') {
+                fecharCadastro();
+            }
+        });
 
     // ============================
     // BUSCA

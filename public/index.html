@@ -43,8 +43,25 @@
                     href="https://setelagoaspolitica.web.app/"
                     class="back-link"
                 >
-                    ← Voltar para o site
+                    Conheça o Sete Lagoas Política →
                 </a>
+
+                <button
+                    id="profile-button"
+                    class="profile-button"
+                    type="button"
+                >
+                    Entrar / cadastro
+                </button>
+
+                <button
+                    id="logout-button"
+                    class="logout-button"
+                    type="button"
+                    style="display: none;"
+                >
+                    Sair da conta
+                </button>
 
             </div>
 
@@ -60,6 +77,7 @@
             <span class="badge-dot"></span>
             <span class="badge-text">ATUALIZADO</span>
         </div>
+
         <p class="update-info">
             <strong id="update-date">02 de setembro de 2026</strong>
             <span class="update-divider">•</span>
@@ -268,6 +286,46 @@
         </div>
 
 
+        <!-- CADASTRO SIMPLIFICADO -->
+
+        <div id="cadastro-modal" class="modal cadastro-modal" style="display: none;" aria-hidden="true">
+            <div class="modal-content cadastro-content" role="dialog" aria-modal="true" aria-labelledby="cadastro-title">
+                <button id="close-cadastro" type="button" class="close-modal" aria-label="Fechar cadastro">&times;</button>
+
+                <div class="cadastro-body">
+                    <span class="cadastro-icon" aria-hidden="true">👋</span>
+                    <h2 id="cadastro-title">Antes, como podemos te chamar?</h2>
+                    <p>Informe seu nome e e-mail para ver os detalhes e os contatos das vagas.</p>
+
+                    <form id="cadastro-form">
+                        <div id="nome-candidato-grupo">
+                            <label for="nome-candidato">Seu nome</label>
+                            <input id="nome-candidato" type="text" maxlength="80" autocomplete="name" placeholder="Ex.: Maria Silva" required>
+                        </div>
+                        <label for="email-candidato">Seu e-mail</label>
+                        <input id="email-candidato" type="email" maxlength="120" autocomplete="email" placeholder="voce@exemplo.com" required>
+                        <div id="senha-candidato-grupo">
+                            <label id="senha-candidato-label" for="senha-candidato">Crie uma senha</label>
+                            <input id="senha-candidato" type="password" minlength="6" autocomplete="new-password" placeholder="Mínimo de 6 caracteres" required>
+                        </div>
+                        <button type="submit" class="btn-cadastro">Criar cadastro</button>
+                    </form>
+
+                    <div class="auth-divider" aria-hidden="true"><span>ou</span></div>
+                    <button id="google-login-button" class="btn-google" type="button">
+                        <span class="google-mark" aria-hidden="true">G</span>
+                        Continuar com Google
+                    </button>
+
+                    <button id="completar-perfil" class="btn-completar-perfil" type="button">Já tenho cadastro</button>
+                    <button id="esqueci-senha" class="btn-esqueci-senha" type="button" hidden>Esqueci minha senha</button>
+                    <p id="cadastro-status" class="cadastro-status" role="status"></p>
+                    <p class="cadastro-note">Sua senha é protegida pelo Firebase e não fica armazenada no site.</p>
+                </div>
+            </div>
+        </div>
+
+
         <!-- =====================================================
              FOOTER
              ===================================================== -->
@@ -288,7 +346,8 @@
          JAVASCRIPT
          ========================================================= -->
 
-    <script src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script defer src="script.js"></script>
 
 </body>
 
