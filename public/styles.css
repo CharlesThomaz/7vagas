@@ -267,7 +267,7 @@ button {
 
 .ranking-vaga {
     display: grid;
-    grid-template-columns: 31px minmax(0, 1fr) auto;
+    grid-template-columns: 31px minmax(0, 1fr);
     align-items: center;
     gap: 9px;
     padding: 10px 0;
@@ -302,14 +302,6 @@ button {
     color: var(--gray-500);
     font-size: 11px;
     text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.ranking-total {
-    color: var(--blue-dark);
-    font-size: 11px;
-    font-weight: 800;
-    text-align: right;
     white-space: nowrap;
 }
 
@@ -2165,15 +2157,6 @@ select:focus-visible {
 
     .noticias-economicas h3 {
         font-size: 20px;
-    }
-
-    .ranking-vaga {
-        grid-template-columns: 27px minmax(0, 1fr);
-    }
-
-    .ranking-total {
-        grid-column: 2;
-        text-align: left;
     }
 
     html,

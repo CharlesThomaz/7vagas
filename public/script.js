@@ -7,6 +7,7 @@ let modoLogin = false;
 let noticiasEconomicas = [];
 let indiceNoticiaAtual = 0;
 let temporizadorNoticias = null;
+let tentativasConexaoRanking = 0;
 
 const CHAVE_NOME_CANDIDATO = '7vagas:nome-candidato';
 const ANUNCIOS_DEMONSTRACAO = [
@@ -89,7 +90,7 @@ async function carregarNoticiasEconomicas() {
     const painel = document.getElementById('noticias-economicas');
 
     try {
-        const resposta = await fetch('assets/noticias-economicas.json');
+        const resposta = await fetch('assets/noticias-economicas.json?v=20260906-2');
 
         if (!resposta.ok) {
             throw new Error('Não foi possível carregar as notícias econômicas.');
@@ -170,9 +171,17 @@ async function carregarRankingVagas() {
     }
 
     if (typeof window.obterMetricasVagasFirebase !== 'function') {
-        ranking.innerHTML = '<li class="painel-carregando">Preparando os dados de acessos…</li>';
+        ranking.innerHTML = '<li class="painel-carregando">Conectando aos dados de acessos…</li>';
+
+        if (tentativasConexaoRanking < 12) {
+            tentativasConexaoRanking += 1;
+            window.setTimeout(carregarRankingVagas, 500);
+        }
+
         return;
     }
+
+    tentativasConexaoRanking = 0;
 
     try {
         const metricas = await window.obterMetricasVagasFirebase();
@@ -201,11 +210,7 @@ async function carregarRankingVagas() {
             empresa.textContent = vaga.empresa || 'Empresa não informada';
             informacoes.append(cargo, empresa);
 
-            const total = document.createElement('span');
-            total.className = 'ranking-total';
-            total.textContent = `${acessos} ${acessos === 1 ? 'acesso' : 'acessos'}`;
-
-            item.append(posicao, informacoes, total);
+            item.append(posicao, informacoes);
             return item;
         }));
     } catch (erro) {
