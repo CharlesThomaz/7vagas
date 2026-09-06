@@ -1,0 +1,32 @@
+[
+  {
+    "categoria": "Mercado de trabalho",
+    "titulo": "Salários e jornada seguem no centro das conversas locais",
+    "texto": "O diagnóstico aponta relatos recorrentes de escala 6x1 com remuneração próxima ao piso, enquanto vagas operacionais mapeadas ficaram em torno de R$ 1.870."
+  },
+  {
+    "categoria": "Oportunidades",
+    "titulo": "Bicos e freelancers têm demanda imediata",
+    "texto": "Eventos, adegas, restaurantes e serviços de cozinha aparecem como canais de contratação rápida, sinalizando espaço para oportunidades de curta duração."
+  },
+  {
+    "categoria": "Profissões técnicas",
+    "titulo": "Trabalho técnico-manual apresenta melhor remuneração",
+    "texto": "O relatório registra exemplos de vagas técnicas com salário de R$ 3 mil e benefícios, além da percepção de que pedreiros estão entre os profissionais mais valorizados localmente."
+  },
+  {
+    "categoria": "Economia circular",
+    "titulo": "Celulares usados movimentam um mercado ativo na cidade",
+    "texto": "Aparelhos de entrada foram mapeados entre R$ 150 e R$ 250, enquanto modelos premium chegam a R$ 5.300, fortalecendo assistência técnica e revenda de bairro."
+  },
+  {
+    "categoria": "Logística comunitária",
+    "titulo": "Frete alto limita o impacto das doações",
+    "texto": "Mesmo quando móveis e itens essenciais são doados, o transporte dentro da cidade pode inviabilizar a entrega. O relatório cita fretes locais orçados em R$ 200."
+  },
+  {
+    "categoria": "Pequenos negócios",
+    "titulo": "Estética, artesanato e serviços sustentam renda rápida",
+    "texto": "Prestadoras autônomas, artesãs, montadores, chaveiros e outros pequenos serviços têm papel relevante na geração de renda em Nova Cidade e Sete Lagoas."
+  }
+]

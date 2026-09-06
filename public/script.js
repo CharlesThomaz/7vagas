@@ -4,6 +4,9 @@ let todasAsVagas = [];
 let vagasFiltradas = [];
 let acaoAposCadastro = null;
 let modoLogin = false;
+let noticiasEconomicas = [];
+let indiceNoticiaAtual = 0;
+let temporizadorNoticias = null;
 
 const CHAVE_NOME_CANDIDATO = '7vagas:nome-candidato';
 const ANUNCIOS_DEMONSTRACAO = [
@@ -32,11 +35,15 @@ const ANUNCIOS_DEMONSTRACAO = [
 
 document.addEventListener('DOMContentLoaded', () => {
     carregarVagas();
+    carregarNoticiasEconomicas();
     inicializarEventos();
     sincronizarSessao();
 });
 
-window.addEventListener('firebase-auth-ready', sincronizarSessao);
+window.addEventListener('firebase-auth-ready', () => {
+    sincronizarSessao();
+    carregarRankingVagas();
+});
 
 
 // ==================== CARREGAR VAGAS DO JSON ====================
@@ -58,6 +65,7 @@ async function carregarVagas() {
         popularFiltroEmpresas();
         exibirVagas(vagasFiltradas);
         atualizarContador();
+        carregarRankingVagas();
 
     } catch (error) {
 
@@ -72,6 +80,159 @@ async function carregarVagas() {
             </div>
         `;
     }
+}
+
+
+// ==================== RADAR ECONÔMICO ====================
+
+async function carregarNoticiasEconomicas() {
+    const painel = document.getElementById('noticias-economicas');
+
+    try {
+        const resposta = await fetch('assets/noticias-economicas.json');
+
+        if (!resposta.ok) {
+            throw new Error('Não foi possível carregar as notícias econômicas.');
+        }
+
+        noticiasEconomicas = await resposta.json();
+        indiceNoticiaAtual = 0;
+        exibirNoticiaEconomica();
+        iniciarRotacaoNoticias();
+    } catch (erro) {
+        console.error('Erro ao carregar notícias econômicas:', erro);
+        painel.textContent = 'As notícias do relatório estarão disponíveis em breve.';
+    }
+}
+
+function exibirNoticiaEconomica() {
+    const painel = document.getElementById('noticias-economicas');
+    const indicadores = document.getElementById('noticias-indicadores');
+    const noticia = noticiasEconomicas[indiceNoticiaAtual];
+
+    if (!noticia) {
+        return;
+    }
+
+    painel.replaceChildren();
+
+    const categoria = document.createElement('span');
+    categoria.className = 'noticia-categoria';
+    categoria.textContent = noticia.categoria;
+
+    const titulo = document.createElement('h3');
+    titulo.textContent = noticia.titulo;
+
+    const texto = document.createElement('p');
+    texto.textContent = noticia.texto;
+
+    painel.append(categoria, titulo, texto);
+
+    indicadores.replaceChildren(...noticiasEconomicas.map((_, indice) => {
+        const botao = document.createElement('button');
+        const ativo = indice === indiceNoticiaAtual;
+
+        botao.type = 'button';
+        botao.className = ativo ? 'noticia-indicador ativo' : 'noticia-indicador';
+        botao.setAttribute('aria-label', `Exibir notícia ${indice + 1}`);
+        botao.setAttribute('aria-pressed', String(ativo));
+        botao.addEventListener('click', () => {
+            indiceNoticiaAtual = indice;
+            exibirNoticiaEconomica();
+            iniciarRotacaoNoticias();
+        });
+
+        return botao;
+    }));
+}
+
+function iniciarRotacaoNoticias() {
+    window.clearInterval(temporizadorNoticias);
+
+    if (noticiasEconomicas.length < 2) {
+        return;
+    }
+
+    temporizadorNoticias = window.setInterval(() => {
+        indiceNoticiaAtual = (indiceNoticiaAtual + 1) % noticiasEconomicas.length;
+        exibirNoticiaEconomica();
+    }, 7000);
+}
+
+
+// ==================== DASHBOARD DE ACESSOS ====================
+
+async function carregarRankingVagas() {
+    const ranking = document.getElementById('ranking-vagas');
+
+    if (!ranking || todasAsVagas.length === 0) {
+        return;
+    }
+
+    if (typeof window.obterMetricasVagasFirebase !== 'function') {
+        ranking.innerHTML = '<li class="painel-carregando">Preparando os dados de acessos…</li>';
+        return;
+    }
+
+    try {
+        const metricas = await window.obterMetricasVagasFirebase();
+        const vagasMaisAcessadas = [...todasAsVagas]
+            .map(vaga => ({
+                vaga,
+                acessos: Number(metricas?.[vaga.id]?.total) || 0
+            }))
+            .sort((primeira, segunda) =>
+                segunda.acessos - primeira.acessos || Number(primeira.vaga.id) - Number(segunda.vaga.id)
+            )
+            .slice(0, 5);
+
+        ranking.replaceChildren(...vagasMaisAcessadas.map(({ vaga, acessos }, indice) => {
+            const item = document.createElement('li');
+            item.className = 'ranking-vaga';
+
+            const posicao = document.createElement('span');
+            posicao.className = 'ranking-posicao';
+            posicao.textContent = String(indice + 1).padStart(2, '0');
+
+            const informacoes = document.createElement('div');
+            const cargo = document.createElement('strong');
+            cargo.textContent = vaga.cargo || 'Cargo não informado';
+            const empresa = document.createElement('span');
+            empresa.textContent = vaga.empresa || 'Empresa não informada';
+            informacoes.append(cargo, empresa);
+
+            const total = document.createElement('span');
+            total.className = 'ranking-total';
+            total.textContent = `${acessos} ${acessos === 1 ? 'acesso' : 'acessos'}`;
+
+            item.append(posicao, informacoes, total);
+            return item;
+        }));
+    } catch (erro) {
+        console.error('Erro ao carregar ranking de vagas:', erro);
+        ranking.innerHTML = '<li class="painel-carregando">Não foi possível atualizar os acessos agora.</li>';
+    }
+}
+
+function registrarAcessoDaVaga(vagaId) {
+    const chaveAcesso = `7vagas:acesso-registrado:${vagaId}`;
+
+    if (typeof window.registrarVisualizacaoVagaFirebase !== 'function') {
+        return;
+    }
+
+    if (sessionStorage.getItem(chaveAcesso)) {
+        return;
+    }
+
+    sessionStorage.setItem(chaveAcesso, '1');
+
+    window.registrarVisualizacaoVagaFirebase(vagaId)
+        .then(carregarRankingVagas)
+        .catch(erro => {
+            sessionStorage.removeItem(chaveAcesso);
+            console.error('Erro ao registrar acesso à vaga:', erro);
+        });
 }
 
 
@@ -289,7 +450,7 @@ function criarCartaoVaga(vaga) {
                 <button
                     type="button"
                     class="btn-detalhes"
-                    onclick="solicitarAcesso(() => abrirModal(${Number(vaga.id)}))"
+                    onclick="registrarAcessoDaVaga(${Number(vaga.id)}); solicitarAcesso(() => abrirModal(${Number(vaga.id)}))"
                 >
                     Detalhes
                 </button>
@@ -298,7 +459,7 @@ function criarCartaoVaga(vaga) {
                 <button
                     type="button"
                     class="btn-contato"
-                    onclick="solicitarAcesso(() => abrirContato(${Number(vaga.id)}))"
+                    onclick="registrarAcessoDaVaga(${Number(vaga.id)}); solicitarAcesso(() => abrirContato(${Number(vaga.id)}))"
                 >
                     Contato
                 </button>
@@ -786,7 +947,6 @@ function abrirModal(vagaId) {
     if (!vaga) {
         return;
     }
-
 
     const modal =
         document.getElementById('modal');
@@ -1376,7 +1536,6 @@ function abrirContato(vagaId) {
     if (!vaga || !vaga.contato) {
         return;
     }
-
 
     // WhatsApp
 

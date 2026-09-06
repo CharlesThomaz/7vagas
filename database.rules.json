@@ -13,6 +13,15 @@
         ".read": "auth != null && auth.uid === $uid",
         ".write": "auth != null && auth.uid === $uid"
       }
+    },
+    "metricasVagas": {
+      "$vagaId": {
+        ".read": true,
+        "total": {
+          ".write": true,
+          ".validate": "newData.isNumber() && newData.val() >= 0 && (!data.exists() ? newData.val() <= 1 : newData.val() <= data.val() + 1)"
+        }
+      }
     }
   }
 }

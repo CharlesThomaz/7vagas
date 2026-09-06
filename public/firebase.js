@@ -13,8 +13,10 @@ import {
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import {
     getDatabase,
+    get,
     push,
     ref,
+    runTransaction,
     serverTimestamp,
     set,
     update
@@ -97,6 +99,21 @@ window.salvarLeadAnuncioFirebase = async ({ usuario, empresa, whatsapp, interess
         email: usuario.email || '',
         criadoEm: serverTimestamp()
     });
+};
+
+window.registrarVisualizacaoVagaFirebase = async vagaId => {
+    if (!vagaId) {
+        return;
+    }
+
+    await runTransaction(ref(database, `metricasVagas/${vagaId}/total`), totalAtual =>
+        (Number(totalAtual) || 0) + 1
+    );
+};
+
+window.obterMetricasVagasFirebase = async () => {
+    const snapshot = await get(ref(database, 'metricasVagas'));
+    return snapshot.exists() ? snapshot.val() : {};
 };
 
 window.sairFirebase = () => signOut(auth);
