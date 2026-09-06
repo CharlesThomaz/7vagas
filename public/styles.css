@@ -272,6 +272,25 @@ button {
     gap: 9px;
     padding: 10px 0;
     border-bottom: 1px solid var(--gray-200);
+    cursor: pointer;
+}
+
+.ranking-vaga:hover,
+.ranking-vaga:focus-visible {
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 8px;
+    background: #eaf4ff;
+    outline: 0;
+}
+
+.vaga-em-destaque {
+    animation: destacar-vaga 1.8s ease-out;
+}
+
+@keyframes destacar-vaga {
+    0%, 45% { box-shadow: 0 0 0 4px rgba(10, 102, 194, 0.45); }
+    100% { box-shadow: var(--shadow); }
 }
 
 .ranking-vaga:last-child {

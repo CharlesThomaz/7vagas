@@ -198,6 +198,16 @@ async function carregarRankingVagas() {
         ranking.replaceChildren(...vagasMaisAcessadas.map(({ vaga, acessos }, indice) => {
             const item = document.createElement('li');
             item.className = 'ranking-vaga';
+            item.tabIndex = 0;
+            item.setAttribute('role', 'button');
+            item.setAttribute('aria-label', `Ver vaga: ${vaga.cargo || 'Cargo não informado'}`);
+            item.addEventListener('click', () => irParaVaga(vaga.id));
+            item.addEventListener('keydown', evento => {
+                if (evento.key === 'Enter' || evento.key === ' ') {
+                    evento.preventDefault();
+                    irParaVaga(vaga.id);
+                }
+            });
 
             const posicao = document.createElement('span');
             posicao.className = 'ranking-posicao';
@@ -238,6 +248,32 @@ function registrarAcessoDaVaga(vagaId) {
             sessionStorage.removeItem(chaveAcesso);
             console.error('Erro ao registrar acesso à vaga:', erro);
         });
+}
+
+function irParaVaga(vagaId) {
+    let cartao = document.getElementById(`vaga-${vagaId}`);
+
+    if (!cartao) {
+        document.getElementById('search-input').value = '';
+        document.getElementById('salary-filter').value = '';
+        document.getElementById('company-filter').value = '';
+        vagasFiltradas = [...todasAsVagas];
+        exibirVagas(vagasFiltradas);
+        atualizarContador();
+        cartao = document.getElementById(`vaga-${vagaId}`);
+    }
+
+    if (!cartao) {
+        return;
+    }
+
+    cartao.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    cartao.focus({ preventScroll: true });
+    cartao.classList.add('vaga-em-destaque');
+
+    window.setTimeout(() => {
+        cartao.classList.remove('vaga-em-destaque');
+    }, 1800);
 }
 
 
@@ -327,6 +363,8 @@ function criarCartaoVaga(vaga) {
     const card = document.createElement('article');
 
     card.className = 'vaga-card';
+    card.id = `vaga-${Number(vaga.id)}`;
+    card.tabIndex = -1;
 
     // ============================
     // LOCALIZAÇÃO
