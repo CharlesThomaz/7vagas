@@ -32,8 +32,8 @@ body {
     overflow-x: hidden;
 
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
-    color: #222;
+    background: #f2f6f8;
+    color: #12212b;
     line-height: 1.5;
 }
 
@@ -77,32 +77,33 @@ button {
    ========================================================= */
 
 :root {
-    --black: #111111;
-    --black-soft: #1c1c1c;
+    /* Paleta compartilhada com Sete Lagoas Política */
+    --black: #12212b;
+    --black-soft: #263947;
 
-    --blue: #0a66c2;
-    --blue-dark: #084f96;
+    --blue: #da251d;
+    --blue-dark: #b51a14;
 
-    --red: #e4032e;
-    --red-dark: #bd0025;
+    --red: #da251d;
+    --red-dark: #b51a14;
 
-    --gold: #d4af37;
-    --green: #198754;
+    --gold: #ffcc00;
+    --green: #19734e;
 
-    --gray-50: #fafafa;
-    --gray-100: #f5f5f5;
-    --gray-200: #eeeeee;
-    --gray-300: #dddddd;
-    --gray-400: #bbbbbb;
-    --gray-500: #777777;
-    --gray-600: #555555;
-    --gray-700: #333333;
+    --gray-50: #f9fbfc;
+    --gray-100: #f2f6f8;
+    --gray-200: #e4edf2;
+    --gray-300: #d0dce4;
+    --gray-400: #9babb5;
+    --gray-500: #6b8090;
+    --gray-600: #3a5060;
+    --gray-700: #253944;
 
     --white: #ffffff;
 
     --radius: 12px;
-    --shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.13);
+    --shadow: 0 4px 16px rgba(18, 33, 43, 0.07);
+    --shadow-hover: 0 9px 28px rgba(18, 33, 43, 0.16);
 }
 
 
@@ -110,7 +111,7 @@ button {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: #1a6bc4;
+    background: var(--red);
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
@@ -124,7 +125,7 @@ button {
 .badge-dot {
     width: 8px;
     height: 8px;
-    background: #4cff7a;
+    background: var(--gold);
     border-radius: 50%;
     display: inline-block;
     animation: blink-dot 1.5s ease-in-out infinite;
@@ -136,7 +137,7 @@ button {
 }
 
 .update-label {
-    color: #5a6f8f;
+    color: var(--gray-600);
     font-weight: 400;
 }
 
@@ -165,7 +166,7 @@ button {
 .painel-noticias {
     color: var(--white);
     border: 0;
-    background: linear-gradient(125deg, #071c35, #0a66c2);
+    background: linear-gradient(125deg, #12212b 0%, #3a5060 72%, #da251d 155%);
 }
 
 .painel-cabecalho {
@@ -182,7 +183,7 @@ button {
 }
 
 .painel-noticias .mural-eyebrow {
-    color: #9dd6ff;
+    color: var(--gold);
 }
 
 .dashboard-acessos .mural-eyebrow {
@@ -204,8 +205,8 @@ button {
 }
 
 .atualizacao-ranking {
-    color: var(--blue-dark);
-    background: #eaf4ff;
+    color: var(--red-dark);
+    background: #fbe9e5;
 }
 
 .noticias-economicas {
@@ -216,7 +217,7 @@ button {
 .noticia-categoria {
     display: inline-block;
     margin-bottom: 8px;
-    color: #bce4ff;
+    color: #ffe18a;
     font-size: 11px;
     font-weight: 900;
     letter-spacing: 0.07em;
@@ -280,7 +281,7 @@ button {
     padding-right: 8px;
     padding-left: 8px;
     border-radius: 8px;
-    background: #eaf4ff;
+    background: #fff0ef;
     outline: 0;
 }
 
@@ -289,7 +290,7 @@ button {
 }
 
 @keyframes destacar-vaga {
-    0%, 45% { box-shadow: 0 0 0 4px rgba(10, 102, 194, 0.45); }
+    0%, 45% { box-shadow: 0 0 0 4px rgba(218, 37, 29, 0.4); }
     100% { box-shadow: var(--shadow); }
 }
 
@@ -352,7 +353,8 @@ button {
 .header {
     position: relative;
     width: 100%;
-    background: var(--black);
+    background: var(--red);
+    border-bottom: 3px solid var(--gold);
     color: var(--white);
     overflow: hidden;
 }
@@ -369,7 +371,7 @@ button {
     background: linear-gradient(
         135deg,
         transparent 0%,
-        rgba(10, 102, 194, 0.12) 100%
+        rgba(255, 204, 0, 0.18) 100%
     );
 
     pointer-events: none;
@@ -400,17 +402,17 @@ button {
 }
 
 .logo .blue {
-    color: var(--blue);
+    color: var(--white);
 }
 
 .logo .red {
-    color: var(--red);
+    color: var(--gold);
 }
 
 .tagline {
     margin: 12px 0 0;
 
-    color: #cccccc;
+    color: rgba(255, 255, 255, 0.84);
 
     font-size: 16px;
     line-height: 1.4;
@@ -544,9 +546,9 @@ section {
 }
 
 .filter-input:focus {
-    border-color: var(--blue);
+    border-color: var(--red);
 
-    box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.12);
+    box-shadow: 0 0 0 3px rgba(218, 37, 29, 0.14);
 }
 
 /* Somente SELECT recebe a seta */
@@ -878,7 +880,7 @@ select.filter-input {
 
     border-radius: 6px;
 
-    background: rgba(228, 3, 46, 0.08);
+    background: rgba(218, 37, 29, 0.09);
     color: var(--red);
 
     font-size: 11px;
@@ -1006,15 +1008,15 @@ select.filter-input {
 }
 
 .anuncio-card-verde {
-    background: linear-gradient(145deg, #075c51, #1e9b75);
+    background: linear-gradient(145deg, #12212b, #3a5060);
 }
 
 .anuncio-card-laranja {
-    background: linear-gradient(145deg, #9b3b10, #ef8a24);
+    background: linear-gradient(145deg, #b51a14, #f04841);
 }
 
 .anuncio-card-roxo {
-    background: linear-gradient(145deg, #302067, #7656d8);
+    background: linear-gradient(145deg, #12212b, #3a5060);
 }
 
 .anuncio-identificacao {
@@ -1093,13 +1095,14 @@ select.filter-input {
 
 .mural-anuncio-principal {
     color: var(--white);
-    background: linear-gradient(120deg, #071c35, #0a66c2);
+    border-left: 5px solid var(--gold);
+    background: linear-gradient(120deg, #12212b 0%, #3a5060 70%, #da251d 150%);
     box-shadow: var(--shadow);
 }
 
 .mural-anuncio-secundario {
-    border: 1px solid #cfe2f8;
-    background: #eaf4ff;
+    border: 1px solid #e8c9c4;
+    background: #fff6f2;
 }
 
 .mural-eyebrow {
@@ -1222,10 +1225,13 @@ select.filter-input {
     scroll-snap-align: start;
 }
 
-.anuncio-mini-azul { background: linear-gradient(135deg, #075a9c, #21a7cf); }
-.anuncio-mini-rosa { background: linear-gradient(135deg, #8e295d, #ed719f); }
-.anuncio-mini-amarelo { background: linear-gradient(135deg, #8b5d00, #e5ae22); }
-.anuncio-mini-ciano { background: linear-gradient(135deg, #00727b, #24b4ad); }
+.anuncio-mini-azul { background: linear-gradient(135deg, #12212b, #3a5060); }
+.anuncio-mini-rosa { background: linear-gradient(135deg, #b51a14, #f04841); }
+.anuncio-mini-amarelo { background: linear-gradient(135deg, #e5b700, #ffcc00); color: var(--black); }
+.anuncio-mini-ciano { background: linear-gradient(135deg, #253944, #587282); }
+
+.anuncio-mini-amarelo p,
+.anuncio-mini-amarelo .anuncio-mini-cta { color: var(--black); }
 
 .anuncio-mini span {
     font-size: 9px;
@@ -1388,8 +1394,8 @@ select.filter-input {
 }
 
 .cadastro-body input:focus {
-    outline: 3px solid rgba(25, 118, 210, 0.2);
-    border-color: var(--blue);
+    outline: 3px solid rgba(218, 37, 29, 0.16);
+    border-color: var(--red);
 }
 
 .btn-cadastro,
@@ -1686,8 +1692,8 @@ select.filter-input {
 
     border-radius: 6px;
 
-    background: rgba(10, 102, 194, 0.1);
-    color: var(--blue);
+    background: rgba(218, 37, 29, 0.1);
+    color: var(--red);
 
     font-size: 11px;
     line-height: 1.3;
@@ -1963,7 +1969,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-    outline: 3px solid rgba(10, 102, 194, 0.35);
+    outline: 3px solid rgba(218, 37, 29, 0.7);
     outline-offset: 2px;
 }
 
