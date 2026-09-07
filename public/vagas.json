@@ -1,1470 +1,761 @@
 [
-    {
-        "id": 1,
-        "cargo": "Auxiliar de Britagem",
-        "empresa": "Grupo Calsete",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Alimentação na empresa",
-            "Fretado",
-            "Plano de saúde e odontológico"
-        ],
-        "requisitos": [
-            "Ensino fundamental completo",
-            "Disponibilidade para trabalho operacional",
-            "Atenção, responsabilidade e trabalho em equipe"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "rhcalsete@gmail.com"
-        },
-        "descricao_vaga": "Acompanhar a alimentação de pedras e minérios na planta. Monitorar o fluxo do material britado e peneirado. Comunicar variações ou falhas no processo ao operador principal. Limpeza e organização do ambiente de trabalho.",
-        "divulgacao": "Grupo Calsete",
-        "fonte_imagem": "IMG-20260904-WA0039.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+  {
+    "id": 1,
+    "cargo": "Atendente de Balcão",
+    "empresa": "Padaria Monsenhor Messias",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 2,
-        "cargo": "Auxiliar de Lavanderia",
-        "empresa": "RJ uniformizar",
-        "local_trabalho": {
-            "rua": "Dentro da Vibra (Agrogem)",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 1.880,00 + vale assiduidade de R$ 550,00",
-        "beneficios": [
-            "Vale assiduidade de R$ 550,00"
-        ],
-        "requisitos": [
-            "Ser uma pessoa organizada, pontual e comprometida com o trabalho",
-            "Vaga exclusiva para homens"
-        ],
-        "horario": {},
-        "escala": "Segunda à sexta",
-        "contato": {
-            "whatsapp": "(31) 99657-0965 / (31) 99586-4422"
-        },
-        "descricao_vaga": "Vaga exclusiva para homens. Lavanderia localizada dentro da Vibra (Agrogem).",
-        "divulgacao": "Não especificada",
-        "fonte_imagem": "IMG-20260904-WA0040.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [
+      "Salário fixo (valor não especificado)",
+      "Gratificação (R$300,00)",
+      "Auxílio para transporte"
+    ],
+    "requisitos": [
+      "Boa comunicação e atendimento ao público",
+      "Organização e atenção aos detalhes",
+      "Agilidade e proatividade",
+      "Disponibilidade em trabalhar fim de semana e feriados"
+    ],
+    "horario": {
+      "segunda_a_sexta": "05:30 às 14:00 ou 12:00 às 20:30",
+      "sabado": "05:30 às 13:00 ou 13:00 às 20:30 (revezamento entre turmas)"
     },
-    {
-        "id": 3,
-        "cargo": "Jovem Aprendiz - Auxiliar Administrativo",
-        "empresa": "CRL Siderurgia Ltda",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Compatível com o mercado",
-        "beneficios": [
-            "Vale Transporte",
-            "Vale Alimentação",
-            "Seguro de Vida",
-            "Ambiente de Aprendizado",
-            "Oportunidade de Crescimento"
-        ],
-        "requisitos": [
-            "Idade: 14 a 18 anos",
-            "Não é necessária experiência"
-        ],
-        "horario": {
-            "carga_horaria": "4 horas por dia"
-        },
-        "escala": "Não especificada",
-        "contato": {
-            "whatsapp": "(31) 98101-8812"
-        },
-        "descricao_vaga": "Oportunidade para Jovem Aprendiz atuar como Auxiliar Administrativo em Sete Lagoas - MG.",
-        "divulgacao": "CRL Siderurgia Ltda",
-        "fonte_imagem": "IMG-20260904-WA0041.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Segunda a sábado (com domingos alternados das 6:00 às 12:00)",
+    "contato": {
+      "email": "contato@padariamonsenhormessias.com.br",
+      "telefone": "",
+      "whatsapp": "(31) 9 9072-1817"
     },
-    {
-        "id": 4,
-        "cargo": "Vendedor(a)",
-        "empresa": "Casa do Criador",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "Boa Vista",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [],
-        "requisitos": [
-            "Proativo(a) e com vontade de aprender",
-            "Ter experiência com vendas"
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "whatsapp": "(31) 9090-3327"
-        },
-        "descricao_vaga": "Venha fazer parte do nosso time! Vaga para vendedor(a) no Bairro Boa Vista.",
-        "divulgacao": "Casa do Criador",
-        "fonte_imagem": "IMG-20260904-WA0042.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Atendimento de balcão e suporte nas operações diárias da Padaria Monsenhor Messias.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260904-WA0050.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 2,
+    "cargo": "Garçom",
+    "empresa": "Expo Sete Lagoas 2026",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 5,
-        "cargo": "Jovem Aprendiz",
-        "empresa": "CIE Forjas Minas",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Plano de Saúde Familiar",
-            "Cartão Cesta Básica",
-            "Seguro de vida",
-            "Plano odontológico",
-            "Alimentação na empresa"
-        ],
-        "requisitos": [
-            "Ensino médio completo",
-            "Ter entre 18 e 22 anos"
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "whatsapp": "(31) 99864-5755",
-            "website": "https://www.autometal.com.br/trabalhe-conosco/"
-        },
-        "descricao_vaga": "A CIE Forjas Minas em Sete Lagoas-MG contrata Jovem Aprendiz. Selecionar unidade: CIE Forjas Minas.",
-        "divulgacao": "Alexandre Jamoia",
-        "fonte_imagem": "IMG-20260904-WA0044.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "R$ 140,00 a diária",
+    "beneficios": [
+      "Alimentação fornecida no local",
+      "Transporte (ônibus partindo da Praça da Estação para levar e trazer)",
+      "Uniforme fornecido (Social branca, calça preta, tênis preto)"
+    ],
+    "requisitos": [
+      "Pessoal todos bem arrumados e aparentados",
+      "Proibido uso de bebida e drogas",
+      "Proibido uso de correntes grandes",
+      "Proibido cabelo descolorido"
+    ],
+    "horario": {
+      "segunda_a_sexta": "Horário de saída enviado no grupo do evento"
     },
-    {
-        "id": 6,
-        "cargo": "Encanador Bombeiro",
-        "empresa": "Arcos 30 Anos",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "Morro Alto / Jequitibá",
-            "cidade": "Vespasiano",
-            "estado": "MG"
-        },
-        "salario": "Salário do Sindicato",
-        "beneficios": [
-            "Cesta de alimentos grande",
-            "Seguro de Vida",
-            "Vale Transporte se necessário"
-        ],
-        "requisitos": [
-            "Necessidade de experiência na carteira",
-            "Ser proativo, saber trabalhar em equipe e realmente querer trabalhar"
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "telefone": "(31) 9 9806-2754"
-        },
-        "descricao_vaga": "Vaga para Encanador Bombeiro em Vespasiano/MG.",
-        "divulgacao": "Alexandre Jamoia",
-        "fonte_imagem": "IMG-20260904-WA0045.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Dias 04, 05 e 06 de setembro de 2026",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31985458556"
     },
-    {
-        "id": 7,
-        "cargo": "Auxiliar de Cozinha / Cozinheira",
-        "empresa": "Bom Sabor Alimentação",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Salário + Vale alimentação",
-        "beneficios": [
-            "Vale alimentação",
-            "Convênio médico",
-            "Vale transporte"
-        ],
-        "requisitos": [
-            "Necessário experiência na área",
-            "Disponibilidade de horários"
-        ],
-        "horario": {
-            "escala": "12x36"
-        },
-        "escala": "12x36",
-        "contato": {
-            "whatsapp": "(31) 99179-6949"
-        },
-        "descricao_vaga": "Estou Contratando Auxiliar de Cozinha e Cozinheira 12x36 na empresa Bom Sabor alimentação. Necessário experiência na área. Disponibilidade de horários.",
-        "divulgacao": "Alexandre Jamoia",
-        "fonte_imagem": "IMG-20260904-WA0047.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Atendimento aos lounges durante o evento Expo Sete Lagoas 2026.",
+    "divulgacao": "Priscila",
+    "fonte_imagem": "IMG-20260904-WA0110.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-06",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 3,
+    "cargo": "Operador de Produção",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 8,
-        "cargo": "Recepcionista",
-        "empresa": "Proteauto Truck",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 1.740,29 (Inicial), R$ 1.949,09 (Após 90 dias de experiência)",
-        "beneficios": [
-            "Cesta básica",
-            "Plano de saúde Unimed",
-            "Vale-combustível ou vale-transporte"
-        ],
-        "requisitos": [
-            "Ensino Médio completo",
-            "Boa comunicação e atenção",
-            "Experiência com atendimento ao cliente",
-            "Informática básica",
-            "Preferencialmente possuir veículo próprio"
-        ],
-        "horario": {
-            "segunda_a_sexta": "08:00 às 18:00",
-            "intervalo": "1:12 de almoço"
-        },
-        "escala": "Segunda a sexta",
-        "contato": {
-            "whatsapp": "(31) 99965-1497"
-        },
-        "descricao_vaga": "Seja o primeiro contato e a melhor impressão da nossa empresa! Atividades: Recepcionar e atender clientes e visitantes; Prestar informações com clareza e cordialidade; Realizar e direcionar ligações telefônicas; Apoiar nas rotinas administrativas da recepção.",
-        "divulgacao": "Alexandre Jamoia",
-        "fonte_imagem": "IMG-20260904-WA0049.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [
+      "Vale-transporte",
+      "Vale-refeição",
+      "Plano de saúde (coparticipativo)",
+      "Cartão multibenefícios"
+    ],
+    "requisitos": [
+      "Não é necessário experiência",
+      "Acima de 18 anos",
+      "Homens precisam ter Certificado de Reservista em dia",
+      "Ambos os sexos"
+    ],
+    "horario": {
+      "segunda_a_sexta": "Segunda a quinta-feira das 08:00 às 18:00, sexta-feira das 08:00 às 17:00"
     },
-    {
-        "id": 9,
-        "cargo": "Atendente de Balcão",
-        "empresa": "Padaria Monsenhor Messias",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Fixo + Gratificação (R$ 300,00)",
-        "beneficios": [
-            "Salário fixo",
-            "Gratificação (R$ 300,00)",
-            "Auxílio para transporte"
-        ],
-        "requisitos": [
-            "Boa comunicação e atendimento ao público",
-            "Organização e atenção aos detalhes",
-            "Agilidade e proatividade",
-            "Disponibilidade em trabalhar fim de semana e feriados"
-        ],
-        "horario": {
-            "segunda_a_sexta": "05:30 às 14:00 ou 12:00 às 20:30",
-            "sabado": "05:30 às 13:00 ou 13:00 às 20:30 (revezamento entre turmas)",
-            "domingos_alternados": "06:00 às 12:00"
-        },
-        "escala": "Segunda a sexta, sábados e domingos alternados",
-        "contato": {
-            "email": "contato@padariamonsenhormessias.com.br",
-            "whatsapp": "(31) 9 9072-1817"
-        },
-        "descricao_vaga": "Temos vaga para atendente de balcão.",
-        "divulgacao": "Padaria Monsenhor Messias",
-        "fonte_imagem": "IMG-20260904-WA0050.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "selecionargsrh@gmail.com",
+      "telefone": "",
+      "whatsapp": ""
     },
-    {
-        "id": 10,
-        "cargo": "Telemarketing",
-        "empresa": "Não especificada",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Salário + Bônus",
-        "beneficios": [
-            "Bônus",
-            "Mais informações na entrevista"
-        ],
-        "requisitos": [
-            "Facilidade com computador e sistema",
-            "Boa comunicação"
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "telefone": "(31) 99147-2642"
-        },
-        "descricao_vaga": "Confirmar pacientes de agenda; Ajudar com negociações no sistema. Salário + Bônus.",
-        "divulgacao": "Não especificada",
-        "fonte_imagem": "IMG-20260904-WA0051.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Trabalhar com produção de chicotes elétricos em ambiente industrial.",
+    "divulgacao": "@GS_PSICOLOGIAERH",
+    "fonte_imagem": "IMG-20260907-WA0028.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @GS_PSICOLOGIAERH",
+    "ativa": true
+  },
+  {
+    "id": 4,
+    "cargo": "Vendedor Externo",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 11,
-        "cargo": "Servente de Obras",
-        "empresa": "Expresso Figueiredo Ltda",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Matozinhos",
-            "estado": "MG"
-        },
-        "salario": "R$ 2.783,21",
-        "beneficios": [
-            "Plano de Saúde Familiar (mensalidade arcada pela empresa, funcionário paga coparticipação apenas - conforme o uso)",
-            "Vale alimentação (R$ 1.518,00 mensal)",
-            "Vale Transporte",
-            "Prêmio (R$ 250,00 mensal - cartão)"
-        ],
-        "requisitos": [
-            "Experiência prévia na função (diferencial)",
-            "Comprometimento, responsabilidade e trabalho em equipe",
-            "Boa condição física para atividades operacionais"
-        ],
-        "horario": {
-            "segunda_a_sexta": "07:00 às 17:18"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "whatsapp": "(31) 99853-1451",
-            "nome_contato": "Talita"
-        },
-        "descricao_vaga": "Serviços inerentes à função de Servente de Obras em Matozinhos/MG.",
-        "divulgacao": "Expresso Figueiredo",
-        "fonte_imagem": "IMG-20260904-WA0052.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "Salário Fixo + comissão + meta + recorrentes",
+    "beneficios": [
+      "Vale Transporte"
+    ],
+    "requisitos": [
+      "Sexo Masculino",
+      "Comunicativo e proativo",
+      "Experiência com vendas e atendimento"
+    ],
+    "horario": {
+      "segunda_a_sexta": "08:30 as 17:30"
     },
-    {
-        "id": 12,
-        "cargo": "Servente de Obras (Vaga Duplicada)",
-        "empresa": "Expresso Figueiredo Ltda",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Matozinhos",
-            "estado": "MG"
-        },
-        "salario": "R$ 2.783,21",
-        "beneficios": [
-            "Plano de Saúde Familiar (mensalidade arcada pela empresa, funcionário paga coparticipação apenas - conforme o uso)",
-            "Vale alimentação (R$ 1.518,00 mensal)",
-            "Vale Transporte",
-            "Prêmio (R$ 250,00 mensal - cartão)"
-        ],
-        "requisitos": [
-            "Experiência prévia na função (diferencial)",
-            "Comprometimento, responsabilidade e trabalho em equipe",
-            "Boa condição física para atividades operacionais"
-        ],
-        "horario": {
-            "segunda_a_sexta": "07:00 às 17:18"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "whatsapp": "(31) 99853-1451",
-            "nome_contato": "Talita"
-        },
-        "descricao_vaga": "Serviços inerentes à função de Servente de Obras em Matozinhos/MG.",
-        "divulgacao": "Expresso Figueiredo",
-        "fonte_imagem": "IMG-20260904-WA0052.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "selecionargsrh@gmail.com",
+      "telefone": "",
+      "whatsapp": ""
     },
-    {
-        "id": 13,
-        "cargo": "Pedreiro",
-        "empresa": "Expresso Figueiredo Ltda",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Matozinhos",
-            "estado": "MG"
-        },
-        "salario": "R$ 3.795,29",
-        "beneficios": [
-            "Plano de Saúde Familiar (mensalidade arcada pela empresa, funcionário paga coparticipação apenas - conforme o uso)",
-            "Vale alimentação (R$ 1.518,00 mensal)",
-            "Vale Transporte",
-            "Prêmio (R$ 500,00 mensal - cartão)"
-        ],
-        "requisitos": [
-            "Experiência prévia na função (diferencial)",
-            "Comprometimento, responsabilidade e trabalho em equipe",
-            "Boa condição física para atividades operacionais"
-        ],
-        "horario": {
-            "segunda_a_sexta": "07:00 às 17:18"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "whatsapp": "(31) 99853-1451",
-            "nome_contato": "Talita"
-        },
-        "descricao_vaga": "Serviços inerentes à função de Pedreiro em Matozinhos/MG.",
-        "divulgacao": "Expresso Figueiredo",
-        "fonte_imagem": "IMG-20260904-WA0053.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Irá realizar prospecção de clientes e vendas de planos de proteção veicular.",
+    "divulgacao": "@GS_PSICOLOGIAERH",
+    "fonte_imagem": "IMG-20260907-WA0029.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @GS_PSICOLOGIAERH",
+    "ativa": true
+  },
+  {
+    "id": 5,
+    "cargo": "Auxiliar de Estoque",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 14,
-        "cargo": "Servente de Obras",
-        "empresa": "Não especificada",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 1.850,00",
-        "beneficios": [
-            "Café da manhã e almoço na obra",
-            "Vale transporte",
-            "Vale alimentação (totalpass e farmácia)"
-        ],
-        "requisitos": [
-            "Proatividade e pontualidade",
-            "Não é necessário experiência na área"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta",
-        "contato": {
-            "whatsapp": "(31) 99546-4222"
-        },
-        "descricao_vaga": "Serviços de servente de obras em Sete Lagoas.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0075.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "R$ 2.000,00",
+    "beneficios": [
+      "Vale transporte"
+    ],
+    "requisitos": [
+      "Homem (conforme especificado na imagem)",
+      "Experiência na área"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:30 as 18:00"
     },
-    {
-        "id": 15,
-        "cargo": "Descarregador de Mercadorias",
-        "empresa": "Locacao e Prestação Estrela Dalva",
-        "local_trabalho": {
-            "rua": "Dentro do supermercado MartMinas",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "VR premiação",
-            "Almoço na empresa",
-            "Plano Odontológico",
-            "Seguro de Vida",
-            "Vale Transporte",
-            "Total Pass"
-        ],
-        "requisitos": [
-            "Ensino Fundamental"
-        ],
-        "horario": {
-            "segunda_a_sexta": "07:30 às 16:30",
-            "sabado": "07:00 às 12:00"
-        },
-        "escala": "Segunda a sábado",
-        "contato": {
-            "email": "rhestreladalvalocacao@gmail.com",
-            "whatsapp": "(31) 99261-0021"
-        },
-        "descricao_vaga": "Serviço braçal de descarga de mercadorias, manusear paleteira, conferencia, estrechamento, organização do RM, conserto de paletes quebrados. Prestará serviço dentro do supermercado MartMinas Sete Lagoas.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0076.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "(31) 99179-6949",
+      "whatsapp": "(31) 99179-6949"
     },
-    {
-        "id": 16,
-        "cargo": "Operador de Produção I",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Ticket de alimentação por dia trabalhado",
-            "Plano de saúde Unimed coparticipativo",
-            "Seguro de vida",
-            "Gympass",
-            "Vale transporte"
-        ],
-        "requisitos": [
-            "Ensino médio completo",
-            "Experiência na área de produção",
-            "Necessário residir em Sete Lagoas"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Oportunidade para Operador de Produção I em Sete Lagoas.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0077.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Será responsável pelo estoque, entrada e saída de nota fiscal, e separação de produtos.",
+    "divulgacao": "@GS_PSICOLOGIAERH",
+    "fonte_imagem": "IMG-20260907-WA0030.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @GS_PSICOLOGIAERH",
+    "ativa": true
+  },
+  {
+    "id": 6,
+    "cargo": "Auxiliar Administrativo",
+    "empresa": "Mecânica HB",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "São Vicente (próximo à Santa Juliana)",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 17,
-        "cargo": "Motorista D",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Plano odontológico co-participação",
-            "Convênio com farmácia",
-            "Vale alimentação",
-            "Totalpass",
-            "Plataforma telemedicina",
-            "Prêmio",
-            "Plano saúde"
-        ],
-        "requisitos": [
-            "Ensino médio completo",
-            "Experiência na função",
-            "CNH categoria D",
-            "Disponibilidade de horário",
-            "Necessário residir em Sete Lagoas"
-        ],
-        "horario": {
-            "diario": "Horário flexível para viagens"
-        },
-        "escala": "Segunda a sábado com viagens externas, com possíveis horas extras",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Atuar como Motorista D com viagens externas pela empresa Âncora.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0078.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [
+      "Cesta básica"
+    ],
+    "requisitos": [
+      "Feminino",
+      "Com experiência na área administrativa"
+    ],
+    "horario": {
+      "segunda_a_sexta": "08:00 às 18:00"
     },
-    {
-        "id": 18,
-        "cargo": "Entregador",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Os benefícios serão informados durante a entrevista"
-        ],
-        "requisitos": [
-            "Ensino médio completo",
-            "Disponibilidade para realizar entregas em outras cidades, incluindo pernoite fora",
-            "Noções de uso de aplicativos de rota (GPS, Waze, Google Maps)",
-            "Conhecimento básico de endereços, rotas e bairros da região de atuação",
-            "Pontualidade e comprometimento",
-            "Carteira Nacional de Habilitação categoria AB",
-            "Necessário residir em Sete Lagoas"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Atuar com entregas em Sete Lagoas e região.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0079.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "(31) 9 8601-0209"
     },
-    {
-        "id": 19,
-        "cargo": "Operador de Produção",
-        "empresa": "Sodecia Minas Gerais",
-        "local_trabalho": {
-            "rua": "Portaria da Sodecia Minas Gerais",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Plano de saúde",
-            "Cartão alimentação",
-            "Cartão farmácia",
-            "Seguro de vida",
-            "Salário família",
-            "PLR",
-            "Plano odontológico",
-            "Refeitório interno",
-            "Total Pass - Plano de academia",
-            "Transporte",
-            "Programa bolsa de estudos",
-            "Auxílio creche"
-        ],
-        "requisitos": [
-            "Vagas operacionais",
-            "Currículo impresso e xerox dos documentos pessoais ao agendar entrevista"
-        ],
-        "horario": {
-            "turno": "1º, 2º e 3º turno"
-        },
-        "escala": "Regime de turnos",
-        "contato": {
-            "whatsapp": "(31) 99851 5273"
-        },
-        "descricao_vaga": "A Sodecia Minas Gerais está selecionando candidatos para vagas operacionais. Quando a entrevista for agendada será necessário currículo impresso e xerox dos documentos pessoais.",
-        "divulgacao": "Sodecia",
-        "fonte_imagem": "IMG-20260904-WA0080.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Rotinas de suporte na área administrativa da Mecânica HB.",
+    "divulgacao": "Breno",
+    "fonte_imagem": "IMG-20260907-WA0031.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 7,
+    "cargo": "Auxiliar de Serviços Gerais",
+    "empresa": "Star Wash",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 20,
-        "cargo": "Carpinteiro",
-        "empresa": "Não especificada",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 2.950,00",
-        "beneficios": [
-            "Café da manhã e almoço na obra",
-            "Vale transporte",
-            "Vale alimentação (totalpass e farmácia)"
-        ],
-        "requisitos": [
-            "Proatividade e pontualidade",
-            "Experiência na área"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta",
-        "contato": {
-            "whatsapp": "(31) 99546-4222"
-        },
-        "descricao_vaga": "Atuar como Carpinteiro em obras em Sete Lagoas.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0081.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "R$ 1.772,77",
+    "beneficios": [
+      "Bonificação de Assiduidade (R$ 200,00)",
+      "Refeição no local",
+      "Vale Transporte"
+    ],
+    "requisitos": [
+      "Vaga Exclusiva para Mulheres"
+    ],
+    "horario": {},
+    "escala": "Escala de revezamento",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "(31) 9 9537-2582"
     },
-    {
-        "id": 21,
-        "cargo": "Consultor Externo",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Comissão",
-        "beneficios": [
-            "Comissão",
-            "Veículo da empresa e as despesas com viagens são por conta da empresa"
-        ],
-        "requisitos": [
-            "Ensino Médio Completo",
-            "Experiência na área de vendas",
-            "Excelente comunicação e habilidade de negociação",
-            "CNH categoria B",
-            "Disponibilidade para viagens - as vezes terá que ficar até 15 dias fora de casa",
-            "Necessário residir em Sete Lagoas",
-            "Proteção veicular para caminhões"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Consultor Externo para atuar com proteção veicular para caminhões pela Âncora Contratação Sólida.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0082.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Serviços gerais de limpeza e conservação no estabelecimento Star Wash.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0037.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 8,
+    "cargo": "Operador(a) de Máquinas",
+    "empresa": "Star Wash",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 22,
-        "cargo": "Pedreiro",
-        "empresa": "Não especificada",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 2.950,00",
-        "beneficios": [
-            "Café da manhã e almoço na obra",
-            "Vale transporte",
-            "Vale alimentação (totalpass e farmácia)"
-        ],
-        "requisitos": [
-            "Proatividade e pontualidade",
-            "Experiência na área"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta",
-        "contato": {
-            "whatsapp": "(31) 99546-4222"
-        },
-        "descricao_vaga": "Vaga de Pedreiro para obras em Sete Lagoas.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0083.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "R$ 2.622,00",
+    "beneficios": [
+      "Bonificação de Assiduidade (R$ 200,00)",
+      "Refeição no local",
+      "Vale Transporte"
+    ],
+    "requisitos": [
+      "Vaga Exclusiva para Mulheres",
+      "Possuir CNH em qualquer categoria"
+    ],
+    "horario": {
+      "segunda_a_sexta": "14:20 às 22:50",
+      "sabado": "14:20 às 20:00"
     },
-    {
-        "id": 23,
-        "cargo": "Vendedor(a) / Atendente",
-        "empresa": "Não especificada (Segmento de Telefonia Móvel)",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "Centro",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 1.600,00 até R$ 3.200,00 (fixo + comissão)",
-        "beneficios": [
-            "Ambiente animado e motivador",
-            "Oportunidade real de crescimento",
-            "Ganhos acima da média com comissões"
-        ],
-        "requisitos": [
-            "Ser comunicativa e com energia para vender",
-            "Ser proativa e comprometida",
-            "Ser focada em metas e resultados"
-        ],
-        "horario": {
-            "diario": "09:00 às 18:00"
-        },
-        "escala": "Não especificada",
-        "contato": {
-            "whatsapp": "(31) 99494-6358"
-        },
-        "descricao_vaga": "Atuação com vendas no segmento de telefonia móvel no Centro de Sete Lagoas.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0084.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "(31) 9 9537-2582"
     },
-    {
-        "id": 24,
-        "cargo": "Ajudante de Retífica",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Vale transporte",
-            "Insalubridade",
-            "Vale alimentação"
-        ],
-        "requisitos": [
-            "Interesse em aprender e se desenvolver na área",
-            "Comprometimento e responsabilidade",
-            "Noção de metrologia será um diferencial",
-            "Necessário residir em Sete Lagoas"
-        ],
-        "horario": {
-            "segunda_a_sexta": "08:00 às 18:00",
-            "sabados": "Podendo trabalhar aos sábados"
-        },
-        "escala": "Segunda a sexta-feira, com possibilidade aos sábados",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Vaga para Ajudante de Retífica pela empresa Âncora Contratação Sólida.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0086.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Operação de maquinário na lavanderia Star Wash.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0038.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 9,
+    "cargo": "Auxiliar Logística",
+    "empresa": "Atual Log",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 25,
-        "cargo": "Assistente de Turno",
-        "empresa": "Burger King",
-        "local_trabalho": {
-            "rua": "Avenida Doutor Renato Azeredo, nº 1.893",
-            "bairro": "Canaã",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 2.403,06",
-        "beneficios": [],
-        "requisitos": [
-            "Experiência em liderança",
-            "Disponibilidade de horário",
-            "Disponibilidade para treinamento em cidades vizinhas"
-        ],
-        "horario": {
-            "manha": "08:00 às 16:20 (6x1)",
-            "tarde": "15:20 às 23:40 (6x1)",
-            "madrugada": "18:00 às 04:20 (5x2)"
-        },
-        "escala": "6x1 ou 5x2 (conforme o turno)",
-        "contato": {
-            "whatsapp": "(16) 99317-9930"
-        },
-        "descricao_vaga": "Responsabilidades: Gerenciamento de turno, Liderança de equipe com o foco em metas e objetivos, Foco em CMV, Controle de custos e estoque.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0087.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "R$ 1.621,00",
+    "beneficios": [
+      "Premiação de até R$ 500,00",
+      "Alimentação na empresa sem desconto",
+      "Transporte sem desconto"
+    ],
+    "requisitos": [
+      "Vagas para Homens!"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "(31) 9 9678-7496"
     },
-    {
-        "id": 26,
-        "cargo": "Auxiliar de Produção (Ramo Alimentício)",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Transporte fretado",
-            "Vale alimentação",
-            "Seguro de vida",
-            "Auxílio farmácia",
-            "Alimentação na empresa",
-            "Bonificação mensal",
-            "Plano de assistência médica (após experiência)",
-            "Plano odontológico (após experiência)"
-        ],
-        "requisitos": [
-            "Ensino Fundamental Completo",
-            "Experiência na área de produção",
-            "Necessário residir em Sete Lagoas nos bairros: Interlagos, São Vicente, Emília, Nova Cidade, Jardim Primavera, Jardim Europa, Bela Vista, Luxemburgo, Nossa Senhora de Lourdes, Cidade de Deus, Lagoa Grande, Santa Felicidade, Catavento ou Sede (conforme a rota do fretado)"
-        ],
-        "horario": {
-            "segunda_a_quinta": "05:00 às 15:00",
-            "sexta_feira": "05:00 às 14:00",
-            "sabados": "Necessário disponibilidade para trabalhar aos sábados"
-        },
-        "escala": "Segunda a sexta-feira (com possibilidade aos sábados)",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Atuar em empresa do ramo alimentício pela Âncora Contratação Sólida.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0088.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Suporte geral na área operacional de logística da Atual Log.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0039.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 10,
+    "cargo": "Auxiliar de Chapeiro (Freelancer)",
+    "empresa": "Via Lanches",
+    "local_trabalho": {
+      "rua": "Av. Carmem Kilesse, 254",
+      "bairro": "Iporanga",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 27,
-        "cargo": "Manicure",
-        "empresa": "Instituto Aquilane Fashion",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [],
-        "requisitos": [
-            "Experiência como manicure"
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "whatsapp": "(31) 99935-4150",
-            "instagram": "_institutoaquilanefashionofc"
-        },
-        "descricao_vaga": "Estamos em busca de uma manicure com experiência para fazer parte do nosso time!",
-        "divulgacao": "_institutoaquilanefashionofc",
-        "fonte_imagem": "IMG-20260904-WA0089.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Morar próximo ao local",
+      "Ter meio de transporte próprio",
+      "Disponibilidade para trabalhar na sexta, sábado, domingo, feriado e véspera de feriado"
+    ],
+    "horario": {
+      "segunda_a_sexta": "Das 17h à meia-noite (aplicável nos dias de atividade)"
     },
-    {
-        "id": 28,
-        "cargo": "Auxiliar de Almoxarife",
-        "empresa": "Âncora Contratação Sólida",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Vale alimentação",
-            "Plano de saúde pela Empremed"
-        ],
-        "requisitos": [
-            "Ensino fundamental completo",
-            "Conhecimento básico em conferência de mercadorias e notas fiscais",
-            "Noções de organização e controle de estoque",
-            "Disponibilidade para atividades operacionais",
-            "Necessário ter experiência e interesse em serviço braçal",
-            "Necessário residir em Sete Lagoas"
-        ],
-        "horario": {
-            "segunda_a_sexta": "08:00 às 18:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "curriculo@ancoract.com.br"
-        },
-        "descricao_vaga": "Atuar como Auxiliar de Almoxarife pela Âncora Contratação Sólida.",
-        "divulgacao": "Âncora Contratação Sólida",
-        "fonte_imagem": "IMG-20260904-WA0090.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Sexta, sábado, domingo, feriados e vésperas de feriados",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "(31) 9-9886-9499"
     },
-    {
-        "id": 29,
-        "cargo": "Auxiliar de Britagem (Vaga Duplicada)",
-        "empresa": "Grupo Calsete",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "Alimentação na empresa",
-            "Fretado",
-            "Plano de saúde e odontológico"
-        ],
-        "requisitos": [
-            "Ensino fundamental completo",
-            "Disponibilidade para trabalho operacional",
-            "Atenção, responsabilidade e trabalho em equipe"
-        ],
-        "horario": {
-            "segunda_a_quinta": "07:00 às 17:00",
-            "sexta_feira": "07:00 às 16:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "rhcalsete@gmail.com"
-        },
-        "descricao_vaga": "Acompanhar a alimentação de pedras e minérios na planta. Monitorar o fluxo do material britado e peneirado. Comunicar variações ou falhas no processo ao operador principal. Limpeza e organização do ambiente de trabalho.",
-        "divulgacao": "Grupo Calsete",
-        "fonte_imagem": "IMG-20260904-WA0091.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Trabalho como auxiliar de chapeiro freelancer para a lanchonete Via Lanches.",
+    "divulgacao": "Gabriel",
+    "fonte_imagem": "IMG-20260907-WA0041.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 11,
+    "cargo": "Atendente (Freelancer)",
+    "empresa": "Via Lanches",
+    "local_trabalho": {
+      "rua": "Av. Carmem Kilesse, 254",
+      "bairro": "Iporanga",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 30,
-        "cargo": "Recuperador de Crédito",
-        "empresa": "Financer Consórcios",
-        "local_trabalho": {
-            "rua": "Avenida Getulio Vargas, 191",
-            "bairro": "Centro",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "CLT + Bônus por desempenho",
-        "beneficios": [
-            "Vale Transporte",
-            "Bônus por desempenho"
-        ],
-        "requisitos": [
-            "Boa comunicação verbal e habilidade em negociação",
-            "Perfil organizado e atento aos controles",
-            "Facilidade com raciocínio lógico",
-            "Conhecimento em Excel e sistemas ERP",
-            "Resiliência para lidar com diferentes situações e perfis de clientes",
-            "Facilidade e interesse em atendimento por ligação"
-        ],
-        "horario": {
-            "segunda_a_quinta": "08:00 às 18:00",
-            "sexta_feira": "08:00 às 17:00"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "vagas@financer.com.br"
-        },
-        "descricao_vaga": "Descrição da oportunidade: Realizar contato com clientes em atraso por telefone, e-mail, WhatsApp. Negociar condições de pagamento. Analisar riscos antes da aprovação de renegociações. Monitorar vencimentos. Emitir boletos. Trabalhar em conjunto com os setores financeiro, judicial e jurídico. Encaminhar situações críticas para cobrança judicial quando necessário.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0092.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Morar próximo ao local",
+      "Ter meio de transporte próprio",
+      "Disponibilidade para trabalhar na sexta, sábado, domingo, feriado e véspera de feriado"
+    ],
+    "horario": {
+      "segunda_a_sexta": "Das 17h à meia-noite (aplicável nos dias de atividade)"
     },
-    {
-        "id": 31,
-        "cargo": "Auxiliar de Produção",
-        "empresa": "Casa de Carnes Bastos",
-        "local_trabalho": {
-            "rua": "Rua Santa Juliana, 2758",
-            "bairro": "Brás Filizola",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Salário da categoria",
-        "beneficios": [
-            "Vale alimentação",
-            "Plano odontológico",
-            "Plano de saúde",
-            "Vale transporte"
-        ],
-        "requisitos": [
-            "Pessoa com disponibilidade para início imediato"
-        ],
-        "horario": {
-            "turno_1": "06:00 as 15:20",
-            "turno_2": "10:00 as 19:20",
-            "almoco": "2 horas de almoço",
-            "domingo": "07:00 às 13:00"
-        },
-        "escala": "Segunda a sábado, com revezamento aos domingos",
-        "contato": {
-            "whatsapp": "(31) 99580-7785"
-        },
-        "descricao_vaga": "Casa de Carnes Bastos contrata Auxiliar de Produção para início imediato.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0093.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "escala": "Sexta, sábado, domingo, feriados e vésperas de feriados",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "(31) 9-9886-9499"
     },
-    {
-        "id": 32,
-        "cargo": "Auxiliar de Oficina (Oficina de Extintor de Incêndio)",
-        "empresa": "Extinsete Prevenção Contra Incêndio",
-        "local_trabalho": {
-            "rua": "Rua Margarida Cortona, 759",
-            "bairro": "Canaã",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [],
-        "requisitos": [
-            "CNH B (item indispensável)",
-            "Facilidade de comunicação",
-            "Ensino médio completo",
-            "Conhecimento básico em computador"
-        ],
-        "horario": {
-            "diario": "07:30 às 17:30",
-            "almoco": "1 hora de almoço",
-            "sabado": "Não trabalha aos sábados"
-        },
-        "escala": "Segunda a sexta-feira",
-        "contato": {
-            "email": "extinsete@extinsete.com.br"
-        },
-        "descricao_vaga": "Auxiliar no processo de manutenção de extintores.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0094.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Trabalho como atendente freelancer de lanchonete.",
+    "divulgacao": "Gabriel",
+    "fonte_imagem": "IMG-20260907-WA0041.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 12,
+    "cargo": "Soldador",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 33,
-        "cargo": "Motorista para Obras para Van",
-        "empresa": "Comaro Engenharia",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Alojado nas cidades das obras",
-            "estado": ""
-        },
-        "salario": "R$ 2.387,00",
-        "beneficios": [
-            "Alimentação completa na obra",
-            "Alojamento (se necessário)",
-            "Vale-Transporte (se necessário)",
-            "Lanche da tarde",
-            "Cesta Básica*",
-            "Plano de Carreira",
-            "Seguro de Vida"
-        ],
-        "requisitos": [
-            "Habilitação para dirigir categoria D",
-            "Experiência com o transporte de pessoal",
-            "Desejável ensino médio completo",
-            "Disponibilidade para viagens",
-            "Precisa ter EAR na carteira",
-            "Disponibilidade para viajar 100% do tempo",
-            "O colaborador ficará alojado nas cidades das obras"
-        ],
-        "horario": {},
-        "escala": "Disponibilidade para viajar 100% do tempo",
-        "contato": {
-            "email": "recrutamento@comaro.com.br",
-            "whatsapp": "(31) 98444-1267"
-        },
-        "descricao_vaga": "Conduzir os veículos da empresa sempre que houver novas demandas, respeitando os limites de velocidade e promovendo uma direção segura. Solicitar a revisão e/ou manutenção dos veículos sempre que identificar a necessidade.",
-        "divulgacao": "Comaro Engenharia",
-        "fonte_imagem": "IMG-20260904-WA0095.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Curso de soldador Mig-Mag",
+      "Ensino médio completo",
+      "Residir em Sete Lagoas e região",
+      "Disponibilidade para trabalhar no 1º e 2º turno",
+      "Conhecimento de leitura e interpretação de EPS (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para 1º e 2º turnos",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
     },
-    {
-        "id": 34,
-        "cargo": "Auxiliar Açougueiro",
-        "empresa": "Casa de Carnes Bastos",
-        "local_trabalho": {
-            "rua": "Rua Santa Juliana, 2758",
-            "bairro": "Brás Filizola",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Salário da categoria",
-        "beneficios": [
-            "Vale alimentação",
-            "Plano odontológico",
-            "Plano de saúde",
-            "Vale transporte"
-        ],
-        "requisitos": [
-            "Pessoa com disponibilidade para início imediato",
-            "Experiência na área"
-        ],
-        "horario": {
-            "turno_1": "06:00 as 15:20",
-            "turno_2": "10:00 as 19:20",
-            "almoco": "2 horas de almoço",
-            "domingo": "07:00 às 13:00"
-        },
-        "escala": "Segunda a sábado, com revezamento aos domingos",
-        "contato": {
-            "whatsapp": "(31) 99580-7785"
-        },
-        "descricao_vaga": "Casa de Carnes Bastos contrata Auxiliar Açougueiro para início imediato com experiência na área.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0098.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Verifica programação diária, realiza as operações de solda, repara e retrabalha peças, opera máquinas de solda semiautomática, preenchimento dos registros, regula maquinário conforme instruções de trabalho.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0043.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 13,
+    "cargo": "Conferente",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 35,
-        "cargo": "Frentista",
-        "empresa": "Posto Lagoa das Pedras",
-        "local_trabalho": {
-            "rua": "BR-040",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 2.236,00",
-        "beneficios": [
-            "Vale Alimentação",
-            "PL",
-            "Vale transporte ou ajuda de custo"
-        ],
-        "requisitos": [
-            "Profissional acima de 20 anos sexo Masculino",
-            "Disponibilidade 13:40h as 22:00h",
-            "Experiência mínima de 6 meses com atendimento ao cliente",
-            "Residir na região de Sete Lagoas"
-        ],
-        "horario": {
-            "diario": "13:40h às 22:00h"
-        },
-        "escala": "6x1",
-        "contato": {
-            "whatsapp": "(31) 99366-0181"
-        },
-        "descricao_vaga": "Enviar currículo em PDF para o whatsapp do Posto Lagoa das Pedras.",
-        "divulgacao": "Posto Lagoa das Pedras",
-        "fonte_imagem": "IMG-20260904-WA0099.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Cursando superior em Logística, Administração, GPI ou áreas afins",
+      "Pacote Office",
+      "CNH B",
+      "Conhecimento em controle de Nota Fiscal",
+      "Desenho Técnico",
+      "Experiência na área, sendo um diferencial no segmento automotivo",
+      "Metrologia básica (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
     },
-    {
-        "id": 36,
-        "cargo": "Freelance (Atendente / Auxiliar)",
-        "empresa": "Rancho do Acarajé",
-        "local_trabalho": {
-            "rua": "Orla da Lagoa Boa Vista",
-            "bairro": "Boa Vista",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "R$ 120,00 por dia + 01 Acarajé Gourmet",
-        "beneficios": [
-            "01 Acarajé Gourmet"
-        ],
-        "requisitos": [
-            "Disponibilidade para trabalhar no horário do evento"
-        ],
-        "horario": {
-            "diario": "18:00 às 22:00"
-        },
-        "escala": "Freelance / Diária",
-        "contato": {
-            "whatsapp": "(31) 99173-1618"
-        },
-        "descricao_vaga": "Vaga de Freelance para a Orla da Lagoa Boa Vista em Sete Lagoas das 18h às 22h. Pagamento de R$ 120,00 mais um acarajé gourmet.",
-        "divulgacao": "ranchodoacaraje",
-        "fonte_imagem": "IMG-20260904-WA0101.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Recebe e confere materiais e notas fiscais, faz conferências de estoque, organiza cargas de entrada e saída, auxilia no abastecimento das linhas, realiza inventário, garante a integridade física do produto e a estocagem com segurança.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0044.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 14,
+    "cargo": "Coordenador de Manutenção",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 37,
-        "cargo": "Auxiliar de Produção",
-        "empresa": "Previncêndio",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [],
-        "requisitos": [
-            "Ensino fundamental completo",
-            "Trabalho em equipe",
-            "Organização, responsabilidade e pontualidade",
-            "Não é necessário experiência prévia",
-            "Buscamos pessoas organizadas, comprometidas e com vontade de aprender",
-            "Vaga somente para sexo masculino"
-        ],
-        "horario": {
-            "segunda_a_sexta": "07:15 às 17:00"
-        },
-        "escala": "Segunda a sexta",
-        "contato": {
-            "email": "administrativo@previncendiomg.com.br"
-        },
-        "descricao_vaga": "O profissional será responsável por auxiliar na execução de serviços de manutenção preventiva e corretiva em equipamentos de prevenção e combate a incêndio, como extintores, mangueiras de incêndio e demais dispositivos relacionados, conforme normas técnicas e procedimentos da empresa.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0102.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Desejável formação em Engenharias (Mecânica, Automação, Elétrica ou afins) e/ou Gestão de processos Industriais",
+      "Domínio pacote Office",
+      "CNH B",
+      "Disponibilidade de horário",
+      "Conhecimento em NR's",
+      "Experiência na área, sendo um diferencial no segmento automotivo",
+      "Conhecimento em IATF e ISO 14001 (Diferencial)",
+      "Desejável conhecimento em processos de Solda, Corte Laser, Dobra CNC e Automação (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
     },
-    {
-        "id": 38,
-        "cargo": "Consultor Externo",
-        "empresa": "Rodobem",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": "Salário fixo + Comissão",
-        "beneficios": [
-            "Salário fixo",
-            "Comissão",
-            "Veículo da empresa",
-            "Despesas com viagens são por conta da empresa"
-        ],
-        "requisitos": [
-            "Ensino Médio Completo",
-            "Experiência na área de vendas",
-            "Excelente comunicação e habilidade de negociação",
-            "CNH categoria B",
-            "Disponibilidade para viagens"
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "email": "contato@rodbem.org.br",
-            "whatsapp": "(31) 99179-0013"
-        },
-        "descricao_vaga": "Vaga para Consultor Externo na Rodobem. Assunto mencionar o título da vaga: CONSULTOR EXTERNO.",
-        "divulgacao": "Rodobem",
-        "fonte_imagem": "IMG-20260904-WA0103.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "descricao_vaga": "Realizar a gestão da equipe de manutenção envolvida nas atividades pertinentes à área, a qual é responsável pelas Manutenções Corretivas, Preditivas e Preventivas em dispositivos, máquinas e equipamentos, assim como Facilities (gestão de serviços e infraestrutura que garantem o funcionamento eficiente de uma organização) Gestor direto para garantia da NR12, assim como gestor responsável pela aprovação da entrega técnica dos meios produtivos no que tange à manutenção.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0045.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 15,
+    "cargo": "Auxiliar de Produção",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
     },
-    {
-        "id": 39,
-        "cargo": "Auxiliar Administrativo",
-        "empresa": "Financer",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [
-            "CLT",
-            "Vale transporte",
-            "Plano de carreira",
-            "Abonos anuais",
-            "Benefícios internos"
-        ],
-        "requisitos": [],
-        "horario": {
-            "diario": "08:00 às 18:00"
-        },
-        "escala": "Segunda a sexta",
-        "contato": {
-            "email": "vagas@financer.com.br"
-        },
-        "descricao_vaga": "Oportunidade para Auxiliar Administrativo na empresa Financer.",
-        "divulgacao": "@juniorsousainforma",
-        "fonte_imagem": "IMG-20260904-WA0105.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Ensino médio completo",
+      "Experiência profissional",
+      "Residir em Sete Lagoas e região",
+      "Disponibilidade de horário no 1º e 2º turno",
+      "Leitura e Interpretação de desenho (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para 1º e 2º turnos",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
     },
-    {
-        "id": 40,
-        "cargo": "Confeiteiro(a) / Atendente",
-        "empresa": "Prendas da Brenda",
-        "local_trabalho": {
-            "rua": "",
-            "bairro": "",
-            "cidade": "Sete Lagoas",
-            "estado": "MG"
-        },
-        "salario": null,
-        "beneficios": [],
-        "requisitos": [
-            "Confeiteiro(a): Profissional criativo(a), organizado(a) e apaixonado(a) por confeitaria, com atenção aos detalhes e comprometimento com a qualidade.",
-            "Atendente: Comunicativo(a), simpático(a) e que gosta de atender bem, proporcionando uma experiência acolhedora aos nossos clientes."
-        ],
-        "horario": {},
-        "escala": "Não especificada",
-        "contato": {
-            "whatsapp": "(31) 99130-5871"
-        },
-        "descricao_vaga": "Se você ama o que faz, tem paixão por servir e deseja crescer com a gente, seu lugar é aqui! Mais que uma cafeteria, um lugar para criar memórias.",
-        "divulgacao": "Prendas da Brenda",
-        "fonte_imagem": "IMG-20260904-WA0106.jpg",
-        "data_publicacao": "2026-09-04",
-        "data_validade": "2026-10-04",
-        "origem": "Grupo WhatsApp - Empregos e Freelances",
-        "ativa": true
-    }
+    "descricao_vaga": "Oportunidade de produção na equipe da Maxion Montich.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0046.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 16,
+    "cargo": "Expedidor",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Ensino médio completo",
+      "Residir em Sete Lagoas e região",
+      "Pacote Office",
+      "Disponibilidade para trabalhar no 1º e 2º turno",
+      "Cursando superior em Logística ou áreas afins (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para 1º e 2º turnos",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Responsável por acompanhar a produção e a programação de expedição, verificar se há atrasos para o atendimento ao cliente, separar e prepara as cargas de produtos e componentes para serem expedidos, acompanhar o carregamento das cargas e disponibilizar a documentação necessária. Acompanhar a programação de expedição.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0047.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 17,
+    "cargo": "Inspetor de Qualidade",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Curso de Aprendizagem, técnico SENAI",
+      "Residir em Sete Lagoas e região",
+      "Pacote Office",
+      "Ferramentas da qualidade",
+      "Experiência na área automotiva",
+      "Disponibilidade para trabalhar no 1º e 2º turno",
+      "Conhecimento em Metrologia (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para 1º e 2º turnos",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Realiza inspeções durante as etapas do processo, relata e registra andamento, não conformidades, ocorrências e ações implementadas, emitir relatórios de inspeção, realiza follow-up da preparação do chassi, calibra chassis, realiza retrabalhos.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0048.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 18,
+    "cargo": "Pintor",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Ensino médio",
+      "Experiência na área da pintura automotiva",
+      "Disponibilidade de horário para o 2º turno",
+      "Residir em Sete Lagoas e região"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para o 2º turno",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Responsável por realizar pintura de peças automotivas com a qualidade de acordo com os requisitos do cliente seguindo a programação da produção.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0049.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 19,
+    "cargo": "Líder de Logística",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Ensino superior completo em Logística, Gestão de Produção Industrial e outras áreas correlatas",
+      "Domínio pacote Office",
+      "CNH B",
+      "Conhecimento em sistema ERP",
+      "Disponibilidade de horário",
+      "Experiência no segmento automotivo",
+      "Desejável curso de empilhadeira (Diferencial)"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "trabalhoconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Liderar equipe nas operações de recebimento, armazenagem, expedição, controlar inventários, garantir o abastecimento da linha produtiva.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0050.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-10",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 20,
+    "cargo": "Ajudante de Carga e Descarga",
+    "empresa": "G&F Transportes",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [
+      "Hora extra",
+      "Vale alimentação",
+      "Convênio médico e odontológico",
+      "Seguro de vida",
+      "PLR e Total Pass"
+    ],
+    "requisitos": [
+      "Ensino fundamental completo",
+      "Ter disponibilidade para trabalhar em horário extraordinário",
+      "Boa comunicação verbal e escrita",
+      "Proatividade, organização e empatia no atendimento ao cliente"
+    ],
+    "horario": {},
+    "escala": "A combinar (Disponibilidade para horário extraordinário)",
+    "contato": {
+      "email": "adm.geftransportes@outlook.com",
+      "telefone": "",
+      "whatsapp": "31-982383452"
+    },
+    "descricao_vaga": "Auxiliar na carga e descarga de mercadorias. Acompanhar o motorista nas entregas. Organizar e conferir os produtos transportados. Garantir a integridade da mercadoria até a entrega final.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0051.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  },
+  {
+    "id": 21,
+    "cargo": "Motorista",
+    "empresa": "G&F Transportes",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [
+      "Hora extra",
+      "Vale alimentação",
+      "Convênio médico e odontológico",
+      "Seguro de vida",
+      "PLR e Total Pass"
+    ],
+    "requisitos": [
+      "Ensino fundamental completo",
+      "Experiência anterior como motorista",
+      "Categoria D",
+      "Ter disponibilidade para trabalhar em horário extraordinário",
+      "Boa comunicação verbal e escrita",
+      "Proatividade, organização e empatia no atendimento ao cliente"
+    ],
+    "horario": {},
+    "escala": "A combinar (Disponibilidade para horário extraordinário)",
+    "contato": {
+      "email": "adm.geftransportes@outlook.com",
+      "telefone": "",
+      "whatsapp": "31-982383452"
+    },
+    "descricao_vaga": "Conduzir o veículo respeitando as normas de trânsito, praticando direção defensiva e econômica. Realizar entregas conforme rota pré-estabelecida, garantindo pontualidade e excelência no atendimento. Sinalizar as áreas de carga e descarga com os cones fornecidos pela empresa. Conferir as quantidades entregues, realizar trocas quando necessário e recolher vasilhames e paletes. Preencher checklist diário do veículo e reportar eventuais problemas.",
+    "divulgacao": "",
+    "fonte_imagem": "IMG-20260907-WA0053.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WhatsApp",
+    "ativa": true
+  }
 ]
