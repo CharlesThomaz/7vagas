@@ -1227,9 +1227,17 @@ select.filter-input {
 .anuncio-mini-rosa { background: linear-gradient(135deg, #b51a14, #f04841); }
 .anuncio-mini-amarelo { background: linear-gradient(135deg, #e5b700, #ffcc00); color: var(--black); }
 .anuncio-mini-ciano { background: linear-gradient(135deg, #253944, #587282); }
+.anuncio-mini-slp {
+    background: linear-gradient(135deg, #0b1320 0%, #1a4d67 36%, #d71920 100%);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 .anuncio-mini-amarelo p,
 .anuncio-mini-amarelo .anuncio-mini-cta { color: var(--black); }
+
+.anuncio-mini-slp .anuncio-mini-cta {
+    color: var(--white);
+}
 
 .anuncio-mini span {
     font-size: 9px;
