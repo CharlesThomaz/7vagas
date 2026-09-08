@@ -496,6 +496,159 @@
         </div>
 
 
+        <!-- MODAL DE LOGIN ADMIN (AUTENTICAÇÃO EM 2 ETAPAS: GOOGLE + SENHA) -->
+        <div id="admin-login-modal" class="modal" style="display: none;" aria-hidden="true">
+            <div class="modal-content cadastro-content admin-login-content" role="dialog" aria-modal="true" aria-labelledby="admin-login-title">
+                <button id="close-admin-login" type="button" class="close-modal" aria-label="Fechar login admin">&times;</button>
+                <div class="cadastro-body admin-login-body">
+                    <span class="cadastro-icon" aria-hidden="true">🛡️</span>
+                    <h2 id="admin-login-title">Área Restrita (2 Fatores)</h2>
+                    <p>Autenticação de 2 Fatores obrigatória: Conta Google + Senha Mestre do Administrador.</p>
+                    
+                    <form id="admin-login-form" style="display: flex; flex-direction: column; gap: 12px; margin-top: 14px;">
+                        <button id="admin-google-login-button" class="btn-google btn-admin-google" type="button">
+                            <span class="google-mark" aria-hidden="true">G</span>
+                            1º Fator: Conectar com Google
+                        </button>
+                        <div id="admin-google-status-badge" style="display:none; font-size: 13px; font-weight: 700; color: #16a34a; background: #f0fdf4; padding: 8px; border-radius: 6px; border: 1px solid #bbf7d0;">
+                            ✓ Google: <span id="admin-google-user-name"></span>
+                        </div>
+
+                        <div style="text-align: left;">
+                            <label for="admin-senha-input" style="font-size: 13px; font-weight: 700; color: #334155;">2º Fator: Senha de Administrador</label>
+                            <input id="admin-senha-input" type="password" placeholder="Digite a senha mestre" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; margin-top: 4px;">
+                        </div>
+
+                        <button type="submit" class="btn-cadastro" style="margin-top: 6px; background-color: #0f172a;">Acessar Painel de Métricas</button>
+                    </form>
+                    
+                    <p id="admin-login-status" class="cadastro-status" role="status" style="margin-top: 10px;"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAINEL DE MÉTRICAS DO ADMINISTRADOR -->
+        <div id="admin-dashboard-modal" class="modal admin-dashboard-modal" style="display: none;" aria-hidden="true">
+            <div class="modal-content admin-dashboard-content" role="dialog" aria-modal="true" aria-labelledby="admin-dashboard-title">
+                <div class="admin-dashboard-header">
+                    <div class="admin-profile-info">
+                        <img id="admin-user-photo" src="" alt="Admin" class="admin-avatar" style="display:none;">
+                        <div>
+                            <h2 id="admin-dashboard-title">📈 Painel de Métricas do Site</h2>
+                            <p id="admin-user-email" class="admin-email-subtext">Conectado via Google</p>
+                        </div>
+                    </div>
+                    <div class="admin-header-actions">
+                        <button id="btn-atualizar-metricas" class="btn-atualizar-metricas" type="button" title="Atualizar Métricas">🔄 Atualizar</button>
+                        <button id="close-admin-dashboard" type="button" class="close-modal" aria-label="Fechar painel">&times;</button>
+                    </div>
+                </div>
+
+                <div class="admin-dashboard-body">
+
+                    <!-- CARDS DE MÉTRICAS PRINCIPAIS -->
+                    <div class="admin-cards-grid">
+                        <div class="admin-card card-visitas">
+                            <span class="admin-card-icon">👁️</span>
+                            <div class="admin-card-data">
+                                <span class="admin-card-val" id="val-visitas-totais">0</span>
+                                <span class="admin-card-label">Visitas no Site</span>
+                            </div>
+                        </div>
+
+                        <div class="admin-card card-usuarios">
+                            <span class="admin-card-icon">👥</span>
+                            <div class="admin-card-data">
+                                <span class="admin-card-val" id="val-usuarios-totais">0</span>
+                                <span class="admin-card-label">Usuários Cadastrados</span>
+                            </div>
+                        </div>
+
+                        <div class="admin-card card-leads">
+                            <span class="admin-card-icon">📣</span>
+                            <div class="admin-card-data">
+                                <span class="admin-card-val" id="val-leads-totais">0</span>
+                                <span class="admin-card-label">Leads de Anunciantes</span>
+                            </div>
+                        </div>
+
+                        <div class="admin-card card-anuncios">
+                            <span class="admin-card-icon">🎬</span>
+                            <div class="admin-card-data">
+                                <span class="admin-card-val" id="val-anuncios-exibidos">0</span>
+                                <span class="admin-card-label">Anúncios Exibidos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEÇÕES DETALHADAS -->
+                    <div class="admin-sections-grid">
+
+                        <!-- TABELA DE VAGAS MAIS ACESSADAS -->
+                        <div class="admin-section-box">
+                            <h3>🏆 Vagas Mais Acessadas</h3>
+                            <div class="admin-table-container">
+                                <table class="admin-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Cargo</th>
+                                            <th>Empresa</th>
+                                            <th>Acessos</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabela-vagas-body">
+                                        <tr><td colspan="4" class="tabela-carregando">Carregando métricas...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- DESEMPENHO DOS ANÚNCIOS DA PASTA -->
+                        <div class="admin-section-box">
+                            <h3>📢 Exibições por Anúncio (Pasta /anuncios)</h3>
+                            <div class="admin-table-container">
+                                <table class="admin-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Mídia / Anúncio</th>
+                                            <th>Exibições</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabela-anuncios-body">
+                                        <tr><td colspan="2" class="tabela-carregando">Carregando exibições...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- SOLICITAÇÕES DE DIVULGAÇÃO (LEADS) -->
+                    <div class="admin-section-box" style="margin-top: 20px;">
+                        <h3>📩 Solicitações de Anunciantes (Leads)</h3>
+                        <div class="admin-table-container">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Data</th>
+                                        <th>Empresa / Contato</th>
+                                        <th>WhatsApp</th>
+                                        <th>Interesse</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabela-leads-body">
+                                    <tr><td colspan="4" class="tabela-carregando">Nenhum lead recebido ainda.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
         <!-- =====================================================
              FOOTER
              ===================================================== -->
@@ -504,7 +657,10 @@
 
             <p>
                 &copy; 2026 7 Vagas.
-                Vagas de grupos de empregos locais no WhatsApp
+                Vagas de grupos de empregos locais no WhatsApp<span id="link-admin-metricas" class="footer-secret-dot" style="cursor: default; user-select: none;">.</span>
+            </p>
+            <p style="margin-top: 4px; font-size: 11px; opacity: 0.4;">
+                <span id="badge-versao-admin" style="cursor: pointer;">v2.4</span>
             </p>
 
         </footer>

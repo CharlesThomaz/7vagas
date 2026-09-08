@@ -116,6 +116,54 @@ window.obterMetricasVagasFirebase = async () => {
     return snapshot.exists() ? snapshot.val() : {};
 };
 
+window.registrarVisitaSiteFirebase = async () => {
+    try {
+        await runTransaction(ref(database, 'metricasGerais/visitasTotais'), total =>
+            (Number(total) || 0) + 1
+        );
+    } catch (e) {
+        console.error('Erro ao registrar visita:', e);
+    }
+};
+
+window.registrarExibicaoAnuncioFirebase = async anuncioNome => {
+    if (!anuncioNome) return;
+    try {
+        const chaveSafe = anuncioNome.replace(/[.#$/\[\]]/g, '_');
+        await runTransaction(ref(database, `metricasAnuncios/${chaveSafe}/exiboes`), total =>
+            (Number(total) || 0) + 1
+        );
+        await runTransaction(ref(database, 'metricasGerais/anunciosExibidosTotais'), total =>
+            (Number(total) || 0) + 1
+        );
+    } catch (e) {
+        console.error('Erro ao registrar exibição de anúncio:', e);
+    }
+};
+
+window.obterTodasMetricasAdminFirebase = async () => {
+    try {
+        const [snapUsuarios, snapLeads, snapVagas, snapGerais, snapAnuncios] = await Promise.all([
+            get(ref(database, 'usuarios')),
+            get(ref(database, 'leadsAnuncios')),
+            get(ref(database, 'metricasVagas')),
+            get(ref(database, 'metricasGerais')),
+            get(ref(database, 'metricasAnuncios'))
+        ]);
+
+        return {
+            usuarios: snapUsuarios.exists() ? snapUsuarios.val() : {},
+            leads: snapLeads.exists() ? snapLeads.val() : {},
+            metricasVagas: snapVagas.exists() ? snapVagas.val() : {},
+            metricasGerais: snapGerais.exists() ? snapGerais.val() : {},
+            metricasAnuncios: snapAnuncios.exists() ? snapAnuncios.val() : {}
+        };
+    } catch (erro) {
+        console.error('Erro ao buscar métricas admin:', erro);
+        return null;
+    }
+};
+
 window.sairFirebase = () => signOut(auth);
 
 // O script principal pode ser executado antes de este módulo terminar de

@@ -3,12 +3,14 @@
     ".read": false,
     ".write": false,
     "usuarios": {
+      ".read": "auth != null && auth.token.firebase.sign_in_provider == 'google.com'",
       "$uid": {
         ".read": "auth != null && auth.uid === $uid",
         ".write": "auth != null && auth.uid === $uid"
       }
     },
     "leadsAnuncios": {
+      ".read": "auth != null && auth.token.firebase.sign_in_provider == 'google.com'",
       "$uid": {
         ".read": "auth != null && auth.uid === $uid",
         ".write": "auth != null && auth.uid === $uid"
@@ -16,12 +18,22 @@
     },
     "metricasVagas": {
       ".read": true,
+      ".write": true,
       "$vagaId": {
         "total": {
+          ".read": true,
           ".write": true,
           ".validate": "newData.isNumber() && newData.val() >= 0 && (!data.exists() ? newData.val() <= 1 : newData.val() <= data.val() + 1)"
         }
       }
+    },
+    "metricasGerais": {
+      ".read": true,
+      ".write": true
+    },
+    "metricasAnuncios": {
+      ".read": true,
+      ".write": true
     }
   }
 }

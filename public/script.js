@@ -10,6 +10,8 @@ let temporizadorNoticias = null;
 let tentativasConexaoRanking = 0;
 
 const CHAVE_NOME_CANDIDATO = '7vagas:nome-candidato';
+const SENHA_ADMIN = '7vagas2026';
+let usuarioGoogleAdmin = null;
 const ANUNCIOS_DEMONSTRACAO = [
     {
         marca: 'VivaLeve',
@@ -53,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
     carregarVagas();
     carregarNoticiasEconomicas();
     inicializarEventos();
+    if (typeof window.registrarVisitaSiteFirebase === 'function') {
+        window.registrarVisitaSiteFirebase();
+    }
     sincronizarSessao();
 });
 
@@ -687,6 +692,10 @@ function confirmarEAssistirAnuncio() {
     const arquivoAnuncio = obterAnuncioAleatorio();
     imagemEl.src = `anuncios/${arquivoAnuncio}`;
 
+    if (typeof window.registrarExibicaoAnuncioFirebase === 'function') {
+        window.registrarExibicaoAnuncioFirebase(arquivoAnuncio);
+    }
+
     meusegundosContadorAnuncio = 3;
     btnConcluir.disabled = true;
     btnConcluir.textContent = `Aguarde ${meusegundosContadorAnuncio}s...`;
@@ -755,6 +764,284 @@ async function executarAcaoFinalComCadastro(acao) {
 
     acaoAposCadastro = acao;
     abrirCadastro();
+}
+
+
+// ==================== PAINEL DE MÉTRICAS DO ADMINISTRADOR (GOOGLE AUTH) ====================
+
+function setarStatusGoogleAdmin(usuario) {
+    const badge = document.getElementById('admin-google-status-badge');
+    const nomeEl = document.getElementById('admin-google-user-name');
+
+    if (!badge || !nomeEl) {
+        return;
+    }
+
+    if (usuario) {
+        usuarioGoogleAdmin = usuario;
+        nomeEl.textContent = usuario.displayName || usuario.email || 'Administrador';
+        badge.style.display = 'block';
+        return;
+    }
+
+    usuarioGoogleAdmin = null;
+    nomeEl.textContent = '';
+    badge.style.display = 'none';
+}
+
+function abrirLoginAdmin() {
+    const modal = document.getElementById('admin-login-modal');
+    const status = document.getElementById('admin-login-status');
+    const senhaInput = document.getElementById('admin-senha-input');
+
+    if (!modal) return;
+    if (status) {
+        status.textContent = '';
+        status.classList.remove('sucesso');
+    }
+    if (senhaInput) {
+        senhaInput.value = '';
+    }
+    setarStatusGoogleAdmin(usuarioGoogleAdmin);
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function fecharLoginAdmin() {
+    const modal = document.getElementById('admin-login-modal');
+    const senhaInput = document.getElementById('admin-senha-input');
+    if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+    }
+    if (modal) {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+    }
+    if (senhaInput) {
+        senhaInput.value = '';
+    }
+    document.body.style.overflow = '';
+}
+
+async function autenticarEAbrirAdminComGoogle() {
+    const status = document.getElementById('admin-login-status');
+    try {
+        if (status) {
+            status.textContent = 'Autenticando com Google...';
+            status.classList.remove('sucesso');
+        }
+
+        if (typeof window.entrarComGoogleFirebase !== 'function') {
+            throw new Error('Serviço de autenticação Firebase indisponível.');
+        }
+
+        const usuario = await window.entrarComGoogleFirebase();
+        if (usuario) {
+            setarStatusGoogleAdmin(usuario);
+            if (status) {
+                status.textContent = 'Google conectado. Agora informe a senha mestre para entrar.';
+                status.classList.remove('sucesso');
+            }
+            const senhaInput = document.getElementById('admin-senha-input');
+            if (senhaInput) {
+                senhaInput.focus();
+            }
+        }
+    } catch (erro) {
+        console.error('Erro no login admin:', erro);
+        if (status) {
+            status.textContent = erro.message || 'Erro ao realizar login com o Google.';
+            status.classList.remove('sucesso');
+        }
+        setarStatusGoogleAdmin(null);
+    }
+}
+
+function validarAcessoAdmin() {
+    const status = document.getElementById('admin-login-status');
+    const senhaInput = document.getElementById('admin-senha-input');
+    const senha = (senhaInput?.value || '').trim();
+
+    if (!usuarioGoogleAdmin) {
+        if (status) {
+            status.textContent = 'Conecte primeiro sua conta Google do administrador.';
+            status.classList.remove('sucesso');
+        }
+        return false;
+    }
+
+    if (!senha) {
+        if (status) {
+            status.textContent = 'Digite a senha mestre para continuar.';
+            status.classList.remove('sucesso');
+        }
+        return false;
+    }
+
+    if (senha !== SENHA_ADMIN) {
+        if (status) {
+            status.textContent = 'Senha incorreta. Acesso negado.';
+            status.classList.remove('sucesso');
+        }
+        return false;
+    }
+
+    if (status) {
+        status.textContent = 'Acesso liberado.';
+        status.classList.add('sucesso');
+    }
+
+    return true;
+}
+
+function confirmarAcessoAdmin(event) {
+    event.preventDefault();
+
+    if (!validarAcessoAdmin()) {
+        return;
+    }
+
+    const senhaInput = document.getElementById('admin-senha-input');
+    if (senhaInput) {
+        senhaInput.value = '';
+    }
+
+    fecharLoginAdmin();
+    abrirPainelMetricasAdmin(usuarioGoogleAdmin);
+}
+
+function abrirPainelMetricasAdmin(usuario) {
+    const modal = document.getElementById('admin-dashboard-modal');
+    const photoEl = document.getElementById('admin-user-photo');
+    const emailEl = document.getElementById('admin-user-email');
+
+    if (!modal) return;
+
+    if (usuario) {
+        if (emailEl) {
+            emailEl.textContent = `Conectado como: ${usuario.displayName || 'Admin'} (${usuario.email})`;
+        }
+        if (photoEl) {
+            if (usuario.photoURL) {
+                photoEl.src = usuario.photoURL;
+                photoEl.style.display = 'inline-block';
+            } else {
+                photoEl.style.display = 'none';
+            }
+        }
+    }
+
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    carregarDadosMetricasAdmin();
+}
+
+function fecharPainelMetricasAdmin() {
+    const modal = document.getElementById('admin-dashboard-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+    }
+    document.body.style.overflow = '';
+}
+
+async function carregarDadosMetricasAdmin() {
+    if (typeof window.obterTodasMetricasAdminFirebase !== 'function') {
+        return;
+    }
+
+    const dados = await window.obterTodasMetricasAdminFirebase();
+    if (!dados) return;
+
+    // 1. Cards Principais
+    const totalVisitas = Number(dados.metricasGerais?.visitasTotais) || 0;
+    const totalUsuarios = Object.keys(dados.usuarios || {}).length;
+    let totalLeads = 0;
+    Object.values(dados.leads || {}).forEach(userLeads => {
+        totalLeads += Object.keys(userLeads || {}).length;
+    });
+    const totalAnuncios = Number(dados.metricasGerais?.anunciosExibidosTotais) || 0;
+
+    const elVisitas = document.getElementById('val-visitas-totais');
+    const elUsuarios = document.getElementById('val-usuarios-totais');
+    const elLeads = document.getElementById('val-leads-totais');
+    const elAnuncios = document.getElementById('val-anuncios-exibidos');
+
+    if (elVisitas) elVisitas.textContent = totalVisitas.toLocaleString('pt-BR');
+    if (elUsuarios) elUsuarios.textContent = totalUsuarios.toLocaleString('pt-BR');
+    if (elLeads) elLeads.textContent = totalLeads.toLocaleString('pt-BR');
+    if (elAnuncios) elAnuncios.textContent = totalAnuncios.toLocaleString('pt-BR');
+
+    // 2. Tabela de Vagas Mais Acessadas
+    const vagasBody = document.getElementById('tabela-vagas-body');
+    if (vagasBody && todasAsVagas.length > 0) {
+        const rankingVagas = [...todasAsVagas]
+            .map(vaga => ({
+                vaga,
+                acessos: Number(dados.metricasVagas?.[vaga.id]?.total) || 0
+            }))
+            .sort((a, b) => b.acessos - a.acessos);
+
+        vagasBody.innerHTML = rankingVagas.slice(0, 10).map(({ vaga, acessos }, idx) => `
+            <tr>
+                <td><strong>${idx + 1}º</strong></td>
+                <td>${escaparHTML(vaga.cargo || 'Não informado')}</td>
+                <td>${escaparHTML(vaga.empresa || 'Não informada')}</td>
+                <td><span class="badge-acessos">${acessos.toLocaleString('pt-BR')} acessos</span></td>
+            </tr>
+        `).join('');
+    }
+
+    // 3. Tabela de Desempenho dos Anúncios da Pasta
+    const anunciosBody = document.getElementById('tabela-anuncios-body');
+    if (anunciosBody) {
+        if (ANUNCIOS_PASTA && ANUNCIOS_PASTA.length > 0) {
+            anunciosBody.innerHTML = ANUNCIOS_PASTA.map(nomeMidia => {
+                const chaveSafe = nomeMidia.replace(/[.#$/\[\]]/g, '_');
+                const exiboes = Number(dados.metricasAnuncios?.[chaveSafe]?.exiboes) || 0;
+                return `
+                    <tr>
+                        <td>📁 <strong>${escaparHTML(nomeMidia)}</strong></td>
+                        <td><span class="badge-exiboes">${exiboes.toLocaleString('pt-BR')} exibições</span></td>
+                    </tr>
+                `;
+            }).join('');
+        } else {
+            anunciosBody.innerHTML = '<tr><td colspan="2">Nenhum anúncio cadastrado.</td></tr>';
+        }
+    }
+
+    // 4. Tabela de Leads
+    const leadsBody = document.getElementById('tabela-leads-body');
+    if (leadsBody) {
+        const listaLeads = [];
+        Object.values(dados.leads || {}).forEach(userLeads => {
+            Object.values(userLeads || {}).forEach(lead => {
+                listaLeads.push(lead);
+            });
+        });
+
+        listaLeads.sort((a, b) => (b.criadoEm || 0) - (a.criadoEm || 0));
+
+        if (listaLeads.length > 0) {
+            leadsBody.innerHTML = listaLeads.map(lead => {
+                const dataFmt = lead.criadoEm ? new Date(lead.criadoEm).toLocaleDateString('pt-BR') : 'Recente';
+                return `
+                    <tr>
+                        <td>${dataFmt}</td>
+                        <td><strong>${escaparHTML(lead.empresa || lead.nome || 'Anunciante')}</strong></td>
+                        <td><a href="https://wa.me/55${(lead.whatsapp || '').replace(/\D/g, '')}" target="_blank" rel="noopener">${escaparHTML(lead.whatsapp || '')}</a></td>
+                        <td><span class="badge-interesse">${escaparHTML(lead.interesse || 'Geral')}</span></td>
+                    </tr>
+                `;
+            }).join('');
+        } else {
+            leadsBody.innerHTML = '<tr><td colspan="4" class="tabela-vazia">Nenhuma solicitação recebida ainda.</td></tr>';
+        }
+    }
 }
 
 
@@ -1648,6 +1935,12 @@ window.addEventListener('click', event => {
 
 document.addEventListener('keydown', event => {
 
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === 'M' || event.key === 'm')) {
+        event.preventDefault();
+        abrirLoginAdmin();
+        return;
+    }
+
     if (event.key === 'Escape') {
 
         const avisoModal = document.getElementById('anuncio-aviso-modal');
@@ -1843,6 +2136,68 @@ function inicializarEventos() {
                 fecharAvisoAnuncio();
             }
         });
+    }
+
+    // ============================
+    // GATILHOS SE CRETOS DO ADMIN
+    // ============================
+
+    const linkMetricas = document.getElementById('link-admin-metricas');
+    if (linkMetricas) {
+        linkMetricas.addEventListener('click', (e) => {
+            e.preventDefault();
+            abrirLoginAdmin();
+        });
+    }
+
+    const badgeVersao = document.getElementById('badge-versao-admin');
+    if (badgeVersao) {
+        badgeVersao.addEventListener('click', (e) => {
+            e.preventDefault();
+            abrirLoginAdmin();
+        });
+    }
+
+    // Clique triplo na logo "7 VAGAS" (Gatilho Secreto de Acesso)
+    const logoEl = document.querySelector('.logo');
+    let cliquesLogo = 0;
+    let timerLogoCliques = null;
+    if (logoEl) {
+        logoEl.addEventListener('click', () => {
+            cliquesLogo++;
+            if (timerLogoCliques) clearTimeout(timerLogoCliques);
+            if (cliquesLogo >= 3) {
+                cliquesLogo = 0;
+                abrirLoginAdmin();
+            } else {
+                timerLogoCliques = setTimeout(() => { cliquesLogo = 0; }, 800);
+            }
+        });
+    }
+
+    const btnAdminGoogle = document.getElementById('admin-google-login-button');
+    if (btnAdminGoogle) {
+        btnAdminGoogle.addEventListener('click', autenticarEAbrirAdminComGoogle);
+    }
+
+    const formAdminLogin = document.getElementById('admin-login-form');
+    if (formAdminLogin) {
+        formAdminLogin.addEventListener('submit', confirmarAcessoAdmin);
+    }
+
+    const closeAdminLogin = document.getElementById('close-admin-login');
+    if (closeAdminLogin) {
+        closeAdminLogin.addEventListener('click', fecharLoginAdmin);
+    }
+
+    const closeAdminDash = document.getElementById('close-admin-dashboard');
+    if (closeAdminDash) {
+        closeAdminDash.addEventListener('click', fecharPainelMetricasAdmin);
+    }
+
+    const btnAtualizarMetricas = document.getElementById('btn-atualizar-metricas');
+    if (btnAtualizarMetricas) {
+        btnAtualizarMetricas.addEventListener('click', carregarDadosMetricasAdmin);
     }
 
     document

@@ -2648,3 +2648,237 @@ select:focus-visible {
     border: none;
 }
 
+
+/* =========================================================
+   PAINEL DE MÉTRICAS DO ADMINISTRADOR (ESTILOS)
+   ========================================================= */
+
+.admin-login-content {
+    max-width: 440px;
+    text-align: center;
+}
+
+.admin-login-botoes {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-admin-google {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.admin-dashboard-modal .modal-content {
+    max-width: 960px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.admin-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.admin-profile-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.admin-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid #2563eb;
+    object-fit: cover;
+}
+
+.admin-dashboard-header h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+}
+
+.admin-email-subtext {
+    font-size: 13px;
+    color: #64748b;
+    margin: 2px 0 0;
+}
+
+.admin-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-atualizar-metricas {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-atualizar-metricas:hover {
+    background-color: #e2e8f0;
+}
+
+/* Grid de Cards */
+.admin-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.admin-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.admin-card-icon {
+    font-size: 32px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.admin-card-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-card-val {
+    font-size: 24px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.admin-card-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Seções e Tabelas */
+.admin-sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 20px;
+}
+
+.admin-section-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.admin-section-box h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-table-container {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.admin-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+}
+
+.admin-table tr:hover td {
+    background-color: #f8fafc;
+}
+
+.badge-acessos {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.badge-exiboes {
+    background-color: #fef3c7;
+    color: #92400e;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.badge-interesse {
+    background-color: #e0e7ff;
+    color: #3730a3;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.tabela-carregando, .tabela-vazia {
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px !important;
+}
+
+.footer-secret-dot:hover {
+    color: #2563eb;
+    cursor: pointer;
+}
+
+
