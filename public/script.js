@@ -38,7 +38,8 @@ const ANUNCIOS_PASTA = [
     'anuncioCharlesThomaz.jpg',
     'anuncioTPBTecnologia.jpg',
     'anuncioSeteLagoasPolitica.jpg',
-    'anuncioCLISystems.jpg'
+    'anuncioCLISystems.jpg',
+    'anuncioReiDoMato.jpg'
 ];
 
 let acaoPendenteAnuncio = null;
