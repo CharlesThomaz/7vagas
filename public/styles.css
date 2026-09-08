@@ -2512,3 +2512,139 @@ select:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* =========================================================
+   ESTILOS DE AVISO E EXIBIÇÃO DE ANÚNCIO (PUBLIC/ANUNCIOS)
+   ========================================================= */
+
+.aviso-anuncio-content {
+    max-width: 440px;
+    text-align: center;
+}
+
+.aviso-anuncio-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aviso-anuncio-destaque {
+    font-weight: 700;
+    margin-top: 6px;
+    color: var(--blue-dark, #0d3b66);
+}
+
+.aviso-anuncio-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.btn-aceitar-anuncio {
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-aceitar-anuncio:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-cancelar-anuncio {
+    background: transparent;
+    border: 1px solid var(--gray-300, #ccc);
+    color: #666;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-cancelar-anuncio:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Modal de Exibição do Anúncio */
+.exibicao-anuncio-content {
+    max-width: 520px;
+    width: 90%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.exibicao-anuncio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+.anuncio-badge {
+    background-color: #e2e8f0;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.anuncio-contador {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.exibicao-anuncio-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 380px;
+}
+
+.anuncio-imagem {
+    max-width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.exibicao-anuncio-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-concluir-anuncio {
+    width: 100%;
+    padding: 12px 18px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.btn-concluir-anuncio:disabled {
+    background-color: #cbd5e1;
+    color: #64748b;
+    cursor: not-allowed;
+    border: none;
+}
+

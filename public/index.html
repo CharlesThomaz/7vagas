@@ -420,6 +420,42 @@
         </div>
 
 
+        <!-- AVISO PRÉVIO DE ANÚNCIO -->
+        <div id="anuncio-aviso-modal" class="modal" style="display: none;" aria-hidden="true">
+            <div class="modal-content cadastro-content aviso-anuncio-content" role="dialog" aria-modal="true" aria-labelledby="anuncio-aviso-title">
+                <button id="close-anuncio-aviso" type="button" class="close-modal" aria-label="Fechar aviso">&times;</button>
+                <div class="cadastro-body aviso-anuncio-body">
+                    <span class="cadastro-icon" aria-hidden="true">🎬</span>
+                    <h2 id="anuncio-aviso-title">Aviso de Anúncio</h2>
+                    <p>Para visualizar as informações da vaga, você assistirá a um breve anúncio a seguir.</p>
+                    <p class="aviso-anuncio-destaque">Deseja continuar?</p>
+                    <div class="aviso-anuncio-botoes">
+                        <button id="btn-aceitar-anuncio" type="button" class="btn-cadastro btn-aceitar-anuncio">Assistir e Continuar</button>
+                        <button id="btn-recusar-anuncio" type="button" class="btn-cancelar-anuncio">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXIBIÇÃO DO ANÚNCIO ALEATÓRIO -->
+        <div id="anuncio-exibicao-modal" class="modal" style="display: none;" aria-hidden="true">
+            <div class="modal-content exibicao-anuncio-content" role="dialog" aria-modal="true" aria-labelledby="anuncio-exibicao-title">
+                <div class="exibicao-anuncio-header">
+                    <span class="anuncio-badge">Publicidade</span>
+                    <span id="anuncio-contador" class="anuncio-contador">Aguarde 3s...</span>
+                </div>
+                <div class="exibicao-anuncio-body">
+                    <img id="anuncio-imagem-exibida" src="" alt="Anúncio" class="anuncio-imagem">
+                </div>
+                <div class="exibicao-anuncio-footer">
+                    <button id="btn-concluir-anuncio" type="button" class="btn-cadastro btn-concluir-anuncio" disabled>
+                        Aguardando anúncio...
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
         <!-- CADASTRO SIMPLIFICADO -->
 
         <div id="cadastro-modal" class="modal cadastro-modal" style="display: none;" aria-hidden="true">

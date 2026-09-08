@@ -32,6 +32,19 @@ const ANUNCIOS_DEMONSTRACAO = [
 ];
 
 
+// Lista de mídias de anúncio presentes na pasta /public/anuncios
+const ANUNCIOS_PASTA = [
+    'anuncioExemplo.png',
+    'anuncioCharlesThomaz.jpg',
+    'anuncioTPBTecnologia.jpg',
+    'anuncioSeteLagoasPolitica.jpg'
+];
+
+let acaoPendenteAnuncio = null;
+let meusegundosContadorAnuncio = 3;
+let timerAnuncioInterval = null;
+
+
 // ==================== INICIALIZAÇÃO ====================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -621,7 +634,106 @@ function obterPerfilCandidato() {
 }
 
 
-async function solicitarAcesso(acao) {
+// ==================== FLUXO DE EXIBIÇÃO DE ANÚNCIOS DA PASTA ====================
+
+function obterAnuncioAleatorio() {
+    if (!ANUNCIOS_PASTA || ANUNCIOS_PASTA.length === 0) {
+        return 'anuncioExemplo.png';
+    }
+    const indice = Math.floor(Math.random() * ANUNCIOS_PASTA.length);
+    return ANUNCIOS_PASTA[indice];
+}
+
+function solicitarAcesso(acao) {
+    acaoPendenteAnuncio = acao;
+    abrirAvisoAnuncio();
+}
+
+function abrirAvisoAnuncio() {
+    const modal = document.getElementById('anuncio-aviso-modal');
+    if (!modal) return;
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function fecharAvisoAnuncio() {
+    const modal = document.getElementById('anuncio-aviso-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+    }
+    document.body.style.overflow = '';
+    acaoPendenteAnuncio = null;
+}
+
+function confirmarEAssistirAnuncio() {
+    const avisoModal = document.getElementById('anuncio-aviso-modal');
+    if (avisoModal) {
+        avisoModal.style.display = 'none';
+        avisoModal.setAttribute('aria-hidden', 'true');
+    }
+
+    const exibicaoModal = document.getElementById('anuncio-exibicao-modal');
+    const imagemEl = document.getElementById('anuncio-imagem-exibida');
+    const contadorEl = document.getElementById('anuncio-contador');
+    const btnConcluir = document.getElementById('btn-concluir-anuncio');
+
+    if (!exibicaoModal || !imagemEl || !btnConcluir) return;
+
+    // Seleciona uma imagem aleatória da pasta public/anuncios
+    const arquivoAnuncio = obterAnuncioAleatorio();
+    imagemEl.src = `anuncios/${arquivoAnuncio}`;
+
+    meusegundosContadorAnuncio = 3;
+    btnConcluir.disabled = true;
+    btnConcluir.textContent = `Aguarde ${meusegundosContadorAnuncio}s...`;
+    contadorEl.textContent = `Aguarde ${meusegundosContadorAnuncio}s...`;
+
+    exibicaoModal.style.display = 'flex';
+    exibicaoModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    if (timerAnuncioInterval) {
+        clearInterval(timerAnuncioInterval);
+    }
+
+    timerAnuncioInterval = setInterval(() => {
+        meusegundosContadorAnuncio--;
+        if (meusegundosContadorAnuncio > 0) {
+            btnConcluir.textContent = `Aguarde ${meusegundosContadorAnuncio}s...`;
+            contadorEl.textContent = `Aguarde ${meusegundosContadorAnuncio}s...`;
+        } else {
+            clearInterval(timerAnuncioInterval);
+            timerAnuncioInterval = null;
+            btnConcluir.disabled = false;
+            btnConcluir.textContent = 'Continuar para a Vaga';
+            contadorEl.textContent = 'Pronto!';
+        }
+    }, 1000);
+}
+
+function concluirAnuncioEContinuar() {
+    if (timerAnuncioInterval) {
+        clearInterval(timerAnuncioInterval);
+        timerAnuncioInterval = null;
+    }
+    const exibicaoModal = document.getElementById('anuncio-exibicao-modal');
+    if (exibicaoModal) {
+        exibicaoModal.style.display = 'none';
+        exibicaoModal.setAttribute('aria-hidden', 'true');
+    }
+    document.body.style.overflow = '';
+
+    const acaoParaExecutar = acaoPendenteAnuncio;
+    acaoPendenteAnuncio = null;
+
+    if (typeof acaoParaExecutar === 'function') {
+        executarAcaoFinalComCadastro(acaoParaExecutar);
+    }
+}
+
+async function executarAcaoFinalComCadastro(acao) {
     const usuario =
         typeof window.obterUsuarioFirebase === 'function' &&
         await window.obterUsuarioFirebase();
@@ -1536,6 +1648,12 @@ document.addEventListener('keydown', event => {
 
     if (event.key === 'Escape') {
 
+        const avisoModal = document.getElementById('anuncio-aviso-modal');
+        if (avisoModal && avisoModal.style.display === 'flex') {
+            fecharAvisoAnuncio();
+            return;
+        }
+
         const cadastroModal =
             document.getElementById('cadastro-modal');
 
@@ -1691,6 +1809,39 @@ function inicializarEventos() {
                 fecharAnuncio();
             }
         });
+
+    // ============================
+    // OUVINTES DO FLUXO DE ANÚNCIO
+    // ============================
+
+    const closeAnuncioAviso = document.getElementById('close-anuncio-aviso');
+    if (closeAnuncioAviso) {
+        closeAnuncioAviso.addEventListener('click', fecharAvisoAnuncio);
+    }
+
+    const btnRecusarAnuncio = document.getElementById('btn-recusar-anuncio');
+    if (btnRecusarAnuncio) {
+        btnRecusarAnuncio.addEventListener('click', fecharAvisoAnuncio);
+    }
+
+    const btnAceitarAnuncio = document.getElementById('btn-aceitar-anuncio');
+    if (btnAceitarAnuncio) {
+        btnAceitarAnuncio.addEventListener('click', confirmarEAssistirAnuncio);
+    }
+
+    const btnConcluirAnuncio = document.getElementById('btn-concluir-anuncio');
+    if (btnConcluirAnuncio) {
+        btnConcluirAnuncio.addEventListener('click', concluirAnuncioEContinuar);
+    }
+
+    const anuncioAvisoModal = document.getElementById('anuncio-aviso-modal');
+    if (anuncioAvisoModal) {
+        anuncioAvisoModal.addEventListener('click', event => {
+            if (event.target.id === 'anuncio-aviso-modal') {
+                fecharAvisoAnuncio();
+            }
+        });
+    }
 
     document
         .getElementById('close-cadastro')
