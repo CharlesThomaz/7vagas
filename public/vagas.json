@@ -1,46 +1,44 @@
 [
   {
     "id": 1,
-    "cargo": "Operador de Forjaria",
-    "empresa": "CIE Forjas Minas",
+    "cargo": "Vendedor / Atendente",
+    "empresa": "Não especificada",
     "local_trabalho": {
-      "rua": "",
+      "rua": "Rua Dr Pedro Luiz",
       "bairro": "",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
-    "salario": "A combinar",
-    "beneficios": [
-      "Cartão Cesta Básica",
-      "Plano de Saúde Familiar",
-      "Plano odontológico",
-      "Seguro de vida",
-      "PR",
-      "Alimentação na empresa"
-    ],
+    "salario": "R$ 1.740,00",
+    "beneficios": [],
     "requisitos": [
-      "Ensino Fundamental Incompleto",
-      "Disponibilidade de horário"
+      "Pessoa comunicativa",
+      "Responsável",
+      "Proativa",
+      "Vontade de crescer profissionalmente"
     ],
-    "horario": {},
-    "escala": "A combinar",
+    "horario": {
+      "segunda_a_sexta": "09:00 às 18:00",
+      "sabado": "08:00 às 14:00"
+    },
+    "escala": "Segunda a sábado",
     "contato": {
       "email": "",
       "telefone": "",
-      "whatsapp": "(31) 99864-5755"
+      "whatsapp": "31998910339"
     },
-    "descricao_vaga": "A CIE Forjas Minas em Sete Lagoas-MG contrata Operador de Forjaria. Necessário ensino fundamental incompleto e disponibilidade de horário.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0059.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Buscamos uma pessoa comunicativa, responsável, proativa e com vontade de crescer profissionalmente.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0060.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 2,
-    "cargo": "Torneiro Mecânico",
-    "empresa": "CIE Forjas Minas",
+    "cargo": "Operador(a) de Caixa",
+    "empresa": "Perfumaria Sul Americana",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
@@ -48,144 +46,146 @@
       "estado": "MG"
     },
     "salario": "A combinar",
-    "beneficios": [
-      "Cartão Cesta Básica",
-      "Plano de Saúde Familiar",
-      "Plano odontológico",
-      "Seguro de vida",
-      "PR",
-      "Alimentação na empresa"
-    ],
+    "beneficios": [],
     "requisitos": [
-      "Experiência comprovada na área",
-      "Ensino médio Completo",
-      "Desejável cursos na área"
+      "Trabalhar em equipe",
+      "Capacidade em lidar com o público",
+      "Cálculos Matemáticos",
+      "Noções básicas de informática",
+      "Gerenciamento de dinheiro",
+      "Experiência na função de 6 meses",
+      "Ensino médio completo",
+      "Gostar da área de beleza (Diferencial)"
     ],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99864-5755"
+    "horario": {
+      "segunda_a_sexta": "horário comercial",
+      "sabado": "horário comercial"
     },
-    "descricao_vaga": "Operacionalizar máquina de torno, selecionar materiais e ferramentas para projeto de peças, seguindo os procedimentos de normas e padrões.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0060.jpg",
-    "data_publicacao": "2026-09-08",
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "daniadm2006@yahoo.com.br",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Trabalhar em equipe, capacidade em lidar com o público, cálculos matemáticos, noções básicas de informática e gerenciamento de dinheiro.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0061.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 3,
-    "cargo": "Fresador CNC",
-    "empresa": "CIE Forjas Minas",
+    "cargo": "Vendedor / Atendente",
+    "empresa": "Loja Mega Cell",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
-    "salario": "A combinar",
-    "beneficios": [
-      "Cartão Cesta Básica",
-      "Plano de Saúde Familiar",
-      "Plano odontológico",
-      "Seguro de vida",
-      "PR",
-      "Alimentação na empresa"
-    ],
+    "salario": "R$ 1.800,00",
+    "beneficios": [],
     "requisitos": [
-      "Experiência comprovada na área",
-      "Ensino médio Completo",
-      "Desejável cursos na área"
+      "Pessoa comunicativa",
+      "Responsável",
+      "Proativa",
+      "Vontade de crescer profissionalmente"
     ],
-    "horario": {},
-    "escala": "A combinar",
+    "horario": {
+      "segunda_a_sexta": "10:00 às 18:30",
+      "sabado": "10:00 às 18:30"
+    },
+    "escala": "Segunda a sábado (10h às 18h30), Domingo (12h às 20h) com 1 folga fixa na semana e 1 domingo de folga por mês",
     "contato": {
       "email": "",
       "telefone": "",
-      "whatsapp": "(31) 99864-5755"
+      "whatsapp": "31998910339"
     },
-    "descricao_vaga": "Leitura e interpretação de desenhos 2D e 3D, Manuseio de ferramentas de medição, Executar a usinagem de ferramentas conformes os projetos.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0061.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Buscamos uma pessoa comunicativa, responsável, proativa e com vontade de crescer profissionalmente.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0062.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 4,
-    "cargo": "Líder de Produção",
-    "empresa": "CIE Forjas Minas",
+    "cargo": "Vendedor / Atendente",
+    "empresa": "TIM Shopping Sete Lagoas",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
-    "salario": "A combinar",
-    "beneficios": [
-      "Cartão Cesta Básica",
-      "Plano de Saúde Familiar",
-      "Plano odontológico",
-      "Seguro de vida",
-      "PR",
-      "Alimentação na empresa"
-    ],
+    "salario": "R$ 1.800,00",
+    "beneficios": [],
     "requisitos": [
-      "Experiência comprovada na função",
-      "Disponibilidade de horário (turno)",
-      "Curso técnico ou superior na área"
+      "Pessoa comunicativa",
+      "Responsável",
+      "Proativa",
+      "Vontade de crescer profissionalmente"
     ],
-    "horario": {},
-    "escala": "A combinar",
+    "horario": {
+      "segunda_a_sexta": "10:00 às 18:30",
+      "sabado": "10:00 às 18:30"
+    },
+    "escala": "Segunda a sábado (10h às 18h30), Domingos (12h às 20h) com 1 folga fixa durante a semana e 1 domingo de folga por mês",
     "contato": {
       "email": "",
       "telefone": "",
-      "whatsapp": "(31) 99864-5755"
+      "whatsapp": "31998910339"
     },
-    "descricao_vaga": "Garantir o cumprimento do programa produtivo, treinamento da mão de obra, acompanhando, orientando a equipe, difundindo entre colaboradores a execução de suas tarefas, de acordo com procedimentos técnicos e operacionais determinados.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0062.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Estamos contratando Vendedor(a) para fazer parte da nossa equipe! Buscamos uma pessoa comunicativa, responsável, proativa e com vontade de crescer profissionalmente.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0063.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 5,
-    "cargo": "Operador de Caixa",
-    "empresa": "Clebinho's Pastelaria",
+    "cargo": "Auxiliar de Logística",
+    "empresa": "Trevo Lácteos",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
-    "salario": "A combinar",
-    "beneficios": [],
+    "salario": "R$ 1.621,00",
+    "beneficios": [
+      "Premiação até R$ 500,00",
+      "Alimentação na empresa sem desconto",
+      "Ajuda de custo de transporte sem desconto"
+    ],
     "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "clebinhospastelaria@gmail.com",
-      "telefone": "",
-      "whatsapp": ""
+    "horario": {
+      "segunda_a_sexta": "integral",
+      "sabado": "integral"
     },
-    "descricao_vaga": "Atendimento ao cliente, Registro de produtos e valores no caixa, Recebimento de pagamentos, Abertura/fechamento de caixa, Organização e limpeza do ambiente de trabalho.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0064.jpg",
-    "data_publicacao": "2026-09-08",
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31996787496"
+    },
+    "descricao_vaga": "Trabalhar terceirizado na Trevo Lácteos, com alimentação na empresa sem desconto e ajuda de custo de transporte sem desconto.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0065.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 6,
-    "cargo": "Atendente",
-    "empresa": "Lojas Rede",
+    "cargo": "Auxiliar de Vendas na Captação de Clientes Interna",
+    "empresa": "Conquista Cred",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
@@ -194,36 +194,37 @@
     },
     "salario": "A combinar",
     "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
+      "Ambiente colaborativo",
+      "Treinamento",
+      "Possibilidade de crescimento",
+      "Pagamentos comissionados"
     ],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "vagas@lojasrede.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99222-0160"
+    "requisitos": [
+      "Pessoas comunicativas",
+      "Proativas",
+      "Vontade de crescimento profissional"
+    ],
+    "horario": {
+      "segunda_a_sexta": "09:00 às 18:00"
     },
-    "descricao_vaga": "Oportunidade para atuar como Atendente na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
+    "escala": "Segunda a sexta-feira (Escala 5x2)",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31973139634"
+    },
+    "descricao_vaga": "Atuar na captação interna de clientes, utilizando redes sociais, WhatsApp, telefone e ferramentas digitais.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0066.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 7,
-    "cargo": "Operador de Caixa",
-    "empresa": "Lojas Rede",
+    "cargo": "Auxiliar Administrativo / Meio Ambiente",
+    "empresa": "Petrolub Industrial",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
@@ -232,308 +233,64 @@
     },
     "salario": "A combinar",
     "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
+      "Vale-transporte",
+      "Vale-alimentação",
+      "Assistência médica",
+      "Convênios e Total Pass"
     ],
-    "requisitos": [],
+    "requisitos": [
+      "Ensino médio completo",
+      "Experiência em rotinas administrativas",
+      "Pacote Office e sistemas informatizados"
+    ],
     "horario": {},
-    "escala": "A combinar",
+    "escala": "Presencial",
     "contato": {
-      "email": "vagas@lojasrede.com.br",
+      "email": "",
       "telefone": "",
-      "whatsapp": "(31) 99222-0160"
+      "whatsapp": ""
     },
-    "descricao_vaga": "Oportunidade para atuar como Operador de Caixa na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Atuação como Auxiliar Administrativo / Meio Ambiente em empresa sólida e em crescimento.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0067.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 8,
-    "cargo": "Assistente de Loja",
-    "empresa": "Lojas Rede",
+    "cargo": "Auxiliar técnico de Laboratório",
+    "empresa": "Farmácia Unifórmulas",
     "local_trabalho": {
-      "rua": "",
-      "bairro": "",
+      "rua": "Rua Senhor dos Passos, n66",
+      "bairro": "Centro",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
     "salario": "A combinar",
-    "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
-    ],
+    "beneficios": [],
     "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "vagas@lojasrede.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99222-0160"
+    "horario": {
+      "segunda_a_sexta": "10:00 às 19:00",
+      "sabado": "08:00 às 14:00 (com uma folga no sábado uma vez no mês)"
     },
-    "descricao_vaga": "Oportunidade para atuar como Assistente de Loja na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "farmaciauniformulas@hotmail.com",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Trabalhar diretamente na manipulação de formulações sólidas e semi sólidas dentro da legislação vigente.",
+    "divulgacao": "@juniorsousainforma",
+    "fonte_imagem": "IMG-20260909-WA0068.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Instagram - @juniorsousainforma",
     "ativa": true
   },
   {
     "id": 9,
-    "cargo": "Fiscal",
-    "empresa": "Lojas Rede",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
-    ],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "vagas@lojasrede.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99222-0160"
-    },
-    "descricao_vaga": "Oportunidade para atuar como Fiscal na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 10,
-    "cargo": "Auxiliar de Serviços Gerais",
-    "empresa": "Lojas Rede",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
-    ],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "vagas@lojasrede.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99222-0160"
-    },
-    "descricao_vaga": "Oportunidade para atuar como Auxiliar de Serviços Gerais na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 11,
-    "cargo": "Repositor",
-    "empresa": "Lojas Rede",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
-    ],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "vagas@lojasrede.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99222-0160"
-    },
-    "descricao_vaga": "Oportunidade para atuar como Repositor na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 12,
-    "cargo": "Técnica de Salão (Cabeleireira)",
-    "empresa": "Lojas Rede",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [
-      "Presença premiada",
-      "Vale transporte",
-      "Vale refeição/alimentação",
-      "Plano de saúde",
-      "Plano odontológico",
-      "Convênio educação",
-      "Convênio Sesc",
-      "Crescimento profissional",
-      "Wellhub/Gympass"
-    ],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "vagas@lojasrede.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99222-0160"
-    },
-    "descricao_vaga": "Oportunidade para atuar como Técnica de Salão (Cabeleireira) na equipe da Lojas Rede em Sete Lagoas.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0065.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 13,
-    "cargo": "Repositor",
-    "empresa": "Rede Sacolão ABC Abastecer",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99706-0457"
-    },
-    "descricao_vaga": "Oportunidade para trabalhar como Repositor no Rede Sacolão ABC Abastecer em Sete Lagoas. Enviar currículo em PDF com foto.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0066.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 14,
-    "cargo": "Faxineira",
-    "empresa": "Rede Sacolão ABC Abastecer",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99706-0457"
-    },
-    "descricao_vaga": "Oportunidade para trabalhar como Faxineira no Rede Sacolão ABC Abastecer em Sete Lagoas. Enviar currículo em PDF com foto.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0066.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 15,
-    "cargo": "Auxiliar de Cozinha",
-    "empresa": "Rede Sacolão ABC Abastecer",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [],
-    "requisitos": [],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99706-0457"
-    },
-    "descricao_vaga": "Oportunidade para trabalhar como Auxiliar de Cozinha no Rede Sacolão ABC Abastecer em Sete Lagoas. Enviar currículo em PDF com foto.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0066.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 16,
     "cargo": "Vendedora",
     "empresa": "Não especificada",
     "local_trabalho": {
@@ -542,65 +299,47 @@
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
-    "salario": "A combinar",
-    "beneficios": [],
-    "requisitos": [
-      "Acima de 20 anos",
-      "Ser responsável",
-      "Ser comunicativa"
+    "salario": "R$ 2.000,00",
+    "beneficios": [
+      "Vale Transporte"
     ],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "malucao@uai.com.br",
-      "telefone": "",
-      "whatsapp": "(31) 99551-4241"
+    "requisitos": [
+      "Sexo Feminino",
+      "Ensino Médio Completo",
+      "Não é necessária experiência",
+      "Capacidade para realizar a gestão da loja",
+      "Habilidades em planejamento",
+      "Comunicação",
+      "Tomada de decisão",
+      "Organização",
+      "Administração do tempo",
+      "Foco em resultados",
+      "Criatividade",
+      "Iniciativa",
+      "Foco no cliente",
+      "Bom relacionamento interpessoal"
+    ],
+    "horario": {
+      "segunda_a_sexta": "08:00 às 18:00",
+      "sabado": "08:00 às 13:00"
     },
-    "descricao_vaga": "Vaga aberta para Vendedora em Sete Lagoas. Experiência não é obrigatória.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0067.jpg",
-    "data_publicacao": "2026-09-08",
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Organização e preparação para abertura da loja; Atendimento aos clientes; Recebimento e abastecimento de mercadorias; Gestão e prospecção de clientes.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0069.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "arseRH",
     "ativa": true
   },
   {
-    "id": 17,
-    "cargo": "Auxiliar Logístico",
-    "empresa": "Destack Motopeças Usadas",
-    "local_trabalho": {
-      "rua": "",
-      "bairro": "Progresso",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [],
-    "requisitos": [
-      "Habilidades com informática",
-      "Ter boa comunicação e disposição",
-      "Desejável residir em Sete Lagoas ou Prudente de Morais ou ter fácil acesso ao Bairro Progresso",
-      "Desejável experiência em gerenciamento de estoque (Diferencial)",
-      "Desejável experiência com E-commerce (Diferencial)"
-    ],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "motosdestack@gmail.com",
-      "telefone": "",
-      "whatsapp": ""
-    },
-    "descricao_vaga": "Cadastro e homologação de peças, Organização e separação de itens no estoque, Separação de pedidos, Gerenciamento de estoque.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0069.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 18,
-    "cargo": "Produtor de Palheiro de Piteira de Palitinho",
+    "id": 10,
+    "cargo": "Consultor (a) de Vendas",
     "empresa": "Não especificada",
     "local_trabalho": {
       "rua": "",
@@ -608,217 +347,171 @@
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
+    "salario": "R$ 1.700,00",
+    "beneficios": [
+      "Vale Alimentação",
+      "Vale Transporte",
+      "Assistência médica"
+    ],
+    "requisitos": [
+      "Não é necessário experiência",
+      "Possuir CNH A ou B",
+      "Boa comunicação",
+      "Iniciativa",
+      "Foco no cliente e no resultado",
+      "Bom relacionamento interpessoal",
+      "Criativo",
+      "Administração do tempo"
+    ],
+    "horario": {
+      "segunda_a_sexta": "08:30 às 18:00"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Prospecção e atendimento a clientes; Apresentação de produtos e serviços; Elaboração de propostas comerciais; Acompanhamentos de negociações e pós-venda; Visitas comerciais.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0070.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 11,
+    "cargo": "Auxiliar de Britador",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 2.319,67",
+    "beneficios": [
+      "Vale Alimentação",
+      "Vale Transporte",
+      "Plano de Saúde coparticipativo (A empresa arca com 70% da mensalidade)",
+      "Convênio com farmácia e gás",
+      "Gympass",
+      "Café da manhã e tarde na empresa",
+      "Plano Odontológico"
+    ],
+    "requisitos": [
+      "Sexo Masculino",
+      "Ensino Médio Completo",
+      "Experiência na função no mínimo 1 ano",
+      "Proatividade",
+      "Organização",
+      "Iniciativa"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:00 às 17:00 (Seg-Qui) e 07:00 às 16:00 (Sex)"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Dar suporte na operação de equipamentos de britagem; Realizar limpeza e organização do local; Auxiliar na manutenção básica; Monitorar o fluxo de material e seguir normas de segurança.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0071.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 12,
+    "cargo": "Auxiliar de Enfermagem",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "Informado na entrevista",
+    "beneficios": [
+      "Vale Transporte",
+      "Plano de Cargos e Salários",
+      "Assistência Médica"
+    ],
+    "requisitos": [
+      "Não é necessário experiência na função",
+      "Ensino Médio Completo",
+      "Possuir Curso Técnico Completo em Enfermagem",
+      "Boa comunicação",
+      "Liderança",
+      "Relacionamento interpessoal",
+      "Atenção aos detalhes",
+      "Planejamento"
+    ],
+    "horario": {
+      "segunda_a_sexta": "13:00 às 17:00"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Receber os fios/cabelos preparados pela equipe e realizar cuidadosamente a colocação dentro da caneta utilizada no procedimento; Manter instrumentos organizados; Realizar a lavagem e preparação dos instrumentos.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0072.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 13,
+    "cargo": "Auxiliar de Almoxarife",
+    "empresa": "Âncora Contratação Sólida",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
     "salario": "A combinar",
     "beneficios": [
-      "Trabalho em casa / Home office",
-      "Oportunidade de renda extra"
-    ],
-    "requisitos": [],
-    "horario": {},
-    "escala": "Trabalho em casa",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99961-9958"
-    },
-    "descricao_vaga": "Trabalho simples e manual de confecção de palheiro de piteira de palitinho. Excelente oportunidade de renda extra trabalhando em casa. Pagamento realizado por milheiro produzido.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0070.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 19,
-    "cargo": "Escovista",
-    "empresa": "Arléia Morais Instituto de Beleza",
-    "local_trabalho": {
-      "rua": "Rua Carmem Kilesse, 564, 2º andar",
-      "bairro": "Iporanga",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "A combinar",
-    "beneficios": [
-      "Comissão atrativa",
-      "Crescimento profissional",
-      "Carteira de clientes da casa"
+      "Vale alimentação",
+      "Plano de saúde pela Empremed"
     ],
     "requisitos": [
-      "Experiência com escovas lisas e modeladas",
-      "Agilidade e organização",
-      "Comprometimento e pontualidade",
-      "Boa comunicação e simpatia",
-      "Disponibilidade de horário"
-    ],
-    "horario": {},
-    "escala": "A combinar",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 98520-3497"
-    },
-    "descricao_vaga": "Trabalhar em salão de beleza realizando escovas lisas e modeladas, focando em capricho e agilidade.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0071.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 20,
-    "cargo": "Operador de Máquina",
-    "empresa": "VOG Engenharia",
-    "local_trabalho": {
-      "rua": "Rua Jovelino Lanza, 116",
-      "bairro": "Jardim Arizona",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "R$ 3.016,00",
-    "beneficios": [
-      "Café da manhã e almoço na obra",
-      "Vale transporte",
-      "Vale alimentação (total pass, farmacia)"
-    ],
-    "requisitos": [
-      "Proatividade e Pontualidade",
-      "Experiência em Retro Escavadeira"
+      "Necessário residir em Sete Lagoas",
+      "Ensino fundamental completo",
+      "Conhecimento básico em conferência de mercadorias e notas fiscais",
+      "Noções de organização e controle de estoque",
+      "Disponibilidade para atividades operacionais",
+      "Necessário ter experiência e interesse em serviço braçal"
     ],
     "horario": {
-      "segunda_a_sexta": "Segunda a quinta: 07:00 às 17:00, Sexta: 07:00 às 14:00"
+      "segunda_a_sexta": "08:00 às 18:00"
     },
     "escala": "Segunda a sexta-feira",
     "contato": {
-      "email": "",
+      "email": "curriculo@ancoract.com.br",
       "telefone": "",
-      "whatsapp": "(31) 99546-4222"
+      "whatsapp": ""
     },
-    "descricao_vaga": "Operar máquina retroescavadeira na empresa VOG Engenharia. Entrevistas com Joice no endereço indicado.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0073.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Conferência de mercadorias e notas fiscais, organização e controle de estoque, atividades operacionais e serviço braçal.",
+    "divulgacao": "Âncora Contratação Sólida",
+    "fonte_imagem": "IMG-20260909-WA0077.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
+    "origem": "Âncora Contratação Sólida",
     "ativa": true
   },
   {
-    "id": 21,
-    "cargo": "Carpinteiro",
-    "empresa": "VOG Engenharia",
-    "local_trabalho": {
-      "rua": "Rua Jovelino Lanza, 116",
-      "bairro": "Jardim Arizona",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "R$ 2.950,00",
-    "beneficios": [
-      "Café da manhã e almoço na obra",
-      "Vale transporte",
-      "Vale alimentação (total pass, farmacia)"
-    ],
-    "requisitos": [
-      "Proatividade e Pontualidade",
-      "Experiência na área será um diferencial"
-    ],
-    "horario": {
-      "segunda_a_sexta": "Segunda a quinta: 07:00 às 17:00, Sexta: 07:00 às 14:00"
-    },
-    "escala": "Segunda a sexta-feira",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 97221-7860"
-    },
-    "descricao_vaga": "Atuar como Carpinteiro em obras da empresa VOG Engenharia. Entrevistas com Joice.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0074.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 22,
-    "cargo": "Pedreiro",
-    "empresa": "VOG Engenharia",
-    "local_trabalho": {
-      "rua": "Rua Jovelino Lanza, 116",
-      "bairro": "Jardim Arizona",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "R$ 2.950,00",
-    "beneficios": [
-      "Café da manhã e almoço na obra",
-      "Vale transporte",
-      "Vale alimentação (TotalPass e Farmacia)"
-    ],
-    "requisitos": [
-      "Produtividade e Pontualidade",
-      "Experiência na área será um diferencial"
-    ],
-    "horario": {
-      "segunda_a_sexta": "Segunda a quinta: 07:00 às 17:00, Sexta: 07:00 às 14:00"
-    },
-    "escala": "Segunda a sexta-feira",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99546-4222"
-    },
-    "descricao_vaga": "Atuar como Pedreiro em obras da empresa VOG Engenharia. Entrevistas com Joice ou Nathalia.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0075.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 23,
-    "cargo": "Servente de Obras",
-    "empresa": "VOG Engenharia",
-    "local_trabalho": {
-      "rua": "Rua Jovelino Lanza, 116",
-      "bairro": "Jardim Arizona",
-      "cidade": "Sete Lagoas",
-      "estado": "MG"
-    },
-    "salario": "R$ 1.850,00",
-    "beneficios": [
-      "Café da manhã e almoço na obra",
-      "Vale transporte",
-      "Vale alimentação (TotalPass e Farmacia)"
-    ],
-    "requisitos": [
-      "Produtividade e Pontualidade",
-      "Não é necessário experiência"
-    ],
-    "horario": {
-      "segunda_a_sexta": "Segunda a quinta: 07:00 às 17:00, Sexta: 07:00 às 14:00"
-    },
-    "escala": "Segunda a sexta-feira",
-    "contato": {
-      "email": "",
-      "telefone": "",
-      "whatsapp": "(31) 99546-4222"
-    },
-    "descricao_vaga": "Atuar como Servente de Obras civil em Sete Lagoas. Entrevistas com Joice ou Nathalia.",
-    "divulgacao": "",
-    "fonte_imagem": "IMG-20260908-WA0076.jpg",
-    "data_publicacao": "2026-09-08",
-    "data_validade": "2026-09-30",
-    "origem": "WhatsApp",
-    "ativa": true
-  },
-  {
-    "id": 24,
-    "cargo": "Operador de CNC",
-    "empresa": "Torneamento Cortez",
+    "id": 14,
+    "cargo": "Vendedor (a)",
+    "empresa": "Papelaria Quintela",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
@@ -828,34 +521,191 @@
     "salario": "A combinar",
     "beneficios": [],
     "requisitos": [
-      "Ensino Médio Completo",
-      "Desejável cursos de qualificação no Senai",
-      "Experiência de no mínimo 01 ano na área de produção e ou como operador de torno convencional e CNC",
-      "Conhecimentos sobre Metrologia básica e desenho técnico",
-      "Pacote Office",
-      "Necessário residir em Sete Lagoas/MG"
+      "Ensino médio completo",
+      "Conhecimento em informática básica e redes sociais",
+      "Facilidade com organizações de agenda e atendimento ao público",
+      "Boa comunicação verbal e escrita",
+      "Perfil empático"
     ],
     "horario": {
-      "segunda_a_sexta": "15:00 às 00:30 (2º Turno)"
+      "segunda_a_sexta": "08:00 às 18:00",
+      "sabado": "08:00 às 14:00"
     },
-    "escala": "Segunda a sexta-feira",
+    "escala": "Segunda a sábado",
     "contato": {
-      "email": "rh@torneamentocortez.com.br",
+      "email": "",
       "telefone": "",
-      "whatsapp": ""
+      "whatsapp": "31997888233"
     },
-    "descricao_vaga": "Operar e ajustar máquinas CNC, usinando peças de metais ferrosos, não-ferrosos, resinas e plásticos. Garantir a qualidade e a segurança do processo, seguindo normas ambientais e de segurança.",
-    "divulgacao": "Alexandre Jamoia",
-    "fonte_imagem": "IMG-20260908-WA0077.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Atendimento ao público, organização de agenda, vendas e utilização de redes sociais e informática básica.",
+    "divulgacao": "@papelariaquintela",
+    "fonte_imagem": "IMG-20260909-WA0084.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp - Alexandre Jamoia",
+    "origem": "Instagram - @papelariaquintela",
     "ativa": true
   },
   {
-    "id": 25,
-    "cargo": "Auxiliar de Produção",
-    "empresa": "Doces Ouro de Minas",
+    "id": 15,
+    "cargo": "Agente de Conservação-Limpeza Dia",
+    "empresa": "GS Psicologia e RH",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 1.772,80",
+    "beneficios": [
+      "Alimentação na empresa",
+      "Fretado",
+      "Assiduidade de R$ 200,00",
+      "Seguro de vida"
+    ],
+    "requisitos": [
+      "Experiência com limpeza"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:00 às 17:10 (Seg-Qui) e 07:00 às 15:20 (Sex)",
+      "sabado": "Sábados alternados"
+    },
+    "escala": "Segunda a sexta-feira (sábados alternados)",
+    "contato": {
+      "email": "selecionargsrh@gmail.com",
+      "telefone": "",
+      "whatsapp": "31991796949"
+    },
+    "descricao_vaga": "Efetuar limpeza de banheiro, espelhos, vidros, divisórias, paredes, forros, luminárias, escadas, tapetes, vestiários, refeitórios, persianas, portas, mesas, armários e cadeiras.",
+    "divulgacao": "@GS_PSICOLOGIAERH",
+    "fonte_imagem": "IMG-20260909-WA0113.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @GS_PSICOLOGIAERH",
+    "ativa": true
+  },
+  {
+    "id": 16,
+    "cargo": "Limpador Técnico(a)",
+    "empresa": "GS Psicologia e RH",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 1.959,92",
+    "beneficios": [
+      "Alimentação na empresa",
+      "Fretado",
+      "Assiduidade de R$ 200,00",
+      "Seguro de vida"
+    ],
+    "requisitos": [
+      "Experiência com limpeza, limpeza industrial ou limpeza de fábrica"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:00 às 17:10 (Seg-Qui) e 07:00 às 15:20 (Sex)",
+      "sabado": "Sábados alternados"
+    },
+    "escala": "Segunda a sexta-feira (sábados alternados)",
+    "contato": {
+      "email": "selecionargsrh@gmail.com",
+      "telefone": "",
+      "whatsapp": "31991796949"
+    },
+    "descricao_vaga": "Executar limpeza técnica de máquinas e equipamentos industriais e limpeza predial, conforme cronograma de atividades previamente estabelecido.",
+    "divulgacao": "@GS_PSICOLOGIAERH",
+    "fonte_imagem": "IMG-20260909-WA0114.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @GS_PSICOLOGIAERH",
+    "ativa": true
+  },
+  {
+    "id": 17,
+    "cargo": "Auxiliar de Jardinagem",
+    "empresa": "GS Psicologia e RH",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 2.294,91",
+    "beneficios": [
+      "Fretado",
+      "Alimentação na empresa",
+      "Prêmio de Assiduidade: R$ 200,00",
+      "Seguro de Vida"
+    ],
+    "requisitos": [
+      "Ensino Fundamental",
+      "Experiência anterior na função",
+      "Conhecimento e manuseio de roçadeiras e ferramentas de jardinagem"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:00 às 17:10"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "selecionargsrh@gmail.com",
+      "telefone": "",
+      "whatsapp": "31991796949"
+    },
+    "descricao_vaga": "Auxiliar nos serviços de jardinagem de forma a manter e conservar as áreas verdes internas e externas do parque fabril.",
+    "divulgacao": "@GS_PSICOLOGIAERH",
+    "fonte_imagem": "IMG-20260909-WA0115.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @GS_PSICOLOGIAERH",
+    "ativa": true
+  },
+  {
+    "id": 18,
+    "cargo": "Operador(a) de Produção Vibra",
+    "empresa": "Vibra Foods",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 1.703,00",
+    "beneficios": [
+      "Vale Alimentação: R$ 550,00 por mês",
+      "Plano de Saúde",
+      "Plano Odontológico",
+      "Seguro de Vida",
+      "Restaurante na empresa",
+      "Adicional Noturno 30%",
+      "Kit Natalino"
+    ],
+    "requisitos": [
+      "Desejável Ensino Fundamental completo",
+      "Desejável disponibilidade para trabalho em turnos",
+      "Desejável experiência em atividades operacionais"
+    ],
+    "horario": {
+      "segunda_a_sexta": "16:20 às 02:08"
+    },
+    "escala": "Segunda-feira à sexta-feira (2º turno)",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "3171858719"
+    },
+    "descricao_vaga": "Vaga para Operador(a) de Produção na Vibra Foods em Sete Lagoas.",
+    "divulgacao": "RHF Talentos",
+    "fonte_imagem": "IMG-20260909-WA0117.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "RHF Talentos",
+    "ativa": true
+  },
+  {
+    "id": 19,
+    "cargo": "Closer (vendedor) / SDR (auxiliar de vendas)",
+    "empresa": "Conquista Cred",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
@@ -864,99 +714,772 @@
     },
     "salario": "A combinar",
     "beneficios": [
-      "Bonificação",
-      "Cesta Básica",
-      "Refeição na empresa sem desconto em folha",
-      "Assistência médica Familiar",
-      "Plano odontológico",
-      "Convênio Farmácia",
-      "Seguro de Vida sem desconto em folha",
-      "Transporte Fretado"
+      "Pagamentos comissionados",
+      "Ótima oportunidade para crescimento (desenvolvimento profissional e plano de carreira)",
+      "Ambiente dinâmico e colaborativo"
     ],
     "requisitos": [
-      "Sexo: Masculino",
-      "Residir em bairros específicos de Sete Lagoas (Luxemburgo, Interlagos, São Vicente, Emilia, Nova Cidade, Jardim Primavera, Jardim Europa, Bela Vista, Nossa Senhora de Lourdes, Cidade de Deus, Lagoa Grande, Santa Felicidade, Catavento, Sede)"
+      "Idade: 20 a 30 anos",
+      "Ensino médio completo",
+      "Boa comunicação",
+      "Seja comunicativo e proativo",
+      "Organizado e focado em resultados",
+      "Vontade de aprender e crescer"
+    ],
+    "horario": {
+      "segunda_a_sexta": "09:00 às 18:00"
+    },
+    "escala": "Segunda a Sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31973139634"
+    },
+    "descricao_vaga": "Faça parte do nosso time! Buscamos pessoas comunicativas, determinadas e com vontade de fazer a diferença!",
+    "divulgacao": "Conquista Cred",
+    "fonte_imagem": "IMG-20260909-WA0119.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Conquista Cred",
+    "ativa": true
+  },
+  {
+    "id": 20,
+    "cargo": "Vagas Operacionais",
+    "empresa": "Cedro Têxtil",
+    "local_trabalho": {
+      "rua": "Rua Policena Mascarenhas, 680",
+      "bairro": "São Geraldo",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Residentes de Sete Lagoas ou Prudente de Morais"
     ],
     "horario": {},
     "escala": "A combinar",
     "contato": {
-      "email": "pessoal@docesourodeminas.com.br",
+      "email": "recrutamentogmm@cedro.ind.br",
       "telefone": "",
-      "whatsapp": "(31) 99822-8318"
+      "whatsapp": "31985771590"
     },
-    "descricao_vaga": "Auxiliar na fabricação de doces na fábrica Doces Ouro de Minas. Vaga masculina para moradores de bairros selecionados.",
-    "divulgacao": "Alexandre Jamoia",
-    "fonte_imagem": "IMG-20260908-WA0078.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "A Cedro Têxtil, unidade de Sete Lagoas, está selecionando candidatos para vagas operacionais. Inscrições até dia 21/09/2026.",
+    "divulgacao": "Cedro Têxtil",
+    "fonte_imagem": "IMG-20260909-WA0122.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-21",
+    "origem": "Cedro Têxtil",
+    "ativa": true
+  },
+  {
+    "id": 21,
+    "cargo": "Agente de Saneamento",
+    "empresa": "Águas de Minas Saneamento",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Carteira B",
+      "Carga horária: 44 horas semanais"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:00 às 17:00"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Faça parte do time que cuida do que é essencial: a água e a vida. Contratação imediata!",
+    "divulgacao": "Águas de Minas",
+    "fonte_imagem": "IMG-20260909-WA0123.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp - Alexandre Jamoia",
+    "origem": "Águas de Minas",
+    "ativa": true
+  },
+  {
+    "id": 22,
+    "cargo": "Auxiliar de produção",
+    "empresa": "Fibrart",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [
+      "Salário Industrial",
+      "Vale transporte",
+      "Plano odontológico",
+      "Plano de carreira",
+      "Premiação assiduidade",
+      "Seguro de vida",
+      "Auxílio refeição",
+      "Plano de saúde"
+    ],
+    "requisitos": [
+      "Atividade operacional",
+      "Responsabilidade",
+      "Assiduidade"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31998550212"
+    },
+    "descricao_vaga": "Oportunidade de emprego para Auxiliar de produção na Fibrart.",
+    "divulgacao": "Fibrart",
+    "fonte_imagem": "IMG-20260909-WA0124.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Fibrart",
+    "ativa": true
+  },
+  {
+    "id": 23,
+    "cargo": "Pintor Industrial (Spray)",
+    "empresa": "Fibrart",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [
+      "Salário Compatível",
+      "Vale transporte",
+      "Plano odontológico",
+      "Plano de carreira",
+      "Premiação assiduidade",
+      "Seguro de vida",
+      "Auxílio refeição"
+    ],
+    "requisitos": [
+      "Atividade operacional",
+      "Responsabilidade",
+      "Assiduidade"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:30 às 17:30 (Seg-Qui) e 07:30 às 16:30 (Sex)"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31998550212"
+    },
+    "descricao_vaga": "Estamos contratando Pintor Industrial (Spray).",
+    "divulgacao": "Fibrart",
+    "fonte_imagem": "IMG-20260909-WA0126.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Fibrart",
+    "ativa": true
+  },
+  {
+    "id": 24,
+    "cargo": "Conferente",
+    "empresa": "AFP",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Pro-ativo",
+      "Experiência em carteira na área",
+      "Ambos sexo",
+      "Ensino médio completo"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:30 às 17:30",
+      "sabado": "07:30 às 11:30"
+    },
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31996469577"
+    },
+    "descricao_vaga": "Realizar contagem do estoque, inspecionar cargas, conferência de entrada e saída de mercadoria.",
+    "divulgacao": "AFP",
+    "fonte_imagem": "IMG-20260909-WA0127.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "AFP",
+    "ativa": true
+  },
+  {
+    "id": 25,
+    "cargo": "Vendedor",
+    "empresa": "AFP Construção",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Experiência em vendas",
+      "Boa comunicação e facilidade com relacionamento",
+      "Proatividade, organização e foco em resultados",
+      "Conhecimento de produtos, tecnologia e redes sociais será um diferencial"
+    ],
+    "horario": {
+      "segunda_a_sexta": "08:00 às 18:00",
+      "sabado": "08:00 às 12:00"
+    },
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "rh@afpconstrucao.com.br",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Vaga para Vendedor com experiência em vendas, boa comunicação e proatividade.",
+    "divulgacao": "AFP",
+    "fonte_imagem": "IMG-20260909-WA0128.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "AFP",
     "ativa": true
   },
   {
     "id": 26,
-    "cargo": "Não especificado",
-    "empresa": "Padaria 24 Horas Pizzaria",
+    "cargo": "Operador de Teleatendimento",
+    "empresa": "Não especificada",
     "local_trabalho": {
-      "rua": "Avenida Raquel Teixeira Viana, 781",
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 1.790,22",
+    "beneficios": [],
+    "requisitos": [
+      "Boa comunicação",
+      "Bom relacionamento interpessoal",
+      "Comprometimento e proatividade",
+      "Noções básicas de informática"
+    ],
+    "horario": {
+      "segunda_a_sexta": "09:48 às 18:00"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Atuar com negociação de dívidas por telefone; Realizar e receber ligações para atendimento ao cliente.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0129.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 27,
+    "cargo": "Caseiro (Casal)",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 5.000,00",
+    "beneficios": [],
+    "requisitos": [
+      "Experiência comprovada em carteira assinada em fazenda",
+      "Experiência em morar e trabalhar em fazenda",
+      "Homem: experiência com serviços gerais e manejo de gado de corte",
+      "Mulher: experiência em serviços domésticos e boa habilidade na cozinha",
+      "Perfil responsável, organizado e comprometido"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para residir na fazenda",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Homem: Serviços gerais da fazenda, manejo de gado de corte. Mulher: Cuidados gerais da casa, limpeza e refeições.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0130.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 28,
+    "cargo": "Ajudante de Produção",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 1.840,56",
+    "beneficios": [
+      "Alimentação na empresa",
+      "Plano de saúde",
+      "Plano Odontológico",
+      "Programa de Participação de Resultados (PPR)",
+      "Seguro de vida",
+      "Transporte fretado",
+      "Vale Cesta Básica",
+      "Gympass",
+      "Abono assiduidade"
+    ],
+    "requisitos": [
+      "Ensino Fundamental Incompleto",
+      "Desejável experiência anterior na função",
+      "Sem restrições para trabalho em altura, espaço confinado, carregamento de peso (25kg a 40kg)",
+      "Residir nas cidades atendidas"
+    ],
+    "horario": {},
+    "escala": "Revezamento de turno (06:00 às 14:00 / 14:00 às 22:00 / 22:00 às 06:00) em escala 6x2",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Fazer a paletização de produtos, enchimento de sacarias, limpeza e organização do local.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0131.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 29,
+    "cargo": "Atendente",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 2.000,00",
+    "beneficios": [
+      "Vale Transporte",
+      "Alimentação na loja",
+      "Plano de carreira",
+      "Plano de Saúde"
+    ],
+    "requisitos": [
+      "Proatividade",
+      "Organização",
+      "Boa comunicação",
+      "Vontade de aprender",
+      "Disponibilidade para trabalhar aos finais de semana"
+    ],
+    "horario": {
+      "segunda_a_sexta": "15:00 às 23:20"
+    },
+    "escala": "Escala 6x1",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Realizará funções inerentes ao cargo.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0132.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 30,
+    "cargo": "Líder de Produção",
+    "empresa": "Não especificada",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "Informado na entrevista",
+    "beneficios": [
+      "Alimentação na empresa",
+      "Plano de Saúde",
+      "Plano Odontológico",
+      "PPR (Programa de Participação de Resultados)",
+      "Seguro de Vida",
+      "Transporte Fretado",
+      "Vale Cesta-Básica",
+      "Wellhub"
+    ],
+    "requisitos": [
+      "Experiência anterior na função",
+      "Curso técnico ou superior em logística, GPI, química ou áreas afins",
+      "Experiência com liderança de equipes",
+      "Conhecimento em Pacote Office completo"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para revezamento de turno",
+    "contato": {
+      "email": "contato@arserh.com.br",
+      "telefone": "",
+      "whatsapp": "31999637672"
+    },
+    "descricao_vaga": "Acompanhar, controlar e avaliar atividades produtivas; Programação das atividades e abastecimento de matérias primas.",
+    "divulgacao": "arseRH",
+    "fonte_imagem": "IMG-20260909-WA0133.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "arseRH",
+    "ativa": true
+  },
+  {
+    "id": 31,
+    "cargo": "Atendente de Lanchonete",
+    "empresa": "Carnes & Afins",
+    "local_trabalho": {
+      "rua": "Av. Raquel Teixeira Viana, 527",
       "bairro": "Canaã",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
     "salario": "A combinar",
     "beneficios": [],
-    "requisitos": [],
-    "horario": {
-      "segunda_a_sexta": "06:00 até às 18:00 (escala geral)"
-    },
-    "escala": "12x36",
+    "requisitos": [
+      "Gostar de trabalhar com o público",
+      "Responsabilidade",
+      "Agilidade",
+      "Proatividade"
+    ],
+    "horario": {},
+    "escala": "A combinar",
     "contato": {
-      "email": "",
-      "telefone": "(31) 9519-1558",
+      "email": "gerencia@carneseafins.com",
+      "telefone": "",
       "whatsapp": ""
     },
-    "descricao_vaga": "A Padaria e Pizzaria 24 horas está contratando novos colaboradores para sua equipe. Entrega de currículo presencial no endereço indicado ou mais informações via telefone.",
-    "divulgacao": "Alexandre Jamoia",
-    "fonte_imagem": "IMG-20260908-WA0079.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Oportunidade para você que gosta de trabalhar com o público, tem responsabilidade, agilidade e proatividade.",
+    "divulgacao": "Carnes & Afins",
+    "fonte_imagem": "IMG-20260909-WA0134.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp - Alexandre Jamoia",
+    "origem": "Carnes & Afins",
     "ativa": true
   },
   {
-    "id": 27,
-    "cargo": "Doméstica",
-    "empresa": "Não especificada",
+    "id": 32,
+    "cargo": "Auxiliar de Cozinha",
+    "empresa": "Carnes & Afins",
+    "local_trabalho": {
+      "rua": "Av. Raquel Teixeira Viana, 527",
+      "bairro": "Canaã",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Gostar de trabalhar em equipe",
+      "Responsabilidade",
+      "Comprometimento"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "gerencia@carneseafins.com",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Oportunidade para você que gosta de trabalhar em equipe, tem responsabilidade e comprometimento.",
+    "divulgacao": "Carnes & Afins",
+    "fonte_imagem": "IMG-20260909-WA0135.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Carnes & Afins",
+    "ativa": true
+  },
+  {
+    "id": 33,
+    "cargo": "Almoxarife / Atendente / Auxiliar de Cozinha / Auxiliar de Salgadeira / Motorista / Salgadeira",
+    "empresa": "Padaria Panorama & Confeitaria",
     "local_trabalho": {
       "rua": "",
       "bairro": "",
       "cidade": "Sete Lagoas",
       "estado": "MG"
     },
-    "salario": "R$ 2.431,50",
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31986613141"
+    },
+    "descricao_vaga": "Vagas para Almoxarife, Atendente, Auxiliar de Cozinha, Auxiliar de Salgadeira, Motorista - Categoria B, Salgadeira.",
+    "divulgacao": "@padariapanorama7l",
+    "fonte_imagem": "IMG-20260909-WA0138.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @padariapanorama7l",
+    "ativa": true
+  },
+  {
+    "id": 34,
+    "cargo": "Técnico em Segurança do Trabalho",
+    "empresa": "WRS Manutenção Industrial",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "Multitécnica",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
     "beneficios": [
-      "Vale-Transporte"
+      "Alimentação na empresa",
+      "Vale-alimentação",
+      "Transporte fretado"
     ],
     "requisitos": [
-      "Sexo feminino",
-      "Necessário experiência mínima de 6 meses na função",
+      "Curso Técnico em Segurança do Trabalho completo",
+      "Conhecimento das Normas Regulamentadoras (NRs)",
+      "Conhecimento em Pacote Office",
+      "Boa comunicação, organização e proatividade"
+    ],
+    "horario": {
+      "segunda_a_sexta": "07:30 às 17:18"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "wrsmanutencao6@gmail.com",
+      "telefone": "",
+      "whatsapp": "31972323879"
+    },
+    "descricao_vaga": "Acompanhamento das rotinas de segurança, inspeções em campo, controle de EPIs, realização de DDS e orientação aos colaboradores.",
+    "divulgacao": "WRS Manutenção Industrial",
+    "fonte_imagem": "IMG-20260909-WA0139.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "WRS Manutenção Industrial",
+    "ativa": true
+  },
+  {
+    "id": 35,
+    "cargo": "Recepcionista (noturno)",
+    "empresa": "Faculdade Atenas Sete Lagoas",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Ambos os sexos",
+      "Ensino Médio completo",
+      "Carga Horária: 20 horas semanais",
+      "Atendimento ao cliente e domínio em informática (pacote Office)",
       "Boa comunicação",
-      "Bom relacionamento interpessoal",
-      "Organização",
-      "Iniciativa"
+      "Proatividade e organização",
+      "Responsabilidade e comprometimento",
+      "Empatia e acolhimento"
+    ],
+    "horario": {
+      "segunda_a_sexta": "18:00 às 22:00"
+    },
+    "escala": "Segunda a sexta-feira",
+    "contato": {
+      "email": "recrutamento.setelagoas@uniatenas.edu.br",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Recepcionar e atender alunos, professores, colaboradores e visitantes; Controle de entrada e saída no período noturno.",
+    "divulgacao": "@gs_psicologiaerh",
+    "fonte_imagem": "IMG-20260909-WA0141.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Instagram - @gs_psicologiaerh",
+    "ativa": true
+  },
+  {
+    "id": 36,
+    "cargo": "Operador de Fábrica de Rações - 1º turno",
+    "empresa": "Vibra Foods",
+    "local_trabalho": {
+      "rua": "Av. Prefeito Alberto Moura, 7271",
+      "bairro": "Distrito Industrial",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "R$ 2.254,00",
+    "beneficios": [
+      "Plano de Saúde",
+      "Plano Odontológico",
+      "Seguro de vida",
+      "Refeitório no local",
+      "Vale-Transporte",
+      "Adiantamento salarial",
+      "Programa de Indicação",
+      "Estacionamento gratuito",
+      "Wi-Fi em áreas de descanso",
+      "Oportunidade de crescimento",
+      "Kit Natalino",
+      "Kit de Produtos"
+    ],
+    "requisitos": [
+      "Não é necessário experiência"
+    ],
+    "horario": {
+      "segunda_a_sexta": "06:30 às 14:50",
+      "sabado": "06:30 às 14:50"
+    },
+    "escala": "Segunda a sábado",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Atuação como Operador de Fábrica de Rações - 1º turno na Vibra Foods.",
+    "divulgacao": "Vibra Foods",
+    "fonte_imagem": "IMG-20260909-WA0142.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-30",
+    "origem": "Vibra Foods",
+    "ativa": true
+  },
+  {
+    "id": 37,
+    "cargo": "Líder de Logística",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Ensino superior completo em Logística, Gestão de Produção Industrial ou áreas correlatas",
+      "Domínio pacote Office",
+      "CNH B",
+      "Conhecimento em sistema ERP",
+      "Disponibilidade de horário",
+      "Experiência no segmento automotivo",
+      "Diferencial: Curso de empilhadeira"
     ],
     "horario": {},
     "escala": "A combinar",
     "contato": {
-      "email": "contato@arserh.com.br",
+      "email": "trabalheconosco@montich.com.ar",
       "telefone": "",
-      "whatsapp": "(31) 99963-7672"
+      "whatsapp": ""
     },
-    "descricao_vaga": "Limpeza e organização geral da casa; Preparação do almoço; Lavar e passar roupas; Auxiliar nos cuidados e supervisão de 2 crianças durante o período da manhã. Vaga código 5028 intermediada por arseRH.",
-    "divulgacao": "Alexandre Jamoia",
-    "fonte_imagem": "IMG-20260908-WA0081.jpg",
-    "data_publicacao": "2026-09-08",
+    "descricao_vaga": "Liderar equipe nas operações de recebimento, armazenagem, expedição, controlar inventários e garantir abastecimento.",
+    "divulgacao": "Maxion Montich",
+    "fonte_imagem": "IMG-20260909-WA0146.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-08",
+    "origem": "Maxion Montich",
+    "ativa": true
+  },
+  {
+    "id": 38,
+    "cargo": "Inspetor de Qualidade",
+    "empresa": "Maxion Montich",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [],
+    "requisitos": [
+      "Curso de Aprendizagem, técnico SENAI",
+      "Residir em Sete Lagoas e região",
+      "Pacote Office",
+      "Ferramentas da qualidade",
+      "Experiência na área automotiva",
+      "Disponibilidade para trabalhar no 1º e 2º turno",
+      "Diferencial: Conhecimento em Metrologia"
+    ],
+    "horario": {},
+    "escala": "Disponibilidade para 1º e 2º turno",
+    "contato": {
+      "email": "trabalheconosco@montich.com.ar",
+      "telefone": "",
+      "whatsapp": ""
+    },
+    "descricao_vaga": "Realiza inspeções durante as etapas do processo, relata e registra andamento, não conformidades e retrabalhos.",
+    "divulgacao": "Maxion Montich",
+    "fonte_imagem": "IMG-20260909-WA0147.jpg",
+    "data_publicacao": "2026-09-01",
+    "data_validade": "2026-09-09",
+    "origem": "Maxion Montich",
+    "ativa": true
+  },
+  {
+    "id": 39,
+    "cargo": "Vendedor",
+    "empresa": "Favo de Mel",
+    "local_trabalho": {
+      "rua": "",
+      "bairro": "",
+      "cidade": "Sete Lagoas",
+      "estado": "MG"
+    },
+    "salario": "A combinar",
+    "beneficios": [
+      "Ajuda de custo",
+      "Produtos de alta qualidade e reconhecidos no mercado",
+      "Oportunidade de crescimento"
+    ],
+    "requisitos": [
+      "CNH categoria AB",
+      "Experiência com vendas externas",
+      "Boa comunicação e negociação",
+      "Foco em resultados e metas"
+    ],
+    "horario": {},
+    "escala": "A combinar",
+    "contato": {
+      "email": "",
+      "telefone": "",
+      "whatsapp": "31972305220"
+    },
+    "descricao_vaga": "Venha fazer parte da equipe que leva saúde, qualidade e energia para mais pessoas! Atuação em vendas externas.",
+    "divulgacao": "Favo de Mel",
+    "fonte_imagem": "IMG-20260909-WA0151.jpg",
+    "data_publicacao": "2026-09-01",
     "data_validade": "2026-09-30",
-    "origem": "WhatsApp - Alexandre Jamoia",
+    "origem": "Favo de Mel",
     "ativa": true
   }
 ]
