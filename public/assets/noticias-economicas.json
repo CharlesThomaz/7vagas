@@ -1,32 +1,32 @@
 [
   {
-    "categoria": "Mercado de trabalho",
-    "titulo": "Salários e jornada seguem no centro das conversas locais",
-    "texto": "O diagnóstico aponta relatos recorrentes de escala 6x1 com remuneração próxima ao piso, enquanto vagas operacionais mapeadas ficaram em torno de R$ 1.870."
+    "categoria": "Mercado local",
+    "titulo": "Grupos de vagas continuam movimentando o mercado de Sete Lagoas",
+    "texto": "Mensagens e convites frequentes apontam alta circulação de oportunidades por WhatsApp, com destaque para vagas de supermercado, caixa, frentista, atendimento e serviços operacionais."
   },
   {
-    "categoria": "Oportunidades",
-    "titulo": "Bicos e freelancers têm demanda imediata",
-    "texto": "Eventos, adegas, restaurantes e serviços de cozinha aparecem como canais de contratação rápida, sinalizando espaço para oportunidades de curta duração."
+    "categoria": "Vagas urgentes",
+    "titulo": "Caixa, frentista e atendimento seguem entre as funções mais procuradas",
+    "texto": "Postos de combustível e supermercados aparecem como setores com demanda mais direta, com relatos de contratação imediata e necessidade de candidatos para funções de atendimento e operação."
   },
   {
-    "categoria": "Profissões técnicas",
-    "titulo": "Trabalho técnico-manual apresenta melhor remuneração",
-    "texto": "O relatório registra exemplos de vagas técnicas com salário de R$ 3 mil e benefícios, além da percepção de que pedreiros estão entre os profissionais mais valorizados localmente."
+    "categoria": "Remuneração",
+    "titulo": "Salários continuam abaixo da média regional para muitos setores",
+    "texto": "O mercado local segue marcado por jornadas mais pesadas e remuneração em torno de R$ 1.622 a R$ 1.870, enquanto vagas com melhores ganhos aparecem em áreas técnicas e em cidades vizinhas."
   },
   {
-    "categoria": "Economia circular",
-    "titulo": "Celulares usados movimentam um mercado ativo na cidade",
-    "texto": "Aparelhos de entrada foram mapeados entre R$ 150 e R$ 250, enquanto modelos premium chegam a R$ 5.300, fortalecendo assistência técnica e revenda de bairro."
+    "categoria": "Cuidados e serviços",
+    "titulo": "Cuidadora domiciliar e plantões de 24 horas continuam em evidência",
+    "texto": "A demanda por cuidador(a) de idosos e plantões domiciliares segue ativa, com ofertas de imediato e remuneração variável conforme experiência e disponibilidade."
   },
   {
-    "categoria": "Logística comunitária",
-    "titulo": "Frete alto limita o impacto das doações",
-    "texto": "Mesmo quando móveis e itens essenciais são doados, o transporte dentro da cidade pode inviabilizar a entrega. O relatório cita fretes locais orçados em R$ 200."
+    "categoria": "Eventos temporários",
+    "titulo": "Monitoria infantil e vagas de evento abrem espaço para contratação rápida",
+    "texto": "Dados recentes reforçam a presença de vagas temporárias para monitora infantil, com carga horária de 44 horas e exigência de afinidade com crianças e boa comunicação."
   },
   {
-    "categoria": "Pequenos negócios",
-    "titulo": "Estética, artesanato e serviços sustentam renda rápida",
-    "texto": "Prestadoras autônomas, artesãs, montadores, chaveiros e outros pequenos serviços têm papel relevante na geração de renda em Nova Cidade e Sete Lagoas."
+    "categoria": "Comparativo regional",
+    "titulo": "Sete Lagoas ainda perde em remuneração frente a cidades próximas",
+    "texto": "Conversas locais apontam que Matozinhos e Pedro Leopoldo costumam oferecer salários e benefícios superiores, elevando a comparação com o mercado de Sete Lagoas."
   }
 ]

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://setelagoasvagas.web.app/sitemap.xml
+
+# Bloqueio opcional para arquivos sem valor para SEO
+Disallow: /assets/
+Disallow: /anuncios/
+Disallow: /firebase.js
+Disallow: /vagas.json
+Disallow: /vagas2.json
+Disallow: /vagas3.json
+Disallow: /vagas4.json
+Disallow: /vagas5.json
+Disallow: /vagas6.json
+Disallow: /vagas7.json
+Disallow: /vagas8.json
+Disallow: /vagasModel.json
